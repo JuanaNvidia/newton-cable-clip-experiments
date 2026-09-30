@@ -1,0 +1,47 @@
+{
+  "length_m": 0.3048,
+  "diameter_m": 0.002,
+  "endpoint_span_m": 0.24,
+  "endpoint_elevation_m": 0.015,
+  "boundary_conditions": "Ball-joint pinned positions, freely rotating ends; straight rest rods initially bent upward. No midpoint constraints.",
+  "temporary_load": "0.02 N downward half-sine pulse at midpoint from 3 to 4 seconds",
+  "solver": "Newton 1.6 SolverVBD, 40 iterations, 3840 Hz",
+  "results": [
+    {
+      "factor": 0.1,
+      "EI_Nm2": 5.7295779513082324e-05,
+      "bend_stiffness_Nm_per_rad": 0.01146667503378616,
+      "mass_g": 0.9575574398040771,
+      "apex_at_3s_mm": 13.697921752929688,
+      "min_apex_during_press_mm": 13.693796157836914,
+      "final_apex_mm": 13.680879592895508,
+      "last_second_apex_range_mm": 0.002123415470123291,
+      "max_joint_gap_mm": 0.0016712727408528024,
+      "max_end_anchor_error_mm": 0.004968591022920338
+    },
+    {
+      "factor": 1.0,
+      "EI_Nm2": 0.0005729577951308232,
+      "bend_stiffness_Nm_per_rad": 0.1146667503378616,
+      "mass_g": 0.9575574398040771,
+      "apex_at_3s_mm": 14.088506698608398,
+      "min_apex_during_press_mm": 14.088525772094727,
+      "final_apex_mm": 14.106527328491211,
+      "last_second_apex_range_mm": 0.0026552006602287292,
+      "max_joint_gap_mm": 0.001597068439018967,
+      "max_end_anchor_error_mm": 0.015982131139947196
+    },
+    {
+      "factor": 2.0,
+      "EI_Nm2": 0.0011459155902616464,
+      "bend_stiffness_Nm_per_rad": 0.2293335006757232,
+      "mass_g": 0.9575574398040771,
+      "apex_at_3s_mm": 91.68297576904297,
+      "min_apex_during_press_mm": 91.08586883544922,
+      "final_apex_mm": 91.6796646118164,
+      "last_second_apex_range_mm": 0.014983117580413818,
+      "max_joint_gap_mm": 0.0005327193295368043,
+      "max_end_anchor_error_mm": 0.005385024050450721
+    }
+  ]
+}

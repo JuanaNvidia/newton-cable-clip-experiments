@@ -1,0 +1,230 @@
+{
+  "archive/coarse_960hz/actual_motion.json": {
+    "bytes": 1190,
+    "sha256": "6d4c9c79e9e8dedd7df5b49b70b695ee1dd5bfaa57c2f722e2dae096c008c11c"
+  },
+  "archive/coarse_960hz/actual_motion.npz": {
+    "bytes": 3806170,
+    "sha256": "78af29d0f4082caefe9282d4d2d226e3d5e4688183fb20022139d9b61c1bdfee"
+  },
+  "archive/coarse_960hz/no_gate_contact.json": {
+    "bytes": 1199,
+    "sha256": "145cdd5046efe140eefa58ec3dd854fae3cab9f5d0b2026dc2e5a8ffa2002cf3"
+  },
+  "archive/coarse_960hz/no_gate_contact.npz": {
+    "bytes": 2274186,
+    "sha256": "b02b728e2c4dc6c3272e5ae1db44af3a86a64dfc4151e33fcb9e2b8169176ef2"
+  },
+  "archive/coarse_960hz/validation.json": {
+    "bytes": 1901,
+    "sha256": "1cdf12a720d73ea845121285ac0adb2df1a1e404f316566f0029ecf0c11ecec1"
+  },
+  "archive/freely_rotating_endpoints/arch_motion.npz": {
+    "bytes": 1947493,
+    "sha256": "394546fc0fa4e646eb3dcd34871c1f2861ea4496641055c4f814a63d95ccb660"
+  },
+  "archive/freely_rotating_endpoints/arch_results.json": {
+    "bytes": 1810,
+    "sha256": "a67afdf9446fbbf396fdba413911e91428e3338064e373aea62a5727184c81e7"
+  },
+  "archive/inflated_inertia/warmup.json": {
+    "bytes": 1202,
+    "sha256": "2f0a412cf7f4a817d88103233b9b2b749bef486ac50baed31d0215e3c6dcff7b"
+  },
+  "archive/inflated_inertia/warmup.npz": {
+    "bytes": 359816,
+    "sha256": "d27e3e35a02efa6cf017b5a3bc78b53a241c0842381741206ae8d1a5b00e2af4"
+  },
+  "experiments/long_cable_newton/actual_after.png": {
+    "bytes": 106031,
+    "sha256": "5b3244157fa3c3520a67912fe97ed6cdec1a00a71b30f399183517c7f72b4262"
+  },
+  "experiments/long_cable_newton/actual_assembly.png": {
+    "bytes": 106031,
+    "sha256": "5b3244157fa3c3520a67912fe97ed6cdec1a00a71b30f399183517c7f72b4262"
+  },
+  "experiments/long_cable_newton/actual_assets_newton.mp4": {
+    "bytes": 666053,
+    "sha256": "9948fbce780ca69b8c7de148edef0e35e7aca68d60d610af0c5005b17dd09bee"
+  },
+  "experiments/long_cable_newton/actual_before.png": {
+    "bytes": 115017,
+    "sha256": "7bf73515e6e9aee5a4386628b8d9851d8d9631186cc24b7d1a551c897d53294d"
+  },
+  "experiments/long_cable_newton/actual_clip_playback.usdc": {
+    "bytes": 16502594,
+    "sha256": "9f7917b9018f2c152812b99352de57840f4c84a95dc50902d0c43cc6f81b5209"
+  },
+  "experiments/long_cable_newton/actual_clip_scene.usda": {
+    "bytes": 13575622,
+    "sha256": "6619afd0115a6f37e7ceeef0c487e365fdaddef3bec0b73b185cf4a792a5a26b"
+  },
+  "experiments/long_cable_newton/actual_clip_scene.usdc": {
+    "bytes": 1374382,
+    "sha256": "3a854e0558ff6e028c889531ad05410b689e4ce4387622369056330c78b83106"
+  },
+  "experiments/long_cable_newton/actual_motion.json": {
+    "bytes": 1444,
+    "sha256": "a0c694fb81f8fefaa09e93641373bd8edbab03b4d0bc2d66b9433cf9dc58e499"
+  },
+  "experiments/long_cable_newton/actual_motion.npz": {
+    "bytes": 4811816,
+    "sha256": "f95ae888dacd1bd4ccab5c7530635a29be6b3e1b36e3f7fafbe278c2ba4c11a0"
+  },
+  "experiments/long_cable_newton/actual_open.png": {
+    "bytes": 113062,
+    "sha256": "e020471c8f3030e4a9797371ca828302303169fa8ce59958dcd809ec7ce12cad"
+  },
+  "experiments/long_cable_newton/arch_comparison.mp4": {
+    "bytes": 237797,
+    "sha256": "5dad30c3babbe04053e8ae3ad15713d13f007b96778ca5c852b5702d376f8221"
+  },
+  "experiments/long_cable_newton/arch_comparison.png": {
+    "bytes": 97325,
+    "sha256": "a735e19393e224d2403210ed383d7b6fbb1f51a79e22ee3a671825f5ab81343c"
+  },
+  "experiments/long_cable_newton/arch_motion.npz": {
+    "bytes": 1599882,
+    "sha256": "63963e48c437e64be8efc2c1f5108fe0444b487362b7ad2d0e47ecd54bbf2f62"
+  },
+  "experiments/long_cable_newton/arch_results.json": {
+    "bytes": 1887,
+    "sha256": "3ef20b5d463005078d22bfee6460f3c3083dd3ab8fd55fb0c3854c747ad336ab"
+  },
+  "experiments/long_cable_newton/arch_validation.json": {
+    "bytes": 618,
+    "sha256": "cee21677fdf718f4f47867c504a81e4bbd3539bf69c8aa1d7078608c83165ca2"
+  },
+  "experiments/long_cable_newton/assembly_before.png": {
+    "bytes": 115017,
+    "sha256": "7bf73515e6e9aee5a4386628b8d9851d8d9631186cc24b7d1a551c897d53294d"
+  },
+  "experiments/long_cable_newton/clipBottom.stl": {
+    "bytes": 33684,
+    "sha256": "61f35e655ba437e23e597cb11052e8453ed321d56a364b73eec75b76cdc54db7"
+  },
+  "experiments/long_cable_newton/clipTop.stl": {
+    "bytes": 29484,
+    "sha256": "6a8acc5f9b4d643b547b7415cacf9a6b18d13c7784ebe52fbb0cfc964f5b1d02"
+  },
+  "experiments/long_cable_newton/connector_displayport.usd": {
+    "bytes": 1093782,
+    "sha256": "7298e8b573cb9c5417b9477fd50dae4cfab397d79b8e88d3a8bc7d5f532c7770"
+  },
+  "experiments/long_cable_newton/geometry_check.json": {
+    "bytes": 688,
+    "sha256": "d2791ddd19ac5a1b2df7377a8874e46f72531acee6837f3f6b18ebda9269a25d"
+  },
+  "experiments/long_cable_newton/validation.json": {
+    "bytes": 1886,
+    "sha256": "dd85291225128cb7dd42dfab46d984392474745f036207c24dae8f657b31c01d"
+  },
+  "experiments/six_cable_newton/actual_after.png": {
+    "bytes": 161836,
+    "sha256": "cc4f02945ad98d9d05bfb23a85c41de076c7aaf997b2d66d1eeae1a8f93ab34a"
+  },
+  "experiments/six_cable_newton/actual_assembly.png": {
+    "bytes": 93785,
+    "sha256": "8831831e0d0ffae8706cb8ddf465de07460b4d124846c2edc8cb79761a293b74"
+  },
+  "experiments/six_cable_newton/actual_assets_newton.mp4": {
+    "bytes": 949388,
+    "sha256": "44d475bc5ed58354821ad69bb5bb5b16061e20dcadd46a03cada1435f79bc354"
+  },
+  "experiments/six_cable_newton/actual_before.png": {
+    "bytes": 160517,
+    "sha256": "265375fefbfd1e7b2978cad7b05726d70a0805db90e2543a13e93c6f12f84277"
+  },
+  "experiments/six_cable_newton/actual_clip_playback.usdc": {
+    "bytes": 13303070,
+    "sha256": "3483776a12635e4176cdbbef53b91af75d6c80b12e2fbea4dfcd21924b8ddd5b"
+  },
+  "experiments/six_cable_newton/actual_clip_scene.usda": {
+    "bytes": 13480978,
+    "sha256": "94b934aed84589b5629bf13b0c28cadb1632cf7b079d4fd9949c57399f2bf748"
+  },
+  "experiments/six_cable_newton/actual_clip_scene.usdc": {
+    "bytes": 1360615,
+    "sha256": "64686d94957d92883e87b6a0a10a37bac7dffa4a1737d375efb7b6009f17c2b7"
+  },
+  "experiments/six_cable_newton/actual_motion.json": {
+    "bytes": 1316,
+    "sha256": "23d59fd63acec82c4e9ab1382399f0d5ca6666ea6ac47754b5fc4b24ea29accc"
+  },
+  "experiments/six_cable_newton/actual_motion.npz": {
+    "bytes": 3779280,
+    "sha256": "2924d812a8f467dbbca384a9e58e50a71f157fbba7c05c8970f0059ccf472a65"
+  },
+  "experiments/six_cable_newton/actual_open.png": {
+    "bytes": 189440,
+    "sha256": "002ec693786f838710fe20781ff256a11e9f88c47d9d8d050b8023441a976d0b"
+  },
+  "experiments/six_cable_newton/assembly_before.png": {
+    "bytes": 101493,
+    "sha256": "9b3e02416f90da18e93c1949be156d87d002529e27d3f7fde00443ea9abee95b"
+  },
+  "experiments/six_cable_newton/clipBottom.stl": {
+    "bytes": 33684,
+    "sha256": "61f35e655ba437e23e597cb11052e8453ed321d56a364b73eec75b76cdc54db7"
+  },
+  "experiments/six_cable_newton/clipTop.stl": {
+    "bytes": 29484,
+    "sha256": "6a8acc5f9b4d643b547b7415cacf9a6b18d13c7784ebe52fbb0cfc964f5b1d02"
+  },
+  "experiments/six_cable_newton/connector_displayport.usd": {
+    "bytes": 1093782,
+    "sha256": "7298e8b573cb9c5417b9477fd50dae4cfab397d79b8e88d3a8bc7d5f532c7770"
+  },
+  "experiments/six_cable_newton/fit_check.json": {
+    "bytes": 292,
+    "sha256": "6ece633f8aa2192e531c10157791b418e9d6a035e1b09091e870eea3c9299d4c"
+  },
+  "experiments/six_cable_newton/geometry_check.json": {
+    "bytes": 728,
+    "sha256": "1e92f8a1f6d5333c1b888b6f0a6c0b2a5d84fef134c390c2bec746e365d4d259"
+  },
+  "experiments/six_cable_newton/no_gate_contact.json": {
+    "bytes": 1322,
+    "sha256": "ccab07980c242003b485820858e1ff15ef86d05319cf8cf1d64735d1d5d76e38"
+  },
+  "experiments/six_cable_newton/no_gate_contact.npz": {
+    "bytes": 2267093,
+    "sha256": "def2b4dbc4956a938bf9a00dfcdc3eb99d0313b6ca653c99742e38799f476a35"
+  },
+  "experiments/six_cable_newton/six_cables_newton.mp4": {
+    "bytes": 1469935,
+    "sha256": "72ebedcc0f73952ac98c40768801df9bf10aa6ae25c4bcaa090910203c96f557"
+  },
+  "experiments/six_cable_newton/support_check.json": {
+    "bytes": 72,
+    "sha256": "64cff1de291ebbbae05e2aa8f4a6928965d9fbd7ac522ae03601b819db68d1de"
+  },
+  "experiments/six_cable_newton/validation.json": {
+    "bytes": 3339,
+    "sha256": "41c6d310ed6f05c4a99adbae6d082d2f70f7428b166527e7a9b893e3c557ea04"
+  },
+  "experiments/three_inch_arch/arch_comparison.mp4": {
+    "bytes": 508359,
+    "sha256": "82af90bfd97eb7e8076534a8b40ea2b4d341ec411253c2c1873a16121532dce1"
+  },
+  "experiments/three_inch_arch/arch_comparison.png": {
+    "bytes": 79159,
+    "sha256": "e5eac3635dbc5646c8b7c1a3ac165335d0e3befdbade4c03904ff5392874ec09"
+  },
+  "experiments/three_inch_arch/arch_motion.npz": {
+    "bytes": 1627469,
+    "sha256": "a88c7809861be4dc45455a0fe7db24645cdf91199cc0d6cd04f7124b034b614e"
+  },
+  "experiments/three_inch_arch/arch_results.json": {
+    "bytes": 1644,
+    "sha256": "90b3760320ad8088e664efb91fc9b05102aeb90f1509fd83e2701da44dac79b6"
+  },
+  "experiments/three_inch_arch/recomputed_validation.json": {
+    "bytes": 301,
+    "sha256": "59f1c3dbb1c1a2e86e1e56f1ea706ade7f6f5a61963e981e3a823d6fc0f6b367"
+  },
+  "experiments/three_inch_arch/validation.json": {
+    "bytes": 352,
+    "sha256": "695bd4a29e89379033a4f783876569ac01fad87f036cc136c3ff039320865c21"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "finite": true,
+    "final_command_76_2_mm": true,
+    "actual_endpoint_span_within_0_05_mm": true,
+    "anchors_within_0_05_mm": true,
+    "joints_within_0_05_mm": true
+  },
+  "passed": true,
+  "motion_sha256": "a88c7809861be4dc45455a0fe7db24645cdf91199cc0d6cd04f7124b034b614e"
+}

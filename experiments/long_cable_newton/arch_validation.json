@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "finite_recorded_poses": true,
+    "selected_arch_above_endpoints_by_50_mm": true,
+    "selected_arch_survives_load": true,
+    "recovers_within_0_1_mm": true,
+    "settled_within_0_1_mm_in_last_second": true,
+    "firmer_than_previous_material": true,
+    "anchors_within_0_05_mm": true,
+    "joint_gaps_within_0_05_mm": true,
+    "mass_matches_solid_cylinder": true
+  },
+  "passed": true,
+  "motion_sha256": "63963e48c437e64be8efc2c1f5108fe0444b487362b7ad2d0e47ecd54bbf2f62",
+  "limitation": "Qualitative target and assumed connector boundary conditions; not measured material identification."
+}

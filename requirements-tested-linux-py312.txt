@@ -1,0 +1,11 @@
+# Versions present during repository verification, Linux / Python 3.12.
+newton==1.6.0
+warp-lang==1.17.0
+numpy==2.4.4
+scipy==1.17.0
+trimesh==4.11.1
+rtree==1.4.1
+usd-core==25.8
+pyglet==2.1.15
+PyOpenGL==4.0.0a1
+Pillow==12.2.0

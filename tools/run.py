@@ -1,0 +1,20 @@
+"""Copy an experiment to a fresh directory and run selected stages there."""
+from pathlib import Path
+import argparse,shutil,subprocess,sys
+ROOT=Path(__file__).resolve().parents[1]
+CASES={
+ 'insertion':('six_cable_newton',{'simulate':[['simulate_newton.py'],['simulate_newton.py','--seconds','3','--no-gate-contact','--output','no_gate_contact']],'validate':[['validate_actual.py','--control']],'render':[['render_newton.py'],['make_video.py']],'usd':[['export_playback.py']]}),
+ 'long-insertion':('long_cable_newton',{'simulate':[['simulate_newton.py']],'validate':[['validate_actual.py']],'render':[['render_newton.py']],'usd':[['export_playback.py']]}),
+ 'arch':('long_cable_newton',{'simulate':[['arch_test.py']],'validate':[['validate_arch.py']],'render':[['render_arch.py']]}),
+ 'three-inch':('three_inch_arch',{'simulate':[['arch_test.py']],'validate':[['validate_motion.py']],'render':[['render_arch.py']]})}
+p=argparse.ArgumentParser(description=__doc__);p.add_argument('experiment',choices=CASES);p.add_argument('--output',type=Path,required=True);p.add_argument('--steps',nargs='+',choices=['simulate','validate','render','usd'],default=['simulate','validate','render']);a=p.parse_args()
+folder,steps=CASES[a.experiment]
+for step in a.steps:
+ if step not in steps:p.error(f'{step} is not supported for {a.experiment}')
+out=a.output.resolve()
+if out.exists():p.error('Output directory already exists; choose a fresh path to preserve previous results.')
+shutil.copytree(ROOT/'experiments'/folder,out)
+for step in a.steps:
+ for command in steps[step]:
+  print('+',sys.executable,*command,flush=True);subprocess.run([sys.executable,*command],cwd=out,check=True)
+print('Results:',out)

@@ -1,0 +1,47 @@
+{
+  "length_m": 0.3048,
+  "diameter_m": 0.002,
+  "endpoint_span_m": 0.24,
+  "endpoint_elevation_m": 0.015,
+  "boundary_conditions": "Clamped endpoint positions and initial tangent orientations, modeling secured connectors; straight rest rods initially bent upward. No midpoint constraints. Independent comparison cases cannot collide.",
+  "temporary_load": "0.02 N downward half-sine pulse at midpoint from 3 to 4 seconds",
+  "solver": "Newton 1.6 SolverVBD, 40 iterations, 3840 Hz",
+  "results": [
+    {
+      "factor": 0.1,
+      "EI_Nm2": 5.7295779513082324e-05,
+      "bend_stiffness_Nm_per_rad": 0.01146667503378616,
+      "mass_g": 0.9575574398040771,
+      "apex_at_3s_mm": 30.81967544555664,
+      "min_apex_during_press_mm": 28.876354217529297,
+      "final_apex_mm": 28.492177963256836,
+      "last_second_apex_range_mm": 0.036893412470817566,
+      "max_joint_gap_mm": 0.009026449630889319,
+      "max_end_anchor_error_mm": 0.020510216524509496
+    },
+    {
+      "factor": 1.0,
+      "EI_Nm2": 0.0005729577951308232,
+      "bend_stiffness_Nm_per_rad": 0.1146667503378616,
+      "mass_g": 0.9575574398040771,
+      "apex_at_3s_mm": 91.52078247070312,
+      "min_apex_during_press_mm": 90.7881851196289,
+      "final_apex_mm": 91.52172088623047,
+      "last_second_apex_range_mm": 0.00702589750289917,
+      "max_joint_gap_mm": 0.0005561441731185813,
+      "max_end_anchor_error_mm": 0.005646433002911594
+    },
+    {
+      "factor": 2.0,
+      "EI_Nm2": 0.0011459155902616464,
+      "bend_stiffness_Nm_per_rad": 0.2293335006757232,
+      "mass_g": 0.9575574398040771,
+      "apex_at_3s_mm": 93.37792205810547,
+      "min_apex_during_press_mm": 93.16133880615234,
+      "final_apex_mm": 93.37854766845703,
+      "last_second_apex_range_mm": 0.00356137752532959,
+      "max_joint_gap_mm": 0.0005545584249864796,
+      "max_end_anchor_error_mm": 0.005605559469062777
+    }
+  ]
+}

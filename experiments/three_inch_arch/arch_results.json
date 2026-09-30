@@ -1,0 +1,41 @@
+{
+  "length_m": 0.3048,
+  "diameter_m": 0.002,
+  "initial_endpoint_span_m": 0.24,
+  "final_endpoint_span_m": 0.0762,
+  "endpoint_elevation_m": 0.015,
+  "boundary_conditions": "Endpoint clamps translate symmetrically from 240 to 76.2 mm apart between 1 and 5 seconds; orientations stay fixed at initial values. Free middle, straight rest rods, gravity active. Comparison cases cannot collide. No midpoint force.",
+  "solver": "Newton 1.6 SolverVBD, 40 iterations, 3840 Hz",
+  "results": [
+    {
+      "factor": 0.1,
+      "EI_Nm2": 5.7295779513082324e-05,
+      "final_apex_mm": 26.228435516357422,
+      "last_second_apex_range_mm": 0.02541579306125641,
+      "maximum_sideways_excursion_mm": 37.91361999511719,
+      "max_joint_gap_mm": 0.009026449630889319,
+      "max_end_anchor_error_mm": 0.02051147280267023,
+      "final_actual_endpoint_distance_mm": 76.20021083680017
+    },
+    {
+      "factor": 1.0,
+      "EI_Nm2": 0.0005729577951308232,
+      "final_apex_mm": 144.22125244140625,
+      "last_second_apex_range_mm": 0.0017583370208740234,
+      "maximum_sideways_excursion_mm": 0.0,
+      "max_joint_gap_mm": 0.0005434954196643654,
+      "max_end_anchor_error_mm": 0.005480530511545086,
+      "final_actual_endpoint_distance_mm": 76.2046952888972
+    },
+    {
+      "factor": 2.0,
+      "EI_Nm2": 0.0011459155902616464,
+      "final_apex_mm": 145.140625,
+      "last_second_apex_range_mm": 0.0019371509552001953,
+      "maximum_sideways_excursion_mm": 0.0,
+      "max_joint_gap_mm": 0.0006358059626777479,
+      "max_end_anchor_error_mm": 0.006436452957467815,
+      "final_actual_endpoint_distance_mm": 76.20932870546324
+    }
+  ]
+}

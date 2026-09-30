@@ -1,0 +1,77 @@
+{
+  "actual_mesh_run": {
+    "cable_count": 6,
+    "cable_diameter_mm": 2.0,
+    "clip_scale": 1.0,
+    "final_lateral_order_preserved": false,
+    "within_one_diameter_height_band": false,
+    "final_height_spread_mm": 10.947037557686894,
+    "retained_per_cable_during_release": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "max_opening_deg": 16.718268259827422,
+    "final_angle_deg": -6.659570227290069,
+    "max_hinge_anchor_error_mm": 0.00354703477837908,
+    "max_cable_joint_gap_mm": 0.03434892293069491,
+    "max_connector_attachment_gap_mm": 0.003398097257246432,
+    "max_sampled_inter_cable_penetration_mm": 0.008937999589410904,
+    "max_sampled_cable_penetration_mm": {
+      "top": 0.15143940854742696,
+      "bottom": 0.48603271030396883
+    },
+    "final_cable_cross_section_mm": [
+      [
+        29.542744901148325,
+        -15.0,
+        13.550336546234888
+      ],
+      [
+        9.249338247620452,
+        -15.0,
+        13.824727588079757
+      ],
+      [
+        11.382779116000387,
+        -15.0,
+        13.927624652371628
+      ],
+      [
+        13.33090432690321,
+        -15.0,
+        14.447733362991704
+      ],
+      [
+        21.439482639698724,
+        -15.0,
+        13.844457371492021
+      ],
+      [
+        50.52971349248185,
+        -15.0,
+        3.5006958053048094
+      ]
+    ],
+    "retained_during_release": false,
+    "release_observation_seconds": 1.7833333333333332,
+    "finite": true
+  },
+  "control_run_included": false,
+  "checks": {
+    "finite": true,
+    "hinge_opens": true,
+    "spring_closes": false,
+    "all_six_cables_retained": false,
+    "six_cable_order_preserved": false,
+    "connectors_attached": true,
+    "cable_separation": true,
+    "hinge_anchors_within_0_05_mm": true,
+    "cable_joints_within_0_2_mm": true,
+    "sampled_mesh_penetration_below_0_2_mm": false
+  },
+  "passed": false
+}

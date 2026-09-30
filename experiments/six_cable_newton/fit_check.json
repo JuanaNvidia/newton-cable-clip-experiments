@@ -1,0 +1,13 @@
+{
+  "cable_count": 6,
+  "diameter_mm": 2.0,
+  "pitch_mm": 2.5,
+  "bundle_width_mm": 14.5,
+  "target_center_x_mm": 18.0,
+  "clip_scale": 1.0,
+  "closed_pose_centerline_clearance_mm": {
+    "Top": 2.3913053412403187,
+    "Bottom": 3.000000000000001
+  },
+  "fits_closed_without_scaling": true
+}
