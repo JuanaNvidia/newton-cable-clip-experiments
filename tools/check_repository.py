@@ -5,7 +5,7 @@ import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('--write-manifest',action='store_true');args=p.parse_args()
 exts={'.npz','.mp4','.png','.stl','.usd','.usda','.usdc','.json'}
-files=sorted(p for top in ['experiments','archive'] for p in (ROOT/top).rglob('*') if p.is_file() and p.suffix in exts and 'work' not in p.parts)
+files=sorted(p for top in ['experiments','archive'] for p in (ROOT/top).rglob('*') if p.is_file() and p.suffix in exts and 'work' not in p.relative_to(ROOT).parts)
 manifest={str(p.relative_to(ROOT)):{'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files}
 path=ROOT/'artifact_manifest.json'
 if args.write_manifest:path.write_text(json.dumps(manifest,indent=2)+'\n')

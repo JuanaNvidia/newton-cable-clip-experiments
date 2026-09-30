@@ -9,4 +9,4 @@ Verified on Linux / Python 3.12 during repository preparation:
 - The experiment runner's command-line interface parses successfully.
 - Packaging scan found no personal absolute filesystem paths, credential patterns, or files over 90 MiB in the publishable tree.
 
-The short GPU run is a packaging smoke test, not a repeat of full insertion validation. Full reference simulation/validation results are the original saved recordings and reports. Optional Isaac RTX rendering was not rerun during packaging. The GitHub Actions workflow has not run until this repository is pushed to GitHub.
+The short GPU run is a packaging smoke test, not a repeat of full insertion validation. Full reference simulation/validation results are the original saved recordings and reports. Optional Isaac RTX rendering was not rerun during packaging. The GitHub Actions workflow runs these integrity checks on pushes and pull requests; see the Actions tab for its current status.
