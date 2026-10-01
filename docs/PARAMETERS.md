@@ -92,3 +92,7 @@ Three independent single-cable cases, initially offset in X by -45, 0, +45 mm. E
 - Three-inch test: no midpoint load; hold for 1 s, move symmetrically to 76.2 mm separation from 1–5 s using cubic smoothstep, then hold through 8 s. Endpoint height and orientations remain fixed.
 
 The reference video was used as a qualitative target, not a measured force/deflection calibration. Endpoint orientations are crucial to interpreting arch behavior.
+
+## Corrected fixed receiver
+
+`fixed_receiver_insertion` retains the connector experiment’s rod, contact, hand-controller and solver settings, but has no receiver hinge or detent parameters. The black receiver is fixed; only the white plug approaches at 25 degrees and rotates to flat. Its hand target turns about the leading top edge. Hand forces fade from 4.8 to 5.2 s, followed by 1.8 s passive settling. There is no modeled snap catch or claim of calibrated locking force. Exact settings and trajectory are in that experiment’s `simulate.py` and `motion.json`.

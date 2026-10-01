@@ -19,6 +19,10 @@ Cached compiled kernels, transient checkpoints, repeated identical download fold
 
 Physics coefficients and reference recordings were preserved. Repository preparation made render scratch directories portable and removed a workstation-specific Isaac app path. Added a runner, documentation, integrity checks, and a pose-based validator for the 3-inch experiment. These packaging changes do not retroactively change the saved simulation results.
 
-## Hinged connector extension
+## Superseded hinged connector interpretation
 
-A fifth experiment reconstructs the visible gray plug, blue wire support, and black hinged table fixture, then solves insertion and rocking closure through Newton contact. It explicitly zeroes rod rest bend/twist. See [the modeling correction](MODELING_CORRECTION.md), [new experiment](../experiments/hinged_connector_insertion/README.md), and its validation/control results. Historical recordings remain unchanged.
+A fifth experiment incorrectly assumes a hinged black receiver. It reconstructs the visible gray plug, blue wire support, and black hinged table fixture, then solves insertion and rocking closure through Newton contact. It explicitly zeroes rod rest bend/twist. See [the modeling correction](MODELING_CORRECTION.md), [new experiment](../experiments/hinged_connector_insertion/README.md), and its validation/control results. Historical recordings remain unchanged.
+
+## Corrected fixed receiver
+
+The user confirmed that the black table connector has no hinge. `fixed_receiver_insertion` removes the hinge geometry, revolute joint and detent; the dynamic white plug enters at 25 degrees and rotates down about its leading edge under a force-driven hand. The receiver stays fixed throughout. Six 2 mm, 304.8 mm cables use explicit zero rod rest curvature. The concealed catch is not reconstructed: seating is validated, positive locking/pull-out retention is not. The earlier experiment remains available as a superseded model.

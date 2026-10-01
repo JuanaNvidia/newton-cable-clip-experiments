@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse,shutil,subprocess,sys
 ROOT=Path(__file__).resolve().parents[1]
 CASES={
+ 'fixed-connector':('fixed_receiver_insertion',{'simulate':[['assets.py'],['simulate.py']],'validate':[['validate.py']],'render':[['render.py']],'usd':[['export_playback.py']]}),
  'hinged-connector':('hinged_connector_insertion',{'simulate':[['assets.py'],['simulate.py'],['simulate.py','--no-receiver-contact','--output','no_receiver_contact']],'validate':[['validate.py','--control']],'render':[['render.py']],'usd':[['export_playback.py']]}),
  'insertion':('six_cable_newton',{'simulate':[['simulate_newton.py'],['simulate_newton.py','--seconds','3','--no-gate-contact','--output','no_gate_contact']],'validate':[['validate_actual.py','--control']],'render':[['render_newton.py'],['make_video.py']],'usd':[['export_playback.py']]}),
  'long-insertion':('long_cable_newton',{'simulate':[['simulate_newton.py']],'validate':[['validate_actual.py']],'render':[['render_newton.py']],'usd':[['export_playback.py']]}),

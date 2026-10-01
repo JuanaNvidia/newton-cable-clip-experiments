@@ -1,3 +1,5 @@
+> **Superseded mechanism:** the user clarified that the black receiver is fixed, without a hinge. This historical run models the wrong mechanism. Use the `fixed_receiver_insertion` experiment for the corrected insertion motion.
+
 # Video-inspired insertion into a hinged table connector
 
 This experiment reconstructs the visible connector mating sequence in the user-provided reference video, particularly approximately 20–24 seconds (plug/fixture details) and 33–38 seconds (alignment, lowering, and rocking into place). The geometry is a parametric surrogate, not customer CAD or measured reverse engineering.

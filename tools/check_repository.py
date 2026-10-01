@@ -13,10 +13,10 @@ expected=json.loads(path.read_text())
 assert manifest==expected,'Artifact set or content changed. Review before updating the manifest.'
 for top in ['experiments','archive','tools']:
  for source in (ROOT/top).rglob('*.py'):compile(source.read_text(),str(source),'exec')
-for folder in ['six_cable_newton','long_cable_newton','three_inch_arch','hinged_connector_insertion']:
+for folder in ['six_cable_newton','long_cable_newton','three_inch_arch','hinged_connector_insertion','fixed_receiver_insertion']:
  report=json.loads((ROOT/'experiments'/folder/'validation.json').read_text());assert report['passed'],folder
 assert json.loads((ROOT/'experiments/long_cable_newton/arch_validation.json').read_text())['passed']
-for folder,name in [('six_cable_newton','actual_motion'),('long_cable_newton','actual_motion'),('long_cable_newton','arch_motion'),('three_inch_arch','arch_motion'),('hinged_connector_insertion','motion'),('hinged_connector_insertion','no_receiver_contact')]:
+for folder,name in [('six_cable_newton','actual_motion'),('long_cable_newton','actual_motion'),('long_cable_newton','arch_motion'),('three_inch_arch','arch_motion'),('fixed_receiver_insertion','motion'),('hinged_connector_insertion','motion'),('hinged_connector_insertion','no_receiver_contact')]:
  with np.load(ROOT/'experiments'/folder/(name+'.npz'),allow_pickle=False) as d:
   assert np.isfinite(d['poses']).all(),(folder,name)
   assert d['poses'].shape[-1]==7 and int(d['fps'])==60

@@ -1,0 +1,49 @@
+{
+  "measurements": {
+    "finite": true,
+    "plug_start_degrees": 24.624795885272,
+    "plug_angle_at_2_5s_degrees": 20.972112526140744,
+    "receiver_start_degrees": 0.0,
+    "receiver_final_degrees": 0.0,
+    "receiver_angle_at_1s_degrees": 0.0,
+    "receiver_rotation_degrees": 0.0,
+    "final_plug_in_receiver_mm": [
+      0.2759721246547997,
+      18.189257010817528,
+      6.629893556237221
+    ],
+    "ideal_seat_mm": [
+      0.0,
+      18.0,
+      6.5
+    ],
+    "final_relative_angle_degrees": 1.8820434913337944,
+    "max_after_release_seat_error_mm": 0.5032176125181366,
+    "max_after_release_relative_angle_degrees": 1.8820549748358306,
+    "max_receiver_translation_error_mm": 8.02452087022325e-07,
+    "max_cable_joint_gap_mm": 0.0006390202388003155,
+    "max_near_attachment_error_mm": 6.690008313625481e-05,
+    "max_far_attachment_error_mm": 6.631528825363981e-05,
+    "max_sampled_plug_receiver_penetration_mm": 0.003948651207494325,
+    "release_observation_seconds": 1.7999999999999998
+  },
+  "checks": {
+    "finite": true,
+    "receiver_stays_fixed": true,
+    "plug_initially_angled": true,
+    "plug_still_angled_at_engagement": true,
+    "plug_rotates_down": true,
+    "seated_after_hand_release": true,
+    "aligned_after_hand_release": true,
+    "fixed_receiver_position_within_0_1_mm": true,
+    "rod_joints_within_0_1_mm": true,
+    "cables_attached": true,
+    "sampled_penetration_below_0_2_mm": true
+  },
+  "passed": true,
+  "limitations": [
+    "Pose and box-surface sampling only; not continuous collision proof",
+    "Concealed latch is not modeled; no positive locking or pull-out validation"
+  ],
+  "motion_sha256": "8511c6eb4f1db7f712f39540642e6e303eb6453733be56e2d0581e73dc9b83b8"
+}

@@ -4,7 +4,9 @@ Reproducible experiments with flexible 2 mm cables, actual clip meshes, a spring
 
 **Physics:** Newton 1.6 `SolverVBD` / rigid-body AVBD with compliant ALM, running on CUDA through Warp 1.17. The previews replay solved poses with Newton OpenGL. Isaac Sim is optional for viewing the recorded USD or rendering the baseline with RTX; it is not a second physics solver.
 
-**Modeling correction:** the historical arch comparisons used their initial curve as the rod rest shape. Earlier straight-rest descriptions were incorrect. The new hinged-connector experiment explicitly sets zero rest curvature. [Details](docs/MODELING_CORRECTION.md).
+**Modeling correction:** the historical arch comparisons used their initial curve as the rod rest shape. Earlier straight-rest descriptions were incorrect. Both connector experiments explicitly set zero rest curvature. [Details](docs/MODELING_CORRECTION.md).
+
+**Connector correction:** the black table receiver has no hinge. The current [fixed-receiver experiment](experiments/fixed_receiver_insertion/README.md) follows the user-confirmed motion. The earlier hinged-receiver experiment is retained as a superseded interpretation. This correction does not apply to the separate original cable-management clip.
 
 ## Results gallery
 
@@ -12,7 +14,7 @@ Click a preview to open its video. The recordings and numerical results are incl
 
 | Experiment | Preview and video | Recorded outcome |
 |---|---|---|
-| Video-inspired plug into a hinged table receiver | [![Hinged connector insertion](experiments/hinged_connector_insertion/seated.png)](experiments/hinged_connector_insertion/connector_insertion.mp4) | Dynamic plug rocks receiver closed; remains seated after release; contact-disabled control stays open |
+| Angled plug insertion into a **fixed** table receiver | [![Fixed receiver insertion](experiments/fixed_receiver_insertion/seated.png)](experiments/fixed_receiver_insertion/connector_insertion.mp4) | White plug enters tilted and rotates flat; black fixture remains fixed; hidden locking catch not modeled |
 | Six 240 mm cables pulled into the actual clip | [![240 mm insertion](experiments/six_cable_newton/actual_assembly.png)](experiments/six_cable_newton/six_cables_newton.mp4) | All six retained; contact-disabled control keeps the lid closed |
 | Six 304.8 mm / 12-inch cables, firmer material | [![12-inch insertion](experiments/long_cable_newton/actual_assembly.png)](experiments/long_cable_newton/actual_assets_newton.mp4) | All six retained, order preserved, original clip scale |
 | 12-inch arch stiffness comparison | [![Arch comparison](experiments/long_cable_newton/arch_comparison.png)](experiments/long_cable_newton/arch_comparison.mp4) | Secured ends 240 mm apart; selected material recovers after a midpoint force pulse |
@@ -36,7 +38,7 @@ python tools/check_repository.py
 Run an experiment into a **new** directory, preserving the included reference results:
 
 ```bash
-python tools/run.py hinged-connector --output runs/hinged-connector-01 --steps simulate validate render usd
+python tools/run.py fixed-connector --output runs/fixed-connector-01 --steps simulate validate render usd
 python tools/run.py three-inch --output runs/three-inch-01
 python tools/run.py arch --output runs/arch-01
 python tools/run.py insertion --output runs/insertion-01 --steps simulate validate render usd
@@ -73,7 +75,7 @@ The top and bottom clip meshes are unscaled. The hinge is at their fitted bore. 
 
 ## Scope and limitations
 
-These are qualitative, uncalibrated cable models. The input video motivated the arch behavior, but did not establish measured material properties. Arch height depends strongly on endpoint spacing, height, and orientation. The historical arch examples use an initially curved material rest state; earlier straight-rest claims are corrected above. The hinged-connector example explicitly uses zero rest curvature. Endpoint clamps are prescribed; the cable middle is solved.
+These are qualitative, uncalibrated cable models. The input video motivated the arch behavior, but did not establish measured material properties. Arch height depends strongly on endpoint spacing, height, and orientation. The historical arch examples use an initially curved material rest state; earlier straight-rest claims are corrected above. The fixed-receiver connector example explicitly uses zero rest curvature. Endpoint clamps are prescribed; the cable middle is solved.
 
 Validation samples recorded poses and geometry. It does not prove absence of collisions between samples or establish accurate real-world forces. A three-second settling observation is not a proof of long-term stability. The 240 mm baseline uses overlapping capsule mass; the 12-inch variants correct total mass to a continuous solid cylinder. Arch board/contact defaults differ from insertion—see the parameter document.
 
