@@ -1,0 +1,43 @@
+{
+  "measurements": {
+    "finite": true,
+    "receiver_start_degrees": 23.668570126672375,
+    "receiver_final_degrees": -0.0002151630546768089,
+    "receiver_angle_at_1s_degrees": 23.633809701959795,
+    "receiver_rotation_degrees": 23.983050389199384,
+    "final_plug_in_receiver_mm": [
+      0.2683725679720821,
+      18.001007921160625,
+      6.608646845366235
+    ],
+    "ideal_seat_mm": [
+      0.0,
+      18.0,
+      6.5
+    ],
+    "final_relative_angle_degrees": 1.3734192890663282,
+    "max_after_release_seat_error_mm": 0.5033116047324656,
+    "max_after_release_relative_angle_degrees": 1.3734192890663282,
+    "max_hinge_anchor_error_mm": 0.0004313787336554274,
+    "max_cable_joint_gap_mm": 0.0006687265765324237,
+    "max_near_attachment_error_mm": 6.837756090446021e-05,
+    "max_far_attachment_error_mm": 6.229640064837472e-05,
+    "max_sampled_plug_receiver_penetration_mm": 0.030221046894771467,
+    "release_observation_seconds": 1.7999999999999998,
+    "control_final_receiver_degrees": 23.633809701959795
+  },
+  "checks": {
+    "finite": true,
+    "receiver_initially_open": true,
+    "receiver_closes": true,
+    "seated_after_hand_release": true,
+    "aligned_after_hand_release": true,
+    "hinge_anchor_within_0_1_mm": true,
+    "rod_joints_within_0_1_mm": true,
+    "cables_attached": true,
+    "sampled_penetration_below_0_2_mm": true,
+    "without_harness_contact_receiver_stays_open": true
+  },
+  "passed": true,
+  "motion_sha256": "2e6bd8717d4b725524811902ddcb2699c0e61e6d6d11d56bbb9e63f7594222db"
+}

@@ -1,5 +1,7 @@
 # Bring 12-inch cable endpoints to 3 inches apart
 
+**Correction:** historical arch recordings in this folder use the initial curve as Newton’s material rest shape, despite earlier straight-rest descriptions. See [the modeling correction](../../docs/MODELING_CORRECTION.md). Insertion recordings that start straight are unaffected.
+
 This separate Newton run preserves the preceding arch comparison. Cable length remains 304.8 mm and diameter remains 2 mm. Cyan is 0.1x the original bending rigidity, yellow is the original material, and red is the selected 2x material (EI = 0.00114591559 N m²). Each color is an independent comparison cable, not part of a colliding bundle.
 
 After one second of gravity settling, both endpoint clamps translate symmetrically inward. Their separation follows a smooth motion from 240 mm to 76.2 mm over four seconds, then remains at 76.2 mm for three more seconds. Endpoint elevation stays 15 mm and endpoint orientations stay fixed at their original values. Only the clamps are driven: the cable middle is solved by Newton. There is no imposed final cable curve or midpoint load. Results depend on these endpoint orientation constraints.

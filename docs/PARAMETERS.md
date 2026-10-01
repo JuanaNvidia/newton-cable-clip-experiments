@@ -1,5 +1,7 @@
 # Newton cable parameters
 
+**Correction:** historical arch rest curvature was inferred from the initial curve, not zero. The new hinged-connector experiment explicitly zeroes rod rest bend/twist. See [details](MODELING_CORRECTION.md) and its [parameters and assets](../experiments/hinged_connector_insertion/README.md).
+
 SI units are used in code. Angular rod coefficients are per radian. Per-joint stiffness is not whole-cable stiffness. The selected 12-inch material is the red 2× case in the arch comparisons.
 
 ## Cable geometry and mass
@@ -14,7 +16,7 @@ SI units are used in code. Angular rod coefficients are per radian. Per-joint st
 | Capsule total length including caps | 0.007 m | 0.006996721311 m |
 | Shape density | 1000 kg/m³ | 789.364640884 kg/m³ |
 | Mass per cable | 0.95504425 g | 0.95755744 g |
-| Rest shape | straight, untwisted | same |
+| Rest shape | straight, untwisted | Insertion: straight; historical arches: initially curved |
 
 The baseline sums full capsule masses, including overlap. The longer variants use density `1000 * ds / (ds + 4*r/3)` so total mass equals a continuous cylinder at 1000 kg/m³. Corresponding line density is 3.14159265 g/m.
 
@@ -84,7 +86,7 @@ Only the 12 grip segment centers receive hand-controller forces. The controller 
 
 ## Arch boundaries
 
-Three independent single-cable cases, initially offset in X by -45, 0, +45 mm. Endpoints start 240 mm apart and 15 mm above the board. Initial centerline is a circular arch with radius 130.391615 mm. End-segment tangents point approximately 65.87277 degrees upward into the arch. Rest curvature remains zero. Endpoint fixed joints retain those tangent orientations; the middle has no imposed shape.
+Three independent single-cable cases, initially offset in X by -45, 0, +45 mm. Endpoints start 240 mm apart and 15 mm above the board. Initial centerline is a circular arch with radius 130.391615 mm. End-segment tangents point approximately 65.87277 degrees upward into the arch. Historical arch rest curvature is inferred from the initial pose. Endpoint fixed joints retain those tangent orientations; the middle has no imposed shape.
 
 - Fixed-span test: hold endpoints; apply a downward 0.02 N half-sine midpoint load from 3–4 s; simulate 8 s.
 - Three-inch test: no midpoint load; hold for 1 s, move symmetrically to 76.2 mm separation from 1–5 s using cubic smoothstep, then hold through 8 s. Endpoint height and orientations remain fixed.

@@ -21,3 +21,7 @@ Run `python tools/check_repository.py` to verify artifact hashes, recorded array
 Review the rendered motion as well as the numbers. Report any changes to boundary conditions, friction, density, damping, collision filtering, or inertia alongside stiffness changes. Do not interpret comparisons with different constraints as a material-only study.
 
 For a proposed improvement, include a short description, preview, parameter changes, validation JSON, and reproducible command. Use a new result folder rather than replacing reference data. Regenerate `artifact_manifest.json` with `python tools/check_repository.py --write-manifest` only after intentionally updating reference artifacts, and review the resulting diff.
+
+## Rest curvature
+
+Read [the modeling correction](docs/MODELING_CORRECTION.md) before interpreting or extending the arch experiments. In Newton 1.6, initially curved body poses become cached rod rest curvature unless explicitly changed. The new hinged-connector example zeroes those caches; do not assume identity anchor rotations alone make a straight-rest cable.

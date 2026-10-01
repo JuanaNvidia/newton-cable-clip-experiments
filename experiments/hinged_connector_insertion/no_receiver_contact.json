@@ -1,0 +1,33 @@
+{
+  "engine": "Newton 1.6 / Warp 1.17",
+  "solver": "SolverVBD / AVBD, compliant ALM",
+  "physics_hz": 3840,
+  "iterations": 40,
+  "length_mm": 304.8,
+  "diameter_mm": 2,
+  "cable_count": 6,
+  "bend_rigidity_Nm2": 0.0011459155902616466,
+  "rod_rest_curvature": "Explicit zero bend/twist solver caches; initially bent state is not material rest",
+  "plug_mass_kg": 0.015,
+  "receiver_mass_kg": 0.025,
+  "hinge_axis": "X",
+  "hinge_limits_degrees": [
+    0,
+    45
+  ],
+  "detent_torque_amplitude_Nm": 0.012,
+  "detent_angular_damping_Nms_per_rad": 0.001,
+  "detent_open_degrees": 25,
+  "detent_model": "tau=-.012*sin(2*pi*angle/open_angle)-.001*angular_velocity; no time-dependent receiver target",
+  "hand_position_stiffness_N_m": 4000,
+  "hand_position_damping_Ns_m": 8,
+  "hand_force_cap_N_per_axis": 20,
+  "hand_angular_stiffness_small_angle_Nm_rad": 0.5,
+  "hand_angular_damping_Nms_rad": 0.003,
+  "hand_torque_cap_Nm_per_axis": 0.15,
+  "hand_release_seconds": 5.2,
+  "seconds": 7,
+  "no_receiver_contact": true,
+  "control_filter_scope": "Plug and all cable shapes against the receiver",
+  "runtime_seconds": 109.04636430740356
+}

@@ -35,6 +35,94 @@
     "bytes": 359816,
     "sha256": "d27e3e35a02efa6cf017b5a3bc78b53a241c0842381741206ae8d1a5b00e2af4"
   },
+  "experiments/hinged_connector_insertion/assembly_after.png": {
+    "bytes": 99652,
+    "sha256": "91fdcd90a1d25e2f7ecdd5c946c23dbd5ccf85e8a4f2f71409613604ac37f032"
+  },
+  "experiments/hinged_connector_insertion/assembly_before.png": {
+    "bytes": 120841,
+    "sha256": "5be5fde4a0ce00df2e42448f90fb2f9930a1399d5b68e856bc55b3d52aaf4183"
+  },
+  "experiments/hinged_connector_insertion/assets/cable_end_connector.stl": {
+    "bytes": 28884,
+    "sha256": "281d01dd64d5c61c4201eeb08cf7e1bc9b21bbd7a8bfc6947d2c2aff5e10baa4"
+  },
+  "experiments/hinged_connector_insertion/assets/cable_end_connector.usda": {
+    "bytes": 42648,
+    "sha256": "53d8d0f5ccbc389b7ca553006223b8c7afb6b35ea363be729e66b0224e977842"
+  },
+  "experiments/hinged_connector_insertion/assets/cable_end_connector.usdc": {
+    "bytes": 8284,
+    "sha256": "c9db92982970dd95a3353a06de2b677aa6850428e8dc5d308a9bcdc0e413d602"
+  },
+  "experiments/hinged_connector_insertion/assets/geometry.json": {
+    "bytes": 25485,
+    "sha256": "7ed35d4a8b325bc3800cb269b1fb1caff01a4fdee358ab953e430d25ec898215"
+  },
+  "experiments/hinged_connector_insertion/assets/hinged_table_connector.usda": {
+    "bytes": 52444,
+    "sha256": "be30179d2cab2de1d1a1db06f67424f258bcc10a07865266b8343236eba68f23"
+  },
+  "experiments/hinged_connector_insertion/assets/hinged_table_connector.usdc": {
+    "bytes": 11740,
+    "sha256": "2d7f75c1049fc98d7eecba0a5dc714fc592651f9c5d41414c74ccc584d28700c"
+  },
+  "experiments/hinged_connector_insertion/assets/table_connector_base.stl": {
+    "bytes": 46684,
+    "sha256": "638350e9e829da35c9c544645deb70314d1a5cb2a7a977ad10d176ec70a98020"
+  },
+  "experiments/hinged_connector_insertion/assets/table_connector_receiver.stl": {
+    "bytes": 18284,
+    "sha256": "59d4f04a63ba675c5ba47aaebefcdefac00073655ede8424e37d978a3a49d612"
+  },
+  "experiments/hinged_connector_insertion/before.png": {
+    "bytes": 120841,
+    "sha256": "5be5fde4a0ce00df2e42448f90fb2f9930a1399d5b68e856bc55b3d52aaf4183"
+  },
+  "experiments/hinged_connector_insertion/connector_insertion.mp4": {
+    "bytes": 1330720,
+    "sha256": "b96c3b170aeb74ebfd17e4c7697c19d3f4cfd4e3543c4c1486bf7517cc74ca9e"
+  },
+  "experiments/hinged_connector_insertion/connector_playback.usdc": {
+    "bytes": 21102462,
+    "sha256": "652871a3b39cfaf30c2ae274b153eb2d1037bee8b4f8f255dabf3d749ff5b302"
+  },
+  "experiments/hinged_connector_insertion/connector_scene.usda": {
+    "bytes": 449551,
+    "sha256": "b59c974e559fab7b6e0534da1698d9bca50798a9262755041dfcc4e847f60cc8"
+  },
+  "experiments/hinged_connector_insertion/connector_scene.usdc": {
+    "bytes": 76101,
+    "sha256": "957a4ce572b979a0dfba54ce1f0535fd9def713628766d717209c2907bbc2842"
+  },
+  "experiments/hinged_connector_insertion/engaging.png": {
+    "bytes": 193792,
+    "sha256": "b1f9df0e85f4eb7dd84b8a6e986e2de94bdbb5bb7fb7d472e122fb0267bfbfcf"
+  },
+  "experiments/hinged_connector_insertion/motion.json": {
+    "bytes": 1060,
+    "sha256": "f3a767b473e83db31f5dc9e92b951686cc400e939c549991d9acf78c45dae097"
+  },
+  "experiments/hinged_connector_insertion/motion.npz": {
+    "bytes": 3916028,
+    "sha256": "2e6bd8717d4b725524811902ddcb2699c0e61e6d6d11d56bbb9e63f7594222db"
+  },
+  "experiments/hinged_connector_insertion/no_receiver_contact.json": {
+    "bytes": 1135,
+    "sha256": "04f5616286f33434a87d5101d8b3a04366fd8c8c5378847e20b62088bf9ab2a1"
+  },
+  "experiments/hinged_connector_insertion/no_receiver_contact.npz": {
+    "bytes": 3927892,
+    "sha256": "bb06497814365912cea12f5414e931b244f9442df72d075b2ba16710223e12a9"
+  },
+  "experiments/hinged_connector_insertion/seated.png": {
+    "bytes": 144019,
+    "sha256": "fbde636648ec87ab2f7242ae8e7352d8172ebc75788d290e7e3a69708e4dd876"
+  },
+  "experiments/hinged_connector_insertion/validation.json": {
+    "bytes": 1531,
+    "sha256": "cfa4f3aa6bebb31916c7965b984c46ab49e4a90a9be2f5118dc93aa05d48ebf5"
+  },
   "experiments/long_cable_newton/actual_after.png": {
     "bytes": 106031,
     "sha256": "5b3244157fa3c3520a67912fe97ed6cdec1a00a71b30f399183517c7f72b4262"

@@ -4,7 +4,7 @@
 
 1. **240 mm six-cable insertion:** native Newton rods, native spring revolute clip hinge, fixed connector attachments, force-driven hand grips. 3840 Hz resolves the original coarse-step grip instability. All six cables retained after release. A cable-to-top-contact-disabled control remains closed, supporting contact-driven lid opening.
 2. **304.8 mm six-cable insertion:** 61 segments, 2 mm diameter, double original bending rigidity, continuous-cylinder mass correction. All six retained and ordered; maximum sampled clip penetration about 0.00146 mm.
-3. **304.8 mm arch comparison:** ends clamped 240 mm apart, starting in an upward arc with a straight rest state. Compare 0.1×, 1×, 2× stiffness under gravity and a 0.02 N downward half-sine midpoint force from 3–4 s. Selected material's apex settles about 78.38 mm above its endpoints, with approximately 0.217 mm force-pulse deflection. Original material also arches with these clamped ends.
+3. **304.8 mm arch comparison:** ends clamped 240 mm apart, starting in an upward arc that Newton also used as its curved rest state. Compare 0.1×, 1×, 2× stiffness under gravity and a 0.02 N downward half-sine midpoint force from 3–4 s. Selected material's apex settles about 78.38 mm above its endpoints, with approximately 0.217 mm force-pulse deflection. Original material also arches with these clamped ends.
 4. **Bring ends to 76.2 mm apart:** same material comparison. Clamp positions move inward during 1–5 s, orientations stay fixed. No midpoint force. Hold until 8 s. Selected material's apex reaches 130.14 mm above the endpoints; actual final endpoint spacing is 76.209 mm.
 
 ## Diagnostic archive
@@ -18,3 +18,7 @@ Cached compiled kernels, transient checkpoints, repeated identical download fold
 ## Packaging changes
 
 Physics coefficients and reference recordings were preserved. Repository preparation made render scratch directories portable and removed a workstation-specific Isaac app path. Added a runner, documentation, integrity checks, and a pose-based validator for the 3-inch experiment. These packaging changes do not retroactively change the saved simulation results.
+
+## Hinged connector extension
+
+A fifth experiment reconstructs the visible gray plug, blue wire support, and black hinged table fixture, then solves insertion and rocking closure through Newton contact. It explicitly zeroes rod rest bend/twist. See [the modeling correction](MODELING_CORRECTION.md), [new experiment](../experiments/hinged_connector_insertion/README.md), and its validation/control results. Historical recordings remain unchanged.

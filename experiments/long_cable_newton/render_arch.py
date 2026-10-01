@@ -26,7 +26,7 @@ try:
     for n,i in enumerate(range(0,len(poses),2)):
         t=(i+1)/fps;state.body_q.assign(poses[i]);viewer.begin_frame(t);viewer.log_state(state);viewer.end_frame();im=Image.fromarray(viewer.get_frame().numpy());draw=ImageDraw.Draw(im)
         draw.rectangle((0,0,1280,132),fill=(15,22,30));draw.text((22,10),'Newton VBD | 12 inch / 2 mm cable bending comparison',font=font,fill='white')
-        draw.text((22,42),'Ends clamped 240 mm apart; free middle; straight rest shape; gravity ON',font=small,fill='white')
+        draw.text((22,42),'Ends clamped 240 mm apart; free middle; initial curve is rest shape; gravity ON',font=small,fill='white')
         for c,label in enumerate(['0.1x stiffness','Original stiffness','2x stiffness']):draw.text((22+c*405,74),label,font=font,fill=tuple(int(x*255) for x in colors[c]))
         phase='Gravity settling' if t<3 else 'Downward midpoint force: up to 0.02 N' if t<4 else 'Load removed: passive recovery'
         draw.text((22,104),f'{phase} | {t:.2f} s | Solved motion, OpenGL replay',font=small,fill='white')

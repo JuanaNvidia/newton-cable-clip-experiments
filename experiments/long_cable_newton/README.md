@@ -1,5 +1,7 @@
 # Twelve-inch Newton cables
 
+**Correction:** historical arch recordings in this folder use the initial curve as Newton’s material rest shape, despite earlier straight-rest descriptions. See [the modeling correction](../../docs/MODELING_CORRECTION.md). Insertion recordings that start straight are unaffected.
+
 Separate variant of `six_cable_newton`; the original is preserved. The target is a qualitative resemblance to IMG_1595.MOV: broad curves that resist gravity but can bend under a hand. The video is not a measured material calibration.
 
 ## Material and discretization
@@ -18,7 +20,7 @@ Separate variant of `six_cable_newton`; the original is preserved. The target is
 
 ## Arch test
 
-`arch_test.py` compares 0.1x, 1x, and 2x the previous bending rigidity. Each cable is 304.8 mm long, its endpoints are clamped 240 mm apart and 15 mm above the board, and its middle is unconstrained. Endpoint positions and initial tangent orientations are held, representing secured connectors. Comparison cables cannot collide with one another. The same upward circular arc is used only as an initially deformed state; the constitutive rest state is straight. The short endpoint spacing is what permits an arch. A free cable with both ends unsupported is not expected to float in an arch.
+`arch_test.py` compares 0.1x, 1x, and 2x the previous bending rigidity. Each cable is 304.8 mm long, its endpoints are clamped 240 mm apart and 15 mm above the board, and its middle is unconstrained. Endpoint positions and initial tangent orientations are held, representing secured connectors. Comparison cables cannot collide with one another. The same upward circular arc is used only as an initially deformed state; Newton inferred a curved material rest state from the initial transforms. The short endpoint spacing is what permits an arch. A free cable with both ends unsupported is not expected to float in an arch.
 
 Gravity acts throughout. A downward half-sine force, peaking at 0.02 N, acts at the midpoint between 3 and 4 seconds, then is removed. This load is an illustrative disturbance, not a force measured from the reference footage. `arch_results.json` reports geometry, recovery, anchor error, and joint error. `arch_comparison.mp4` is actual Newton pose playback, with colors identifying each stiffness. This is a finite-duration demonstration of this support arrangement, not proof of stability for arbitrary endpoint positions or disturbances.
 

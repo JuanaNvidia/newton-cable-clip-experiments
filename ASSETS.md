@@ -9,3 +9,5 @@
 This repository is intended for private collaboration. No new blanket open-source license or third-party asset redistribution rights are asserted. Confirm rights with the asset owners before making the repository public or redistributing their models separately.
 
 The reference footage and customer conversation are not included. No GitHub credentials or workstation environment are part of the repository.
+
+The hinged-connector extension uses newly generated parametric surrogate geometry from `experiments/hinged_connector_insertion/assets.py`. Its USD/STL assets do not incorporate the prior DisplayPort connector or original clip STLs. The hidden mechanism and dimensions are assumptions based on visual reference. The reference video itself remains excluded.
