@@ -14,6 +14,7 @@ Click a preview to open its video. The recordings and numerical results are incl
 
 | Experiment | Preview and video | Recorded outcome |
 |---|---|---|
+| 18-inch cables: connector insertion **and** original spring clip | [![Combined connector and clip](experiments/connector_and_clip/assembly_after.png)](experiments/connector_and_clip/connector_and_clip.mp4) | All six retained with preloaded spring; lid rests 3.4° open. Original spring reopens 31.5°. Connector retention is approximate. |
 | Angled plug insertion into a **fixed** table receiver | [![Fixed receiver insertion](experiments/fixed_receiver_insertion/seated.png)](experiments/fixed_receiver_insertion/connector_insertion.mp4) | White plug enters tilted and rotates flat; black fixture remains fixed; hidden locking catch not modeled |
 | Six 240 mm cables pulled into the actual clip | [![240 mm insertion](experiments/six_cable_newton/actual_assembly.png)](experiments/six_cable_newton/six_cables_newton.mp4) | All six retained; contact-disabled control keeps the lid closed |
 | Six 304.8 mm / 12-inch cables, firmer material | [![12-inch insertion](experiments/long_cable_newton/actual_assembly.png)](experiments/long_cable_newton/actual_assets_newton.mp4) | All six retained, order preserved, original clip scale |
@@ -38,6 +39,7 @@ python tools/check_repository.py
 Run an experiment into a **new** directory, preserving the included reference results:
 
 ```bash
+python tools/run.py connector-and-clip --output runs/connector-and-clip-01 --steps simulate validate render usd
 python tools/run.py fixed-connector --output runs/fixed-connector-01 --steps simulate validate render usd
 python tools/run.py three-inch --output runs/three-inch-01
 python tools/run.py arch --output runs/arch-01
@@ -72,6 +74,8 @@ Changing span, segment count, or timing may also require updating the renderer a
 - [Asset provenance and rights](ASSETS.md)
 
 The top and bottom clip meshes are unscaled. The hinge is at their fitted bore. The source USD scenes contain geometry/materials but no active PhysX simulation; Python constructs the Newton model. `actual_clip_playback.usdc` files contain recorded animations.
+
+The combined 18-inch experiment adds an explicitly approximate, bounded connector-retention spring after seating, because the hidden locking catch is not reconstructed. Its assumed force limits are documented in [the experiment](experiments/connector_and_clip/README.md). The standalone fixed-receiver experiment still has no retention mechanism.
 
 ## Scope and limitations
 

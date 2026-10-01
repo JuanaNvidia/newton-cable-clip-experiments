@@ -96,3 +96,9 @@ The reference video was used as a qualitative target, not a measured force/defle
 ## Corrected fixed receiver
 
 `fixed_receiver_insertion` retains the connector experiment’s rod, contact, hand-controller and solver settings, but has no receiver hinge or detent parameters. The black receiver is fixed; only the white plug approaches at 25 degrees and rotates to flat. Its hand target turns about the leading top edge. Hand forces fade from 4.8 to 5.2 s, followed by 1.8 s passive settling. There is no modeled snap catch or claim of calibrated locking force. Exact settings and trajectory are in that experiment’s `simulate.py` and `motion.json`.
+
+## Combined 18-inch sequence
+
+See [the complete combined-experiment parameter list](../experiments/connector_and_clip/README.md). The six cables are 457.2 mm long, 2 mm in diameter, and use 91 segments with the same EI and explicit zero rest curvature. The original clip remains unscaled and uses the same native spring revolute joint. Cable grips release at 11.2 s, the plug hand releases at 12.2 s, and the recording ends at 14 s. The receiver is fixed. A new, explicitly approximate retention spring captures the plug only after seating; its finite force and breakaway limits are documented with the experiment.
+
+The combined example includes an original-clip-spring comparison that reopens under the longer cable load. Its default variant increases spring stiffness and damping by 10× and adds 0.03 N m constant closing preload. Both use the same unscaled clip meshes. These are design assumptions, not measured spring ratings.

@@ -1,0 +1,116 @@
+{
+  "diagnostics": {
+    "clip_fully_closed_within_1_degree": false
+  },
+  "measurements": {
+    "finite": true,
+    "plug_start_degrees": 24.759677656168808,
+    "plug_angle_at_2_5s_degrees": 11.604275604443897,
+    "receiver_start_degrees": 0.0,
+    "receiver_final_degrees": 0.0,
+    "receiver_angle_at_1s_degrees": 0.0,
+    "receiver_rotation_degrees": 0.0,
+    "final_plug_in_receiver_mm": [
+      -0.017942262275028042,
+      17.555035650730133,
+      6.617039442062378
+    ],
+    "ideal_seat_mm": [
+      0.0,
+      18.0,
+      6.5
+    ],
+    "final_relative_angle_degrees": 0.5068337950523704,
+    "max_after_release_seat_error_mm": 0.4604722083529808,
+    "max_after_release_relative_angle_degrees": 0.5068908782902702,
+    "max_receiver_translation_error_mm": 8.02452087022325e-07,
+    "max_cable_joint_gap_mm": 0.18471944437155408,
+    "max_released_cable_joint_gap_mm": 0.0010602049786588273,
+    "max_near_attachment_error_mm": 0.0006198935807995335,
+    "max_far_attachment_error_mm": 0.0001962997572736795,
+    "max_sampled_plug_receiver_penetration_mm": 0.019385658345705877,
+    "release_observation_seconds": 1.8000000000000007,
+    "clip_max_opening_degrees": 31.519854641670882,
+    "clip_final_angle_degrees": -31.519854641670882,
+    "max_clip_hinge_anchor_error_mm": 0.003792771032182654,
+    "final_clip_height_spread_mm": 2.9381084401257014,
+    "clip_final_cross_section_mm": [
+      [
+        10.022775474348807,
+        -14.999999999999986,
+        16.742557386117333
+      ],
+      [
+        12.126321736128878,
+        -14.999999999999986,
+        17.393242075843077
+      ],
+      [
+        14.178751450819496,
+        -14.999999999999986,
+        18.063080010457394
+      ],
+      [
+        16.19594189586145,
+        -14.999999999999986,
+        18.73486792530085
+      ],
+      [
+        18.191505588082215,
+        -14.999999999999986,
+        19.424623613275532
+      ],
+      [
+        20.242959391880746,
+        -14.999999999999986,
+        19.680665826243036
+      ]
+    ],
+    "all_six_retained_after_all_hands_release": false,
+    "retained_per_cable_after_all_hands_release": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "max_sampled_cable_clip_penetration_mm": {
+      "top": 0.0,
+      "bottom": 0.0
+    },
+    "max_clip_penetration_frame": {
+      "top": null,
+      "bottom": null
+    },
+    "retention_engaged_frame": 356
+  },
+  "checks": {
+    "finite": true,
+    "receiver_stays_fixed": true,
+    "plug_initially_angled": true,
+    "plug_enters_angled": true,
+    "plug_rotates_down": true,
+    "seated_after_hand_release": true,
+    "aligned_after_hand_release": true,
+    "fixed_receiver_position_within_0_1_mm": true,
+    "rod_joints_within_0_2_mm": true,
+    "released_rod_joints_within_0_1_mm": true,
+    "cables_attached": true,
+    "sampled_penetration_below_0_2_mm": true,
+    "clip_opens_on_cable_contact": true,
+    "all_six_in_clip_after_release": false,
+    "six_cables_side_by_side": false,
+    "clip_hinge_within_0_05_mm": true,
+    "clip_sampled_penetration_below_0_2_mm": true,
+    "final_cable_order_preserved": true,
+    "retention_engaged_and_holds": true
+  },
+  "passed": false,
+  "limitations": [
+    "Pose and box-surface sampling only; not continuous collision proof",
+    "Concealed latch is approximated by a bounded spring capture; no calibrated hardware locking or pull-out validation",
+    "Clip STL distance sampled at 15 Hz; rod axes sampled at 17 points per segment"
+  ],
+  "motion_sha256": "6583feed7d978f6be75a8cc4c43047b7a2733044e5b7ed62d547893e858c6773"
+}

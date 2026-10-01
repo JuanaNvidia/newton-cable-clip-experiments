@@ -26,3 +26,9 @@ A fifth experiment incorrectly assumes a hinged black receiver. It reconstructs 
 ## Corrected fixed receiver
 
 The user confirmed that the black table connector has no hinge. `fixed_receiver_insertion` removes the hinge geometry, revolute joint and detent; the dynamic white plug enters at 25 degrees and rotates down about its leading edge under a force-driven hand. The receiver stays fixed throughout. Six 2 mm, 304.8 mm cables use explicit zero rod rest curvature. The concealed catch is not reconstructed: seating is validated, positive locking/pull-out retention is not. The earlier experiment remains available as a superseded model.
+
+## Combined 18-inch connector and spring-clip sequence
+
+`connector_and_clip` extends the cables to 457.2 mm (91 segments) and combines angled insertion into the fixed receiver with routing all six cables into the original unscaled clipTop/clipBottom. The supporting plug hand releases after the two cable grips. A bounded, pose-triggered retention spring approximates the concealed connector catch; its parameters are assumptions, not measured lock forces. Original experiments remain unchanged.
+
+The combined example includes an original-clip-spring comparison that reopens under the longer cable load. Its default variant increases spring stiffness and damping by 10× and adds 0.03 N m constant closing preload. Both use the same unscaled clip meshes. These are design assumptions, not measured spring ratings.

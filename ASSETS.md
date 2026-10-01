@@ -13,3 +13,5 @@ The reference footage and customer conversation are not included. No GitHub cred
 The hinged-connector extension uses newly generated parametric surrogate geometry from `experiments/hinged_connector_insertion/assets.py`. Its USD/STL assets do not incorporate the prior DisplayPort connector or original clip STLs. The hidden mechanism and dimensions are assumptions based on visual reference. The reference video itself remains excluded.
 
 The corrected `fixed_receiver_insertion/assets.py` removes all receiver hinge hardware and generates `fixed_table_connector` assets. The original hinged extension is a superseded interpretation. Both are approximate surrogate geometry; neither establishes the real concealed locking mechanism.
+
+The combined `connector_and_clip` experiment reuses the corrected connector assets and byte-identical original clip STL files. It adds no measured customer CAD. Connector retention is a force-model approximation rather than a mesh-derived locking catch.

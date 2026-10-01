@@ -13,14 +13,16 @@ expected=json.loads(path.read_text())
 assert manifest==expected,'Artifact set or content changed. Review before updating the manifest.'
 for top in ['experiments','archive','tools']:
  for source in (ROOT/top).rglob('*.py'):compile(source.read_text(),str(source),'exec')
-for folder in ['six_cable_newton','long_cable_newton','three_inch_arch','hinged_connector_insertion','fixed_receiver_insertion']:
+for folder in ['six_cable_newton','long_cable_newton','three_inch_arch','hinged_connector_insertion','fixed_receiver_insertion','connector_and_clip']:
  report=json.loads((ROOT/'experiments'/folder/'validation.json').read_text());assert report['passed'],folder
 assert json.loads((ROOT/'experiments/long_cable_newton/arch_validation.json').read_text())['passed']
-for folder,name in [('six_cable_newton','actual_motion'),('long_cable_newton','actual_motion'),('long_cable_newton','arch_motion'),('three_inch_arch','arch_motion'),('fixed_receiver_insertion','motion'),('hinged_connector_insertion','motion'),('hinged_connector_insertion','no_receiver_contact')]:
+for folder,name in [('six_cable_newton','actual_motion'),('long_cable_newton','actual_motion'),('long_cable_newton','arch_motion'),('three_inch_arch','arch_motion'),('connector_and_clip','motion'),('connector_and_clip','original_spring_motion'),('fixed_receiver_insertion','motion'),('hinged_connector_insertion','motion'),('hinged_connector_insertion','no_receiver_contact')]:
  with np.load(ROOT/'experiments'/folder/(name+'.npz'),allow_pickle=False) as d:
   assert np.isfinite(d['poses']).all(),(folder,name)
   assert d['poses'].shape[-1]==7 and int(d['fps'])==60
 for name in ['clipTop.stl','clipBottom.stl']:
  assert (ROOT/'experiments/six_cable_newton'/name).read_bytes()==(ROOT/'experiments/long_cable_newton'/name).read_bytes()
+ assert (ROOT/'experiments/six_cable_newton'/name).read_bytes()==(ROOT/'experiments/connector_and_clip'/name).read_bytes()
 assert not json.loads((ROOT/'archive/coarse_960hz/validation.json').read_text())['passed'],'Historical failed control must stay labeled failed'
+assert not json.loads((ROOT/'experiments/connector_and_clip/original_spring_motion_validation.json').read_text())['passed'],'Original spring comparison must retain its failed closed-clip outcome'
 print(f'PASS: {len(files)} artifact hashes, finite reference motions, expected validation statuses, identical clip meshes, Python syntax.')
