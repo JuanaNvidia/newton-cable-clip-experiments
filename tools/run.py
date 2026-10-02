@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse,shutil,subprocess,sys
 ROOT=Path(__file__).resolve().parents[1]
 CASES={
+ 'ur5-opposite-pull':('ur5_opposite_pull',{'simulate':[['simulate.py']],'validate':[['validate.py'],['check_clip_contacts.py'],['check_gripper_contacts.py'],['check_robot_clearance.py']],'render':[['render.py']],'usd':[['export_playback.py']]}),
  'ur5-interior-clip':('ur5_interior_clip',{'simulate':[['simulate.py']],'validate':[['validate.py'],['check_clip_contacts.py'],['check_gripper_contacts.py'],['check_robot_clearance.py']],'render':[['render.py']],'usd':[['export_playback.py']]}),
  'ur5-clip':('ur5_cable_clip',{'simulate':[['simulate.py']],'validate':[['validate.py'],['check_clip_contacts.py'],['check_robot_clearance.py']],'render':[['render.py']],'usd':[['export_playback.py']]}),
  'connector-and-clip':('connector_and_clip',{'simulate':[['assets.py'],['simulate.py']],'validate':[['validate.py']],'render':[['render.py']],'usd':[['export_playback.py']]}),

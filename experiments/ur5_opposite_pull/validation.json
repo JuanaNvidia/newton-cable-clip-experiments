@@ -1,0 +1,195 @@
+{
+  "passed": true,
+  "checks": {
+    "finite": true,
+    "connector_stays_seated": true,
+    "starts_outside_clip": true,
+    "rod_joint_gap_under_0_2mm": true,
+    "root_attached_within_0_1mm": true,
+    "hinge_anchor_within_0_05mm": true,
+    "robot_follows_urdf_fk_within_0_1mm": true,
+    "robot_orientation_within_0_1deg": true,
+    "all_six_retained_after_release": true,
+    "clip_opens_during_insertion": true,
+    "all_cables_lifted_at_least_5mm": true,
+    "all_cables_follow_gripper_during_lift_within_5mm": true,
+    "both_fingers_contact_bundle_during_hold": true,
+    "fingers_clear_after_withdrawal": true,
+    "robot_command_within_joint_limits": true,
+    "robot_command_within_velocity_limits": true,
+    "all_six_retained_after_withdrawal": true,
+    "gripper_targets_clip_plane_height_within_0_1mm": true,
+    "all_six_distal_ends_attached_within_0_1mm": true,
+    "clip_at_least_100mm_inside_table": true,
+    "recovery_trigger_matches_retention_check": true,
+    "recorded_detection_matches_geometry": true,
+    "feedback_matches_recorded_geometry": true
+  },
+  "measurements": {
+    "final_clip_cross_section_mm": [
+      [
+        12.290989415738178,
+        -14.999999999999986,
+        15.391588436696816
+      ],
+      [
+        12.750900990418895,
+        -14.999999999999986,
+        13.442512497507133
+      ],
+      [
+        14.820427086965658,
+        -14.999999999999986,
+        14.087121853793933
+      ],
+      [
+        18.159994695772077,
+        -14.999999999999986,
+        13.57763968994799
+      ],
+      [
+        16.775727600396007,
+        -14.999999999999986,
+        15.087793060763289
+      ],
+      [
+        20.579973293073646,
+        -14.999999999999986,
+        13.737181609121192
+      ]
+    ],
+    "final_clip_angle_deg": 0.00013045957300705232,
+    "max_clip_opening_deg": 7.909415629364986,
+    "max_rod_joint_gap_mm": 0.1695597359156151,
+    "max_root_attachment_error_mm": 0.011600144097130291,
+    "max_hinge_anchor_error_mm": 0.011269448943830553,
+    "max_fk_position_error_mm": 5.820766091346741e-08,
+    "max_fk_rotation_error_deg": 1.0372799050719956e-05,
+    "retained_per_cable_after_release": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "max_pad_distance_per_cable_during_hold_mm": [
+      4.744800846218174,
+      3.853353415758004,
+      2.9037171506238337,
+      2.0389768165987814,
+      3.051890127097461,
+      4.045785098953534
+    ],
+    "final_cable_order_preserved": false,
+    "final_cable_height_spread_mm": 1.9490759391896824,
+    "observation_after_release_s": 7.199999999999999,
+    "max_grasp_material_slip_per_cable_mm": [
+      27.125644625117676,
+      26.845659256448823,
+      27.801328292343836,
+      27.473856951191948,
+      26.950406552511044,
+      27.411289460566763
+    ],
+    "lift_per_cable_mm": [
+      13.415970802307129,
+      14.257966041564941,
+      14.212519645690918,
+      14.16426944732666,
+      14.176724433898926,
+      14.100356101989746
+    ],
+    "max_lift_slip_per_cable_mm": [
+      1.8138722025551266,
+      0.5345915429467755,
+      0.24310904291248045,
+      0.1741542609492806,
+      0.15311034077229538,
+      0.16685447368059475
+    ],
+    "min_pad_distance_after_release_mm": 12.087054461888798,
+    "min_pad_distance_last_second_mm": 205.39049010617538,
+    "min_pad_distance_after_withdrawal_mm": 95.44455649646684,
+    "max_joint_speed_rad_s": [
+      0.11453254494377063,
+      0.4086418356839494,
+      0.41821537981371115,
+      0.25992725130414396,
+      9.050360461060336e-10,
+      0.15678893183920017
+    ],
+    "max_rod_joint_gap_time_s": 10.6,
+    "retention_failure_times_after_release_s": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "retained_per_cable_last_second": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "retained_per_cable_final_frame": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "inside_closed_lid_envelope_final": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "final_lid_clearance_from_cable_axis_mm": [
+      1.5676556809819335,
+      3.5167305729713223,
+      2.8721165044806316,
+      3.3815910642998275,
+      1.8714408453941456,
+      3.222043634958973
+    ],
+    "retention_method": "Clip center-plane crossing inside local X 5..28 mm, axis above floor+0.8 mm and at least 0.8 mm below the actual posed lid underside from original STL; capsule/STL penetration checked separately",
+    "retained_per_cable_after_withdrawal": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "observation_after_withdrawal_s": 4.0,
+    "max_target_chord_height_error_mm": 9.017674784672636e-08,
+    "max_distal_attachment_error_mm": 0.0009349329505866876,
+    "distal_connector_displacement_mm": 70.69559478759766,
+    "clip_min_table_edge_clearance_mm": 242.0,
+    "retained_before_opposite_side_pull": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "feedback_retention_mismatched_samples": 0
+  },
+  "limitations": [
+    "Robot links are kinematically position controlled, not motor torque simulation",
+    "Connector is fixed in its seated pose",
+    "Finger contact distances include original pads and physical support lips; exact near contact, conservative support-box lower bounds at distances above 3 mm; not measured hardware forces",
+    "No calibrated grip-force or hardware execution validation",
+    "Retention is sampled at the clip center plane, using the posed lid underside; this is not a long-term retention proof"
+  ],
+  "motion_sha256": "9c8b7326eb25603e3d1cd1202bfe2153e77bb8a6092cd8075d0dc6a3b1964973"
+}

@@ -1006,5 +1006,221 @@
   "experiments/ur5_interior_clip/validation.json": {
     "bytes": 15022,
     "sha256": "53f130a5cd008972ed06c272dd8d0d408bd5b34fb8212564c5823c6c460bd595"
+  },
+  "experiments/ur5_opposite_pull/actual_clip_scene.usda": {
+    "bytes": 13575622,
+    "sha256": "6619afd0115a6f37e7ceeef0c487e365fdaddef3bec0b73b185cf4a792a5a26b"
+  },
+  "experiments/ur5_opposite_pull/assembly_after.png": {
+    "bytes": 116994,
+    "sha256": "b0789cf24def93cc602773f1cd25a84142c8f37e7f6be66a1263b5b799df08a3"
+  },
+  "experiments/ur5_opposite_pull/assembly_before.png": {
+    "bytes": 114779,
+    "sha256": "a5f58552dda2826b3f84eba33248639be7d427b3b98f3eec3b0dbb8d734489ba"
+  },
+  "experiments/ur5_opposite_pull/before.png": {
+    "bytes": 114779,
+    "sha256": "a5f58552dda2826b3f84eba33248639be7d427b3b98f3eec3b0dbb8d734489ba"
+  },
+  "experiments/ur5_opposite_pull/clipBottom.stl": {
+    "bytes": 33684,
+    "sha256": "61f35e655ba437e23e597cb11052e8453ed321d56a364b73eec75b76cdc54db7"
+  },
+  "experiments/ur5_opposite_pull/clipTop.stl": {
+    "bytes": 29484,
+    "sha256": "6a8acc5f9b4d643b547b7415cacf9a6b18d13c7784ebe52fbb0cfc964f5b1d02"
+  },
+  "experiments/ur5_opposite_pull/clip_open.png": {
+    "bytes": 216679,
+    "sha256": "62ed9a46547b2a4173252d96046c5591a2754e337232300b827e6b895d738897"
+  },
+  "experiments/ur5_opposite_pull/contact_validation.json": {
+    "bytes": 393,
+    "sha256": "60247e5f0e527fe19598139a87d5ec57a1ade35ac8aed1667e7b3b70fcc29d21"
+  },
+  "experiments/ur5_opposite_pull/fingertip_support.stl": {
+    "bytes": 684,
+    "sha256": "662983ca1ec287ddf6934fee4d4ba331ad9fa798d5fa81ba518eae68be5fbc5e"
+  },
+  "experiments/ur5_opposite_pull/first_result.png": {
+    "bytes": 204353,
+    "sha256": "de73fb1ba5b7e1cbc4f12f0ab9f74fd50320b343202336284429f30c2049eccb"
+  },
+  "experiments/ur5_opposite_pull/geometry_check.json": {
+    "bytes": 977,
+    "sha256": "0f08a38411bb6cc5c0ec9c97add182e3d2e1c33b1acee91dfd002eef31fe979f"
+  },
+  "experiments/ur5_opposite_pull/grasp.png": {
+    "bytes": 367854,
+    "sha256": "f352b00b5bd7034baf9b96ded6eb30f63264e95b1642c074eb9807a0d6dc0402"
+  },
+  "experiments/ur5_opposite_pull/gripper_contact_validation.json": {
+    "bytes": 517,
+    "sha256": "2f0df3bb3b28692911a213ef0c560264c0bdb4d21b2f1aa105852fef454edcd9"
+  },
+  "experiments/ur5_opposite_pull/initialization_check.json": {
+    "bytes": 234,
+    "sha256": "e8d561eed79552941dc9bdfa4c8fa0ed0304ac77ed1d3834dfaabb4fddd209da"
+  },
+  "experiments/ur5_opposite_pull/motion.json": {
+    "bytes": 3953,
+    "sha256": "b846f5106d8c676dedcdcaa8d9a6b80dc2aad10e24c5857a919a07e97133028a"
+  },
+  "experiments/ur5_opposite_pull/motion.npz": {
+    "bytes": 18831042,
+    "sha256": "9c8b7326eb25603e3d1cd1202bfe2153e77bb8a6092cd8075d0dc6a3b1964973"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/provenance.json": {
+    "bytes": 3879,
+    "sha256": "44a8a4258d7121842d872de24b9faadc0fea1a291039c766284403ef8ba31fb6"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/robotiq/robotiq_2f85/2f85.xml": {
+    "bytes": 9540,
+    "sha256": "d48aca5f9151798ffd38111ce4e8b2081f3ec2d4f525161b33643451580010de"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/robotiq/robotiq_2f85/assets/base.stl": {
+    "bytes": 1712484,
+    "sha256": "1c7b9f2bd92d705fc4e897c94e905973a3c05f406845e942229433deb7041453"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/robotiq/robotiq_2f85/assets/base_mount.stl": {
+    "bytes": 1091784,
+    "sha256": "87971dfdd6e5311b5a723e7b73c4701ebf5c2364df671500f30dfc1c53c8e61a"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/robotiq/robotiq_2f85/assets/coupler.stl": {
+    "bytes": 89084,
+    "sha256": "d5ee95e62f8415bf5b6e503c831a958f5fc1990bf9b2865329ec38a28932727c"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/robotiq/robotiq_2f85/assets/driver.stl": {
+    "bytes": 67084,
+    "sha256": "bbd6e868b1778bead60d2516c7ede581d7ad4e431744b1828757d6ea5129c112"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/robotiq/robotiq_2f85/assets/follower.stl": {
+    "bytes": 110484,
+    "sha256": "633793332c081641ce200df27a40643cc293b29956e3cb5cb29cb811c33ef1c7"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/robotiq/robotiq_2f85/assets/pad.stl": {
+    "bytes": 15084,
+    "sha256": "4af1fa8d9bb285abecbf5dfc88e74cb30f059a7a074c2030dc35e9ee4316019d"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/robotiq/robotiq_2f85/assets/silicone_pad.stl": {
+    "bytes": 15084,
+    "sha256": "ca20c0fa61e6d3ce7b04bed25360e048e31dfd88ace04187aa6d9e8f4ca3fd0f"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/robotiq/robotiq_2f85/assets/spring_link.stl": {
+    "bytes": 84884,
+    "sha256": "4fb74a8a0d76c0e471cf19fd48bc676fd5b19123798e7a39eb6aa56869354283"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/robotiq/robotiq_2f85/scene.xml": {
+    "bytes": 1393,
+    "sha256": "dbc7255f3e1a5539e59cffac3000a49f19aa3cae384061aa74ec787e6a5760ff"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/config/ur5/default_kinematics.yaml": {
+    "bytes": 638,
+    "sha256": "5682ff6543f819dbdfca67577c783e5673f7dc74406defb3ce919d4950015d73"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/config/ur5/joint_limits.yaml": {
+    "bytes": 2837,
+    "sha256": "76d43c7a908a10a364af60bc69017686914cf0d7afdd6952f0d9c73a6db55c7d"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/config/ur5/physical_parameters.yaml": {
+    "bytes": 2622,
+    "sha256": "20e1e30212edf91c2cb057407e1d741c448b5a76d6f359fa229e7af4adf0cd5f"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/config/ur5/visual_parameters.yaml": {
+    "bytes": 1885,
+    "sha256": "fc81be7e016b36e8d28f6b49601aba6b7a764d74ea410b6d6346ae2bd220c04b"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/collision/base.stl": {
+    "bytes": 28984,
+    "sha256": "1b9d4941ffba8e771ca119ab1c34d2ce7e393273955e14c6f6b56b75875923af"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/collision/forearm.stl": {
+    "bytes": 52584,
+    "sha256": "8e79aa80a532494ba5320c30b40363ff63d228e3d59e2904703dca341dcba2ac"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/collision/shoulder.stl": {
+    "bytes": 33784,
+    "sha256": "1d62e23a8c3ff9e6334fb157c805e6202037bcfca65bc6a36c5c9ae866751b3b"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/collision/upperarm.stl": {
+    "bytes": 58884,
+    "sha256": "55c11ac0ad1e144f230849b2033532e8b140b2e818ea497296d08dfb88757440"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/collision/wrist1.stl": {
+    "bytes": 35184,
+    "sha256": "0a1fd12150140efdee91650dcb4c2d0443065551a9207a2d2dbde58ff1fb4eb7"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/collision/wrist2.stl": {
+    "bytes": 35184,
+    "sha256": "c1d9f7843366068cb331f3f5c43fa716d3eceeb8c80216eccbbc878905dab123"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/collision/wrist3.stl": {
+    "bytes": 22384,
+    "sha256": "cf7220397b56f1d3047be9465eea1181d471b40fc82728052e31c97588585b4b"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/visual/base.dae": {
+    "bytes": 161072,
+    "sha256": "d76755b25c45002b4167cd1a6bb4cf501567627ae0ed9b7e2d94b421d417712d"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/visual/forearm.dae": {
+    "bytes": 1473169,
+    "sha256": "a163079ff71fa2a5cdea9a642a1ec31007b9b6c29ce14d106e7cb088896b4c8b"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/visual/shoulder.dae": {
+    "bytes": 1011530,
+    "sha256": "fce5dd86671eeb56ddc821f138ad5fd45e03a5c7d31bdf59f3b46f193e1c9455"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/visual/upperarm.dae": {
+    "bytes": 2008753,
+    "sha256": "bcfe8208ad1cbeada65166078d6b883413e9aa4e05fa891d1d80d780aecf4fd7"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/visual/wrist1.dae": {
+    "bytes": 952454,
+    "sha256": "0eeddca348d2e2db0d834298a58a3ea09b7aafe59051f1f552d6114d92de5acd"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/visual/wrist2.dae": {
+    "bytes": 951267,
+    "sha256": "9be5d84e57e63adeccd9110cc87d0e457cabb13cdd4603016f9a22233f1dc34e"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/meshes/ur5/visual/wrist3.dae": {
+    "bytes": 127695,
+    "sha256": "7630f9d288ecbbf24d9def977521e766ccedd6b4e89334253c818a049b462e37"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur/ur_description/package.xml": {
+    "bytes": 2317,
+    "sha256": "102cc54c7d13badb51f9f2b2e1ee77e84d576a1e0df20bcdf9726e7faca93a63"
+  },
+  "experiments/ur5_opposite_pull/robot_assets/ur5.urdf": {
+    "bytes": 13449,
+    "sha256": "bddefd3a94068e0171a8930e5e70d832bc0019594b5c04b712b186bbbb2b0333"
+  },
+  "experiments/ur5_opposite_pull/robot_clearance_validation.json": {
+    "bytes": 256,
+    "sha256": "ed39300261e4f2c9a0886a181a53533c03accce0ab13d11cb212996a82d4cc26"
+  },
+  "experiments/ur5_opposite_pull/seated.png": {
+    "bytes": 154857,
+    "sha256": "4c9211e6b645de675e444070cf1a227738438ac025beb14fad276675576517f3"
+  },
+  "experiments/ur5_opposite_pull/ur5_cable_clip.mp4": {
+    "bytes": 5192677,
+    "sha256": "6e1f2295f8d563504a6348bf14bb327ca6203bb730d2adb3897f425f55bb18ec"
+  },
+  "experiments/ur5_opposite_pull/ur5_playback.usdc": {
+    "bytes": 34197143,
+    "sha256": "04846e8267fc4ffec76e4704b9ddc44be37c0c52eb3c41d2b7025fefb1fa0cb7"
+  },
+  "experiments/ur5_opposite_pull/ur5_scene.usda": {
+    "bytes": 7988315,
+    "sha256": "183d82d2404c6cb2b69d2dd80b54f63d193b213f29de564a9934b99e71740463"
+  },
+  "experiments/ur5_opposite_pull/ur5_scene.usdc": {
+    "bytes": 1691768,
+    "sha256": "d15a4f883e3b6068c766b86d80610267360f786f8eb113c244d65c8f2b925bf2"
+  },
+  "experiments/ur5_opposite_pull/validation.json": {
+    "bytes": 5719,
+    "sha256": "bfc001b75ede0b437b22299a4594fd84ad40cd6550938a005ae863f32020b45b"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "target_length_mm": 457.2,
+  "sample_curve_length_mm": 464.59207098737477,
+  "min_initial_segment_mm": 5.024165474490565,
+  "max_initial_segment_mm": 5.024175821222235,
+  "target_segment_mm": 5.024175824175824,
+  "passed": true
+}

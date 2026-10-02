@@ -27,11 +27,20 @@ assert r['checks']['finite'] and r['checks']['connector_stays_seated'] and r['ch
 with np.load(interior/'motion.npz') as d:
  assert np.isfinite(d['poses']).all() and d['distal_anchors'].shape==(6,3)
  assert int(d['distal_body'])<int(d['robot_start'])
+opposite=ROOT/'experiments/ur5_opposite_pull';r=json.loads((opposite/'validation.json').read_text());sha=hashlib.sha256((opposite/'motion.npz').read_bytes()).hexdigest()
+assert r['passed']==all(r['checks'].values()) and r['motion_sha256']==sha
+for name in ['contact_validation','gripper_contact_validation','robot_clearance_validation']:
+ assert json.loads((opposite/(name+'.json')).read_text())['motion_sha256']==sha
+assert r['checks']['finite'] and r['checks']['connector_stays_seated']
+assert r['checks']['recovery_trigger_matches_retention_check'] and r['checks']['feedback_matches_recorded_geometry']
+with np.load(opposite/'motion.npz') as d:
+ assert np.isfinite(d['poses']).all() and d['recovery_retention'].shape==(len(d['poses']),6)
 for folder,name in [('six_cable_newton','actual_motion'),('long_cable_newton','actual_motion'),('long_cable_newton','arch_motion'),('three_inch_arch','arch_motion'),('ur5_cable_clip','motion'),('connector_and_clip','motion'),('connector_and_clip','original_spring_motion'),('fixed_receiver_insertion','motion'),('hinged_connector_insertion','motion'),('hinged_connector_insertion','no_receiver_contact')]:
  with np.load(ROOT/'experiments'/folder/(name+'.npz'),allow_pickle=False) as d:
   assert np.isfinite(d['poses']).all(),(folder,name)
   assert d['poses'].shape[-1]==7 and int(d['fps'])==60
 for name in ['clipTop.stl','clipBottom.stl']:
+ assert (ROOT/'experiments/six_cable_newton'/name).read_bytes()==(opposite/name).read_bytes()
  assert (ROOT/'experiments/six_cable_newton'/name).read_bytes()==(interior/name).read_bytes()
  assert (ROOT/'experiments/six_cable_newton'/name).read_bytes()==(ROOT/'experiments/long_cable_newton'/name).read_bytes()
  assert (ROOT/'experiments/six_cable_newton'/name).read_bytes()==(ROOT/'experiments/connector_and_clip'/name).read_bytes()

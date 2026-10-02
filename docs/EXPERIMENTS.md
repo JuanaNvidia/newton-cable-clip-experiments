@@ -40,3 +40,7 @@ The new [UR5 / Robotiq experiment](../experiments/ur5_cable_clip/README.md) star
 ## UR5 insertion on an interior tabletop, two connectors
 
 The [interior-table robot experiment](../experiments/ur5_interior_clip/README.md) extends the tabletop beneath and beyond the clip, with 242 mm clearance from the nearest edge. One connector remains seated, and a second 15 g dynamic connector holds the six distal cable ends together. A top-down grasp closes sideways across the bundle, then lifts and inserts it using Newton contacts. The open gripper retreats vertically above the table. The prior edge-mounted experiment remains available separately. See the recorded reports for the actual result and numerical limitations.
+
+## Conditional pull from the other side of the clip
+
+The [opposite-side recovery experiment](../experiments/ur5_opposite_pull/README.md) repeats the interior-table insertion. At 18 seconds, it checks retention and, if necessary, regrips the bundle on the seated-connector side, approximately 65 mm before the clip. It pulls sideways at up to 4 mm/s over a bounded 24 mm range, then releases and observes. The controller shares its retention geometry with validation; an entry event is distinguished from retention after the final withdrawal. The same physical fingertip supports and dynamic second connector are retained.
