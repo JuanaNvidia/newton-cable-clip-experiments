@@ -14,6 +14,7 @@ Click a preview to open its video. The recordings and numerical results are incl
 
 | Experiment | Preview and video | Recorded outcome |
 |---|---|---|
+| UR5, interior tabletop and two end connectors | [![Interior tabletop](experiments/ur5_interior_clip/assembly_after.png)](experiments/ur5_interior_clip/ur5_cable_clip.mp4) | 5/6 retained after withdrawal; free dynamic second connector, top-down contact grasp with physical fingertip supports. Strict checks did not pass. |
 | UR5 + Robotiq pickup with connector already seated | [![Robot pickup](experiments/ur5_cable_clip/grasp.png)](experiments/ur5_cable_clip/ur5_cable_clip.mp4) | 6/6 retained after withdrawal in the recorded trial; scripted arm, contact-only grasp. Strict numerical validation did not pass. |
 | 18-inch cables: connector insertion **and** original spring clip | [![Combined connector and clip](experiments/connector_and_clip/assembly_after.png)](experiments/connector_and_clip/connector_and_clip.mp4) | All six retained with preloaded spring; lid rests 3.4° open. Original spring reopens 31.5°. Connector retention is approximate. |
 | Angled plug insertion into a **fixed** table receiver | [![Fixed receiver insertion](experiments/fixed_receiver_insertion/seated.png)](experiments/fixed_receiver_insertion/connector_insertion.mp4) | White plug enters tilted and rotates flat; black fixture remains fixed; hidden locking catch not modeled |

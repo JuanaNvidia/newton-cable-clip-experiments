@@ -19,3 +19,7 @@ The combined `connector_and_clip` experiment reuses the corrected connector asse
 ## UR5 and Robotiq assets
 
 The robot experiment adds ROS-Industrial UR5 CB3 meshes/default kinematics (BSD-3-Clause) and Robotiq 2F-85 meshes/kinematic dimensions from MuJoCo Menagerie (BSD-2-Clause). Original licenses and pinned upstream commits are included in `experiments/ur5_cable_clip/robot_assets`. Source files were verified against upstream Git blob hashes. The Menagerie XML is only an asset/kinematics source: the experiment runs no MuJoCo physics. See the experiment README for source links.
+
+The interior-table UR5 variant reuses those same licensed robot assets and original clip meshes. Its second connector is another instance of the existing approximate plug geometry; the larger tabletop is procedural box geometry.
+
+`ur5_interior_clip/robot.py` adds procedural wedge support inserts to the Robotiq fingertips. These are new experiment geometry, separate from the unchanged upstream robot mesh files; they participate in collision and rendering.

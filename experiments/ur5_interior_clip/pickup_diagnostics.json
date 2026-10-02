@@ -1,0 +1,68 @@
+{
+  "note": "Earlier stock-pad pickup attempts slipped. Measurements describe partial recordings, not completed insertion runs.",
+  "trials": [
+    {
+      "trial": "interior_tip_grasp",
+      "fingertips": "stock, no support lips",
+      "gap_mm": 11.99,
+      "tcp_offset_past_pad_center_mm": 18.25,
+      "pickup_yaw_deg": 0,
+      "measurement_seconds": [
+        4.5,
+        5.3
+      ],
+      "cable_lift_mm": [
+        -0.21357229351997375,
+        0.00044889748096466064,
+        -0.020562438294291496,
+        -0.7018277049064636,
+        -1.1526269912719727,
+        -0.723807156085968
+      ],
+      "all_six_lifted_5mm": false,
+      "checkpoint_sha256": "703dc3a0858a309c9529c3690b8c58ff4034d3b7ba284709a1f245a0bcebc214"
+    },
+    {
+      "trial": "interior_aligned_grasp",
+      "fingertips": "stock, no support lips",
+      "gap_mm": 11.99,
+      "tcp_offset_past_pad_center_mm": 17.7,
+      "pickup_yaw_deg": -16.699,
+      "measurement_seconds": [
+        4.5,
+        5.3
+      ],
+      "cable_lift_mm": [
+        -0.0010172370821237564,
+        -0.002223532646894455,
+        -0.0012670643627643585,
+        -0.0011890660971403122,
+        -0.002061249688267708,
+        -0.0013832468539476395
+      ],
+      "all_six_lifted_5mm": false,
+      "checkpoint_sha256": "78f0d24615b77016d26877f2aad0892cee5d3558f5a60110e2328601ba5f46d1"
+    },
+    {
+      "trial": "interior_bunched_grasp",
+      "fingertips": "stock, no support lips",
+      "gap_mm": 7.99,
+      "tcp_offset_past_pad_center_mm": 17.7,
+      "pickup_yaw_deg": -16.699,
+      "measurement_seconds": [
+        4.5,
+        5.3
+      ],
+      "cable_lift_mm": [
+        -0.12548337876796722,
+        -0.8315730094909668,
+        -0.3278483748435974,
+        -1.4426182508468628,
+        -1.971252679824829,
+        9.685754776000977e-05
+      ],
+      "all_six_lifted_5mm": false,
+      "checkpoint_sha256": "a9a475ea84b401c1b54fb32a01d73f204fd518c533954c3ea1963df48188bc5c"
+    }
+  ]
+}

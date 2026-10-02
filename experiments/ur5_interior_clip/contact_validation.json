@@ -1,0 +1,13 @@
+{
+  "motion_sha256": "0f584708c525165f53e8ba18f3840b81be0831a54b3f67e15fb249c2dd829be1",
+  "max_sampled_capsule_clip_penetration_mm": {
+    "top": 0.17737264397596333,
+    "bottom": 0.7383443312649205
+  },
+  "frames": {
+    "top": 852,
+    "bottom": 780
+  },
+  "passed": false,
+  "method": "Original STL signed distance, 15 Hz and 17 axis samples per capsule; not continuous collision proof"
+}

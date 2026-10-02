@@ -36,3 +36,7 @@ The combined example includes an original-clip-spring comparison that reopens un
 ## UR5 pickup from free hanging tails
 
 The new [UR5 / Robotiq experiment](../experiments/ur5_cable_clip/README.md) starts with the connector fixed in its seated pose. Six free 18-inch cable tails hang outside the original clip. A nominal UR5 CB3 arm and Robotiq 2F-85 use scripted Cartesian motion and numerical IK. Newton contacts and friction provide the grasp; cable bodies are not attached to fingers. The controller checks entry relative to the moving lid, then releases, lowers the open jaws to clear hanging tails, withdraws sideways and returns home. Retention is measured after withdrawal. See the experiment reports for observed results and numerical limitations. This is a qualitative simulation, not a hardware-ready robot program.
+
+## UR5 insertion on an interior tabletop, two connectors
+
+The [interior-table robot experiment](../experiments/ur5_interior_clip/README.md) extends the tabletop beneath and beyond the clip, with 242 mm clearance from the nearest edge. One connector remains seated, and a second 15 g dynamic connector holds the six distal cable ends together. A top-down grasp closes sideways across the bundle, then lifts and inserts it using Newton contacts. The open gripper retreats vertically above the table. The prior edge-mounted experiment remains available separately. See the recorded reports for the actual result and numerical limitations.
