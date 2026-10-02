@@ -9,3 +9,4 @@ usd-core==25.8
 pyglet==2.1.15
 PyOpenGL==4.0.0a1
 Pillow==12.2.0
+pycollada==0.9.3

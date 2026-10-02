@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "max_sampled_table_penetration_mm": 0.0,
+  "where": null,
+  "method": "Mesh vertices at 10 Hz against solid table boxes; not swept-volume proof"
+}

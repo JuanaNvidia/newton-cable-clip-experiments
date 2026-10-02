@@ -8,3 +8,4 @@ usd-core
 pyglet
 PyOpenGL
 Pillow
+pycollada

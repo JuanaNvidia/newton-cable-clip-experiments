@@ -1,0 +1,12 @@
+{
+  "max_sampled_capsule_clip_penetration_mm": {
+    "top": 0.5960289112224391,
+    "bottom": 0.4842849093342432
+  },
+  "frames": {
+    "top": 860,
+    "bottom": 856
+  },
+  "passed": false,
+  "method": "Original STL signed distance, 15 Hz and 17 axis samples per capsule; not continuous collision proof"
+}

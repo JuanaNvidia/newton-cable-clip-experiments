@@ -1,0 +1,54 @@
+{
+  "recorded_motion": "shallow_entry_motion.npz",
+  "time_seconds": 10.35,
+  "old_entry_test_per_cable": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "moving_lip_test_per_cable": [
+    true,
+    false,
+    false,
+    true,
+    false,
+    true
+  ],
+  "lid_local_crossings_mm": [
+    [
+      6.839148772053927,
+      -15.000515201006849,
+      15.802623052971521
+    ],
+    [
+      35.99679080242534,
+      -15.001659802925856,
+      11.843096879304174
+    ],
+    [
+      37.149852827421974,
+      -15.001686142985598,
+      13.505218543327011
+    ],
+    [
+      11.292169691264359,
+      -15.000703110070335,
+      13.938662947733642
+    ],
+    [
+      38.32174159312599,
+      -15.001712810532892,
+      15.204337371163554
+    ],
+    [
+      8.88346234123754,
+      -15.000601543446765,
+      14.939577403528965
+    ]
+  ],
+  "explanation": "The old test accepted cable centers beneath the raised outside flare. The corrected test also requires centers to pass the lip into lid-local X -2..23 mm, beneath the flat clamping surface.",
+  "motion_sha256": "2e785b1171e70c2c28f5bdbdbe4a4c8b28c7ede4084e563a4d6f857e8d7ea0c9"
+}

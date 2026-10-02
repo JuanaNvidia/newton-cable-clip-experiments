@@ -1,0 +1,703 @@
+{
+  "description": "Earlier local trials. These are failed diagnostic results, not successful robot insertion demonstrations. Full local recordings are retained outside this public reference experiment. Source snapshots can be copied over simulate.py in a copy of the experiment to reproduce each configuration.",
+  "trials": [
+    {
+      "trial": "material_grasp",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "connector_stays_seated": true,
+        "starts_outside_clip": true,
+        "rod_joint_gap_under_0_2mm": false,
+        "root_attached_within_0_1mm": true,
+        "hinge_anchor_within_0_05mm": true,
+        "robot_follows_urdf_fk_within_0_1mm": true,
+        "robot_orientation_within_0_1deg": true,
+        "all_six_retained_after_release": false,
+        "clip_opens_during_insertion": true,
+        "all_cables_lifted_at_least_5mm": true,
+        "all_cables_follow_gripper_during_lift_within_5mm": true,
+        "all_six_contact_both_pads_during_hold": true
+      },
+      "measurements": {
+        "final_clip_cross_section_mm": [
+          [
+            25.594558542354328,
+            -14.999999999999986,
+            16.32820201994733
+          ],
+          [
+            22.658884313530823,
+            -14.999999999999986,
+            16.219168051207628
+          ],
+          [
+            58.17577291477502,
+            -14.999999999999986,
+            -191.05067279066083
+          ],
+          [
+            110.75584372755212,
+            -14.999999999999986,
+            -148.87370457983886
+          ],
+          [
+            65.35501895729713,
+            -14.999999999999986,
+            -176.93509792017903
+          ],
+          [
+            126.75801822429897,
+            -14.999999999999986,
+            78.6789314236348
+          ]
+        ],
+        "final_clip_angle_deg": -3.632057335980827,
+        "max_clip_opening_deg": 13.08941598823432,
+        "max_rod_joint_gap_mm": 0.24281717836905525,
+        "max_root_attachment_error_mm": 0.014509093851277697,
+        "max_hinge_anchor_error_mm": 0.005932367410692173,
+        "max_fk_position_error_mm": 5.820766091346741e-08,
+        "max_fk_rotation_error_deg": 9.975889117020748e-06,
+        "retained_per_cable_after_release": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "max_pad_distance_per_cable_during_hold_mm": [
+          0.9812458875195755,
+          0.9793452551221573,
+          0.9770552190136259,
+          0.9667593628168106,
+          0.9758345645050903,
+          0.9817194095549792
+        ],
+        "final_cable_order_preserved": false,
+        "final_cable_height_spread_mm": 269.7296042142956,
+        "observation_after_release_s": 2.383333333333333,
+        "max_grasp_material_slip_per_cable_mm": [
+          0.04076405902987737,
+          0.023951664822502935,
+          0.04172462093622077,
+          0.056803005073080594,
+          0.024215890978215797,
+          0.023716493293133013
+        ],
+        "lift_per_cable_mm": [
+          13.999741554260254,
+          14.016929626464844,
+          14.00393295288086,
+          13.997886657714844,
+          14.0003662109375,
+          13.999402046203613
+        ],
+        "max_lift_slip_per_cable_mm": [
+          0.0244501395934034,
+          0.012390522100293103,
+          0.010745373818440946,
+          0.03088582634729635,
+          0.006353252260035494,
+          0.01025433917662174
+        ]
+      },
+      "source_snapshot": "diagnostics/material_no_tension_simulate.py",
+      "motion_sha256": "6d6b4180a8c2aa5ab1ef6abc8e751c416b209fc62c5a3adaf1e1caeaf5f5eb8b"
+    },
+    {
+      "trial": "higher_grasp",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "connector_stays_seated": true,
+        "starts_outside_clip": true,
+        "rod_joint_gap_under_0_2mm": false,
+        "root_attached_within_0_1mm": true,
+        "hinge_anchor_within_0_05mm": false,
+        "robot_follows_urdf_fk_within_0_1mm": true,
+        "robot_orientation_within_0_1deg": true,
+        "all_six_retained_after_release": false,
+        "clip_opens_during_insertion": true,
+        "all_cables_lifted_at_least_5mm": true,
+        "all_cables_follow_gripper_during_lift_within_5mm": true,
+        "all_six_contact_both_pads_during_hold": true
+      },
+      "measurements": {
+        "final_clip_cross_section_mm": [
+          [
+            105.80286818720928,
+            -14.999999999999986,
+            87.40024857589488
+          ],
+          [
+            25.73858122671629,
+            -14.999999999999986,
+            16.697760779308318
+          ],
+          [
+            21.624218598252366,
+            -14.999999999999986,
+            16.759693211843135
+          ],
+          [
+            94.25760469521431,
+            -14.999999999999986,
+            89.76544043262673
+          ],
+          [
+            108.81055258502377,
+            -14.999999999999986,
+            85.29041829440725
+          ],
+          [
+            23.665924805522543,
+            -14.999999999999986,
+            16.882550177259315
+          ]
+        ],
+        "final_clip_angle_deg": -7.052123903985843,
+        "max_clip_opening_deg": 70.95894420412388,
+        "max_rod_joint_gap_mm": 0.5224699777717527,
+        "max_root_attachment_error_mm": 0.0520446378038496,
+        "max_hinge_anchor_error_mm": 0.053733319486137965,
+        "max_fk_position_error_mm": 9.458744898438454e-08,
+        "max_fk_rotation_error_deg": 1.079937579073988e-05,
+        "retained_per_cable_after_release": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "max_pad_distance_per_cable_during_hold_mm": [
+          0.9950054646104666,
+          0.9935995579201766,
+          0.9682468640548632,
+          0.9915375780899602,
+          0.9913515409750319,
+          0.9907038122143174
+        ],
+        "final_cable_order_preserved": false,
+        "final_cable_height_spread_mm": 73.06767965331841,
+        "observation_after_release_s": 2.9833333333333325,
+        "max_grasp_material_slip_per_cable_mm": [
+          0.0981749377936329,
+          0.05830086029915607,
+          0.05784327819481644,
+          0.07124542402611049,
+          0.11247069825292971,
+          0.060832533700393814
+        ],
+        "lift_per_cable_mm": [
+          14.001248359680176,
+          13.996491432189941,
+          14.004371643066406,
+          14.002843856811523,
+          13.994939804077148,
+          13.998730659484863
+        ],
+        "max_lift_slip_per_cable_mm": [
+          0.052888628505954986,
+          0.055299643091256206,
+          0.05164226738294876,
+          0.057225445070699224,
+          0.0596589953345498,
+          0.054005364213802726
+        ]
+      },
+      "source_snapshot": "diagnostics/direct_retreat_simulate.py",
+      "motion_sha256": "d3b807c0ee6ed46995332c267fc478ca516463c8b87abd846f713d51e799ecf5"
+    },
+    {
+      "trial": "sideways_retreat",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "connector_stays_seated": true,
+        "starts_outside_clip": true,
+        "rod_joint_gap_under_0_2mm": false,
+        "root_attached_within_0_1mm": true,
+        "hinge_anchor_within_0_05mm": true,
+        "robot_follows_urdf_fk_within_0_1mm": true,
+        "robot_orientation_within_0_1deg": true,
+        "all_six_retained_after_release": false,
+        "clip_opens_during_insertion": true,
+        "all_cables_lifted_at_least_5mm": true,
+        "all_cables_follow_gripper_during_lift_within_5mm": true,
+        "all_six_contact_both_pads_during_hold": true
+      },
+      "measurements": {
+        "final_clip_cross_section_mm": [
+          [
+            12.569864346293095,
+            -14.999999999999986,
+            15.718591910923733
+          ],
+          [
+            19.936599390113948,
+            -14.999999999999986,
+            15.977636076966093
+          ],
+          [
+            15.063863358210527,
+            -14.999999999999986,
+            15.848839392008557
+          ],
+          [
+            24.969514882246838,
+            -14.999999999999986,
+            16.231354745340276
+          ],
+          [
+            10.047831964171039,
+            -14.999999999999986,
+            31.70693371093123
+          ],
+          [
+            124.2202482344531,
+            -14.999999999999986,
+            81.36398320947197
+          ]
+        ],
+        "final_clip_angle_deg": -3.9046270260381832,
+        "max_clip_opening_deg": 69.75400372576127,
+        "max_rod_joint_gap_mm": 0.44723523687246935,
+        "max_root_attachment_error_mm": 0.03829605130335538,
+        "max_hinge_anchor_error_mm": 0.049359263235496394,
+        "max_fk_position_error_mm": 1.1641532182693481e-07,
+        "max_fk_rotation_error_deg": 1.0053283792833883e-05,
+        "retained_per_cable_after_release": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "max_pad_distance_per_cable_during_hold_mm": [
+          0.9928051120075988,
+          0.9920579101109893,
+          0.9890719338828905,
+          0.9890038874562443,
+          0.8634287890807567,
+          0.9868064776267591
+        ],
+        "final_cable_order_preserved": false,
+        "final_cable_height_spread_mm": 65.64539129854823,
+        "observation_after_release_s": 4.9833333333333325,
+        "max_grasp_material_slip_per_cable_mm": [
+          0.0798614030450713,
+          0.11531848997179449,
+          0.08540802081670953,
+          0.08950428119208538,
+          0.09348859519573204,
+          0.09981049904016727
+        ],
+        "lift_per_cable_mm": [
+          13.999753952026367,
+          14.013943672180176,
+          14.000428199768066,
+          14.00236701965332,
+          13.999809265136719,
+          14.000091552734375
+        ],
+        "max_lift_slip_per_cable_mm": [
+          0.051567243268298785,
+          0.049098553236013975,
+          0.05137600061347871,
+          0.04849639107875543,
+          0.04720099733760017,
+          0.04990778431144205
+        ]
+      },
+      "source_snapshot": "diagnostics/kinematic_pads_simulate.py",
+      "motion_sha256": "491f3e0b859afaba1e85ab0e6b54d309b19493afde342d8ed92262a757542b3f"
+    },
+    {
+      "trial": "force_pad_grasp",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "connector_stays_seated": true,
+        "starts_outside_clip": true,
+        "rod_joint_gap_under_0_2mm": false,
+        "root_attached_within_0_1mm": true,
+        "hinge_anchor_within_0_05mm": true,
+        "robot_follows_urdf_fk_within_0_1mm": true,
+        "robot_orientation_within_0_1deg": true,
+        "all_six_retained_after_release": false,
+        "clip_opens_during_insertion": true,
+        "all_cables_lifted_at_least_5mm": true,
+        "all_cables_follow_gripper_during_lift_within_5mm": false,
+        "all_six_contact_both_pads_during_hold": false,
+        "pad_travel_below_hard_limit": false,
+        "pad_tangent_within_0_1mm": true,
+        "pad_rotation_within_0_1deg": true
+      },
+      "measurements": {
+        "final_clip_cross_section_mm": [
+          [
+            -33.82915264035984,
+            -14.999999999999986,
+            11.265160463230027
+          ],
+          [
+            48.73607037708805,
+            -14.999999999999986,
+            10.227358393872901
+          ],
+          [
+            110.50783293441401,
+            -14.999999999999986,
+            79.45071328671906
+          ],
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            126.01283438645997,
+            -14.999999999999986,
+            81.19386219792919
+          ],
+          [
+            123.62353856498534,
+            -14.999999999999986,
+            80.96393996884841
+          ]
+        ],
+        "final_clip_angle_deg": 0.0001050048568168357,
+        "max_clip_opening_deg": 14.044414213365503,
+        "max_rod_joint_gap_mm": 1.1702681908581052,
+        "max_root_attachment_error_mm": 0.042620588073527185,
+        "max_hinge_anchor_error_mm": 0.012126961503066476,
+        "max_fk_position_error_mm": 1.1641532182693481e-07,
+        "max_fk_rotation_error_deg": 1.0383842023793403e-05,
+        "retained_per_cable_after_release": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "max_pad_distance_per_cable_during_hold_mm": [
+          1.2767857418273052,
+          3.039172222576778,
+          2.9296339677830368,
+          3.022857900486557,
+          2.4767818899048293,
+          8.345826594376335
+        ],
+        "final_cable_order_preserved": false,
+        "final_cable_height_spread_mm": null,
+        "observation_after_release_s": 4.383333333333335,
+        "max_grasp_material_slip_per_cable_mm": [
+          10.776242949297767,
+          17.03836621888174,
+          16.4246510537089,
+          17.826023193797635,
+          17.69045300238375,
+          27.10714042599349
+        ],
+        "lift_per_cable_mm": [
+          13.33102798461914,
+          13.960481643676758,
+          13.399916648864746,
+          13.357333183288574,
+          13.58896255493164,
+          13.438887596130371
+        ],
+        "max_lift_slip_per_cable_mm": [
+          7.158097195739099,
+          13.993960694816854,
+          16.4246510537089,
+          17.826023193797635,
+          17.69045300238375,
+          27.10714042599349
+        ],
+        "max_pad_normal_travel_mm": 8.66750255227089,
+        "max_pad_tangent_error_mm": 0.061263078545248345,
+        "max_pad_rotation_error_deg": 0.013386781009608079
+      },
+      "source_snapshot": "diagnostics/dynamic_pads_simulate.py",
+      "motion_sha256": "f9e1dbc509d9c831efd8cf8731c40dcb02f0b49015362e1ca38374a4611a24df"
+    },
+    {
+      "trial": "release_hold",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "connector_stays_seated": true,
+        "starts_outside_clip": true,
+        "rod_joint_gap_under_0_2mm": false,
+        "root_attached_within_0_1mm": true,
+        "hinge_anchor_within_0_05mm": false,
+        "robot_follows_urdf_fk_within_0_1mm": true,
+        "robot_orientation_within_0_1deg": true,
+        "all_six_retained_after_release": false,
+        "clip_opens_during_insertion": true,
+        "all_cables_lifted_at_least_5mm": true,
+        "all_cables_follow_gripper_during_lift_within_5mm": true,
+        "all_six_contact_both_pads_during_hold": true,
+        "fingers_clear_cables_after_release": false
+      },
+      "measurements": {
+        "final_clip_cross_section_mm": [
+          [
+            13.942521719603612,
+            -14.999999999999986,
+            14.95948241027712
+          ],
+          [
+            9.246890738099562,
+            -14.999999999999986,
+            15.557565140042387
+          ],
+          [
+            11.545013243424153,
+            -14.999999999999986,
+            15.082377078425449
+          ],
+          [
+            37.939233358594834,
+            -14.999999999999986,
+            15.695214780734975
+          ],
+          [
+            15.405841001370005,
+            -14.999999999999986,
+            33.20367177446814
+          ],
+          [
+            17.387910540988315,
+            -14.999999999999986,
+            33.94544159961916
+          ]
+        ],
+        "final_clip_angle_deg": -0.0005794028756702043,
+        "max_clip_opening_deg": 70.81483158736161,
+        "max_rod_joint_gap_mm": 0.46152076031879874,
+        "max_root_attachment_error_mm": 0.034986518745581924,
+        "max_hinge_anchor_error_mm": 0.0788282427478261,
+        "max_fk_position_error_mm": 1.1641532182693481e-07,
+        "max_fk_rotation_error_deg": 1.0405378403253628e-05,
+        "retained_per_cable_after_release": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "max_pad_distance_per_cable_during_hold_mm": [
+          0.9901115901787428,
+          0.9949508315578414,
+          0.990444280108747,
+          0.9736868381314823,
+          0.8561048189558186,
+          0.877540545934136
+        ],
+        "final_cable_order_preserved": false,
+        "final_cable_height_spread_mm": 18.98595918934204,
+        "observation_after_release_s": 2.9833333333333325,
+        "max_grasp_material_slip_per_cable_mm": [
+          0.11785723690780905,
+          0.11547881911013574,
+          0.09399002966651869,
+          0.07296318901808721,
+          0.09832961710595875,
+          0.10172155711422048
+        ],
+        "lift_per_cable_mm": [
+          13.999720573425293,
+          13.99394702911377,
+          14.000293731689453,
+          14.002192497253418,
+          13.999862670898438,
+          13.998512268066406
+        ],
+        "max_lift_slip_per_cable_mm": [
+          0.042229872249009585,
+          0.042674407701133954,
+          0.04152154256659288,
+          0.04216973112914407,
+          0.041819888042793324,
+          0.04722920589484805
+        ],
+        "min_pad_distance_after_release_mm": 0.34812983745987947
+      },
+      "source_snapshot": "diagnostics/release_hold_simulate.py",
+      "motion_sha256": "1ace058718d7d06fe9fb1ccbb0c3746cb23e46bbe0c7957ea18c3d34a81ef85c"
+    },
+    {
+      "trial": "shallow_entry_motion",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "connector_stays_seated": true,
+        "starts_outside_clip": true,
+        "rod_joint_gap_under_0_2mm": false,
+        "root_attached_within_0_1mm": true,
+        "hinge_anchor_within_0_05mm": false,
+        "robot_follows_urdf_fk_within_0_1mm": true,
+        "robot_orientation_within_0_1deg": true,
+        "all_six_retained_after_release": false,
+        "clip_opens_during_insertion": true,
+        "all_cables_lifted_at_least_5mm": true,
+        "all_cables_follow_gripper_during_lift_within_5mm": true,
+        "all_six_contact_both_pads_during_hold": true,
+        "fingers_clear_after_withdrawal": true,
+        "robot_command_within_joint_limits": true,
+        "robot_command_within_velocity_limits": true,
+        "all_six_retained_after_withdrawal": false
+      },
+      "measurements": {
+        "final_clip_cross_section_mm": [
+          [
+            10.884903674108,
+            -14.999999999999986,
+            15.832370879506875
+          ],
+          [
+            16.989687896206426,
+            -14.999999999999986,
+            16.396215383017985
+          ],
+          [
+            13.279943974197563,
+            -14.999999999999986,
+            16.036664468504075
+          ],
+          [
+            21.507434019977936,
+            -14.999999999999986,
+            16.72578113840177
+          ],
+          [
+            54.73354869061839,
+            -14.999999999999986,
+            10.455142291404332
+          ],
+          [
+            24.642053627459536,
+            -14.999999999999986,
+            16.92202825109392
+          ]
+        ],
+        "final_clip_angle_deg": -6.496172923542491,
+        "max_clip_opening_deg": 68.31702454549117,
+        "max_rod_joint_gap_mm": 0.5654378337058992,
+        "max_root_attachment_error_mm": 0.04044669442553116,
+        "max_hinge_anchor_error_mm": 0.0910869543360668,
+        "max_fk_position_error_mm": 1.1641532182693481e-07,
+        "max_fk_rotation_error_deg": 9.945317857956477e-06,
+        "retained_per_cable_after_release": [
+          true,
+          true,
+          false,
+          true,
+          false,
+          true
+        ],
+        "max_pad_distance_per_cable_during_hold_mm": [
+          0.9930572337616492,
+          0.9918744603386058,
+          0.9676428693927309,
+          0.9924407288590814,
+          0.9800543575010108,
+          0.9943790870538313
+        ],
+        "final_cable_order_preserved": false,
+        "final_cable_height_spread_mm": 6.466885959689587,
+        "observation_after_release_s": 7.183333333333334,
+        "max_grasp_material_slip_per_cable_mm": [
+          0.2526028246215703,
+          0.29086400553513464,
+          0.3392603757263874,
+          0.2415388146570205,
+          0.22743263906954986,
+          0.282350414235335
+        ],
+        "lift_per_cable_mm": [
+          13.993561744689941,
+          13.999604225158691,
+          13.999653816223145,
+          13.999645233154297,
+          13.998822212219238,
+          13.999320030212402
+        ],
+        "max_lift_slip_per_cable_mm": [
+          0.04947327489344347,
+          0.047792131513701305,
+          0.046463939334680626,
+          0.05106489642703894,
+          0.05063401649129215,
+          0.050039338264998
+        ],
+        "min_pad_distance_after_release_mm": 0.2653375311874615,
+        "min_pad_distance_last_second_mm": 110.38134075784211,
+        "min_pad_distance_after_withdrawal_mm": 54.52174670586362,
+        "max_joint_speed_rad_s": [
+          0.39919225870751696,
+          0.7138026534706698,
+          0.30343786023752095,
+          0.6356462938699847,
+          0.3991922587074903,
+          3.0140023810076855e-09
+        ],
+        "retained_per_cable_last_second": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "retained_per_cable_final_frame": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "inside_closed_lid_envelope_final": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "final_lid_clearance_from_cable_axis_mm": [
+          1.979604074224959,
+          2.1100558257251647,
+          2.047589479509374,
+          2.2937296309265607,
+          null,
+          2.45338352096567
+        ],
+        "retention_method": "Clip center-plane crossing inside local X 5..28 mm, axis above floor+0.8 mm and at least 0.8 mm below the actual posed lid underside from original STL; capsule/STL penetration checked separately",
+        "retained_per_cable_after_withdrawal": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "observation_after_withdrawal_s": 3.9833333333333343
+      },
+      "source_snapshot": "diagnostics/feedback_shallow_simulate.py",
+      "motion": "shallow_entry_motion.npz",
+      "motion_sha256": "2e785b1171e70c2c28f5bdbdbe4a4c8b28c7ede4084e563a4d6f857e8d7ea0c9",
+      "note": "Earlier entry test accepted cables under the rotating outside flare. Five remained after withdrawal."
+    }
+  ],
+  "known_initialization_issue": "Early UR5 trials with initial lateral slope 0.20 used a guide shorter than 457.2 mm, compressing the final initial segment. The current 0.30 layout covers the full length and checks initial segment spacing."
+}

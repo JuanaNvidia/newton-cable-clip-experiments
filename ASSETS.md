@@ -15,3 +15,7 @@ The hinged-connector extension uses newly generated parametric surrogate geometr
 The corrected `fixed_receiver_insertion/assets.py` removes all receiver hinge hardware and generates `fixed_table_connector` assets. The original hinged extension is a superseded interpretation. Both are approximate surrogate geometry; neither establishes the real concealed locking mechanism.
 
 The combined `connector_and_clip` experiment reuses the corrected connector assets and byte-identical original clip STL files. It adds no measured customer CAD. Connector retention is a force-model approximation rather than a mesh-derived locking catch.
+
+## UR5 and Robotiq assets
+
+The robot experiment adds ROS-Industrial UR5 CB3 meshes/default kinematics (BSD-3-Clause) and Robotiq 2F-85 meshes/kinematic dimensions from MuJoCo Menagerie (BSD-2-Clause). Original licenses and pinned upstream commits are included in `experiments/ur5_cable_clip/robot_assets`. Source files were verified against upstream Git blob hashes. The Menagerie XML is only an asset/kinematics source: the experiment runs no MuJoCo physics. See the experiment README for source links.

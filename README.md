@@ -4,7 +4,7 @@ Reproducible experiments with flexible 2 mm cables, actual clip meshes, a spring
 
 **Physics:** Newton 1.6 `SolverVBD` / rigid-body AVBD with compliant ALM, running on CUDA through Warp 1.17. The previews replay solved poses with Newton OpenGL. Isaac Sim is optional for viewing the recorded USD or rendering the baseline with RTX; it is not a second physics solver.
 
-**Modeling correction:** the historical arch comparisons used their initial curve as the rod rest shape. Earlier straight-rest descriptions were incorrect. Both connector experiments explicitly set zero rest curvature. [Details](docs/MODELING_CORRECTION.md).
+**Modeling correction:** the historical arch comparisons used their initial curve as the rod rest shape. Earlier straight-rest descriptions were incorrect. The connector and robot experiments explicitly set zero rest curvature. [Details](docs/MODELING_CORRECTION.md).
 
 **Connector correction:** the black table receiver has no hinge. The current [fixed-receiver experiment](experiments/fixed_receiver_insertion/README.md) follows the user-confirmed motion. The earlier hinged-receiver experiment is retained as a superseded interpretation. This correction does not apply to the separate original cable-management clip.
 
@@ -14,6 +14,7 @@ Click a preview to open its video. The recordings and numerical results are incl
 
 | Experiment | Preview and video | Recorded outcome |
 |---|---|---|
+| UR5 + Robotiq pickup with connector already seated | [![Robot pickup](experiments/ur5_cable_clip/grasp.png)](experiments/ur5_cable_clip/ur5_cable_clip.mp4) | 6/6 retained after withdrawal in the recorded trial; scripted arm, contact-only grasp. Strict numerical validation did not pass. |
 | 18-inch cables: connector insertion **and** original spring clip | [![Combined connector and clip](experiments/connector_and_clip/assembly_after.png)](experiments/connector_and_clip/connector_and_clip.mp4) | All six retained with preloaded spring; lid rests 3.4° open. Original spring reopens 31.5°. Connector retention is approximate. |
 | Angled plug insertion into a **fixed** table receiver | [![Fixed receiver insertion](experiments/fixed_receiver_insertion/seated.png)](experiments/fixed_receiver_insertion/connector_insertion.mp4) | White plug enters tilted and rotates flat; black fixture remains fixed; hidden locking catch not modeled |
 | Six 240 mm cables pulled into the actual clip | [![240 mm insertion](experiments/six_cable_newton/actual_assembly.png)](experiments/six_cable_newton/six_cables_newton.mp4) | All six retained; contact-disabled control keeps the lid closed |
@@ -39,6 +40,7 @@ python tools/check_repository.py
 Run an experiment into a **new** directory, preserving the included reference results:
 
 ```bash
+python tools/run.py ur5-clip --output runs/ur5-clip-01 --steps simulate render usd
 python tools/run.py connector-and-clip --output runs/connector-and-clip-01 --steps simulate validate render usd
 python tools/run.py fixed-connector --output runs/fixed-connector-01 --steps simulate validate render usd
 python tools/run.py three-inch --output runs/three-inch-01
@@ -46,6 +48,8 @@ python tools/run.py arch --output runs/arch-01
 python tools/run.py insertion --output runs/insertion-01 --steps simulate validate render usd
 python tools/run.py long-insertion --output runs/long-insertion-01 --steps simulate validate render usd
 ```
+
+The UR5 example is experimental; inspect its task and contact validation reports before relying on the result. Run its validation separately with `python runs/ur5-clip-01/validate.py` and the two `check_*` scripts.
 
 Each command copies the selected experiment, runs physics, validates, and renders. The insertion baseline also runs its contact-disabled control. Failed validation stops subsequent steps. Choose a fresh output directory each time.
 
