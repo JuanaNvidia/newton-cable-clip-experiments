@@ -44,3 +44,11 @@ The [interior-table robot experiment](../experiments/ur5_interior_clip/README.md
 ## Conditional pull from the other side of the clip
 
 The [opposite-side recovery experiment](../experiments/ur5_opposite_pull/README.md) repeats the interior-table insertion. At 18 seconds, it checks retention and, if necessary, regrips the bundle on the seated-connector side, approximately 65 mm before the clip. It pulls sideways at up to 4 mm/s over a bounded 24 mm range, then releases and observes. The controller shares its retention geometry with validation; an entry event is distinguished from retention after the final withdrawal. The same physical fingertip supports and dynamic second connector are retained.
+
+## Thirty-inch harness: two installed connectors and three clips
+
+The robot starts with the complete six-cable harness on the table, installs both end connectors, then attempts all three clips in a shallow arc. Each cable is 762 mm long and 2 mm in diameter. The connectors have added handling ribs; the gripper has physical fingertip support lips. The original clip assets are unscaled. Socket locks are idealized constraints gated by the actual seated pose.
+
+The recorded result retains **5/6, 6/6, 6/6** after withdrawal. Both socket locks remain engaged. Initial feeds were followed by upstream recovery. Additional low-entry and tilted-grasp branches are stored separately. The selected branch is `assembly_recovery`. The recording contains development restarts with preserved poses and velocities; its per-segment solver iteration counts are 80 → 80 → 80 → 80 → 40. The intermediate 40-iteration attempt exceeded the cable-joint gap criterion.
+
+Whole-record strict contact checks fail: maximum cable/clip overlap 0.794 mm, cable/gripper overlap 0.787 mm and connector/socket-or-pad overlap 1.594 mm, against a 0.2 mm limit. This is an experimental manipulation record, not validated real-world execution. See the [case documentation](../experiments/ur5_three_clips/README.md), [retention timeline](../experiments/ur5_three_clips/retention_timeline.png) and per-audit JSON reports.

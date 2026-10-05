@@ -1,0 +1,37 @@
+{
+  "cable_count": 6,
+  "cable_diameter_mm": 2.0,
+  "connector_attachment_pitch_mm": 2.5,
+  "clip_scale": 1.0,
+  "shared_connectors": 2,
+  "bottom_hole_local_mm": [
+    3.000024053317326,
+    -15.0,
+    22.000005074816304
+  ],
+  "top_hole_local_mm": [
+    3.0000082135035893,
+    -15.0,
+    22.000029828168728
+  ],
+  "top_assembly_offset_mm": [
+    1.5839813736692743e-05,
+    0.0,
+    -2.4753352423356745e-05
+  ],
+  "assembled_hinge_error_m": 0.0,
+  "top_convex_prisms": 68,
+  "top_stl_volume_m3": 1.1148532664533427e-05,
+  "collision_prisms_volume_m3": 1.1148532664533427e-05,
+  "status": "Three original unscaled clips on an interior tabletop; both attached end connectors start dynamic and are installed into two alignment-gated table sockets. Recorded task checks are in validation.json.",
+  "fingertip_support": {
+    "width_mm": 22,
+    "projection_mm": 2.5,
+    "leading_thickness_mm": 0.1,
+    "back_thickness_mm": 1,
+    "local_frame": "Original Robotiq pad frame, metres",
+    "watertight": true
+  },
+  "clip_count": 3,
+  "cable_length_mm": 762
+}

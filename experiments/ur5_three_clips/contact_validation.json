@@ -1,0 +1,21 @@
+{
+  "motion_sha256": "80093fdb0f2766d3af6b894104c0411cc2a7d74770e8fb8bb75d9c05544fe476",
+  "passed": false,
+  "max_sampled_capsule_clip_penetration_mm": {
+    "clip1_top": 0.5892038216572472,
+    "clip1_bottom": 0.7942828439553544,
+    "clip2_top": 0.672356484594096,
+    "clip2_bottom": 0.7782411157998912,
+    "clip3_top": 0.7941503794053305,
+    "clip3_bottom": 0.583763150806491
+  },
+  "frames": {
+    "clip3_bottom": 3972,
+    "clip2_bottom": 5220,
+    "clip1_bottom": 4368,
+    "clip1_top": 5132,
+    "clip2_top": 4848,
+    "clip3_top": 5740
+  },
+  "method": "Original STL signed distances, 15 Hz and 17 samples per capsule; not continuous collision proof"
+}

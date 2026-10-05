@@ -1,0 +1,7 @@
+{
+  "motion_sha256": "80093fdb0f2766d3af6b894104c0411cc2a7d74770e8fb8bb75d9c05544fe476",
+  "passed": true,
+  "max_sampled_table_penetration_mm": 0.0,
+  "where": null,
+  "method": "Mesh vertices at 10 Hz against solid table boxes; not swept-volume proof"
+}

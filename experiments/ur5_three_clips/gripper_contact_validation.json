@@ -1,0 +1,19 @@
+{
+  "motion_sha256": "80093fdb0f2766d3af6b894104c0411cc2a7d74770e8fb8bb75d9c05544fe476",
+  "passed": false,
+  "max_sampled_cable_gripper_penetration_mm": {
+    "pads": 0.787014656371972,
+    "support_lips": 0.783917906731708
+  },
+  "where": {
+    "pads": {
+      "frame": 4932,
+      "side": "left"
+    },
+    "support_lips": {
+      "frame": 7356,
+      "side": "left"
+    }
+  },
+  "method": "Original pad boxes and wedge mesh signed distances, 15 Hz, 17 axis points per capsule; not continuous collision proof"
+}

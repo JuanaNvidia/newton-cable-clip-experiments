@@ -1,0 +1,30 @@
+{
+  "selected": "assembly_recovery",
+  "candidates": {
+    "assembly_recovery": {
+      "final_two_seconds_retained_counts": [
+        5,
+        6,
+        6
+      ],
+      "score": [
+        5,
+        17
+      ],
+      "frames": 9001
+    },
+    "assembly_angled": {
+      "final_two_seconds_retained_counts": [
+        3,
+        1,
+        1
+      ],
+      "score": [
+        1,
+        5
+      ],
+      "frames": 10021
+    }
+  },
+  "criterion": "Maximize the minimum retained count across clips, then total retained count, requiring retention at every recorded pose in the final two seconds. Keep the earlier branch on ties. This selection does not waive numerical or contact failures."
+}

@@ -1,0 +1,19 @@
+{
+  "old_fixed_pivot": {
+    "max_box_intersection_mm": 2.74040777448057,
+    "where": {
+      "angle_deg": 25.0,
+      "plug_part": "housing",
+      "socket_part": "front_stop"
+    }
+  },
+  "corrected_front_clearance": {
+    "max_box_intersection_mm": 3.469446951953614e-15,
+    "where": {
+      "angle_deg": 4.5,
+      "plug_part": "housing",
+      "socket_part": "cradle_floor"
+    }
+  },
+  "method": "Separating-axis test for all colliding plug boxes against fixed socket boxes over 101 commanded orientations; evaluates nominal geometry, not actual dynamic contact."
+}

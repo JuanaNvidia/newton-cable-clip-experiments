@@ -23,3 +23,7 @@ The robot experiment adds ROS-Industrial UR5 CB3 meshes/default kinematics (BSD-
 The interior-table UR5 variant reuses those same licensed robot assets and original clip meshes. Its second connector is another instance of the existing approximate plug geometry; the larger tabletop is procedural box geometry.
 
 `ur5_interior_clip/robot.py` adds procedural wedge support inserts to the Robotiq fingertips. These are new experiment geometry, separate from the unchanged upstream robot mesh files; they participate in collision and rendering.
+
+## Three-clip harness assembly
+
+`experiments/ur5_three_clips` reuses the original unscaled clip STL files and the licensed UR5/Robotiq assets from the earlier robot experiments. Its approximate connector meshes add T-shaped handling ribs. Table sockets, tabletop and fingertip support lips are generated geometry. The customer video and correspondence are excluded.

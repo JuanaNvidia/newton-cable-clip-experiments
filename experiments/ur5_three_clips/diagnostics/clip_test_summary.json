@@ -1,0 +1,22 @@
+{
+  "diagnostic_only": true,
+  "initial_condition": "Both connectors initialized seated; no installation attempt",
+  "motion_sha256": "9b26b473c46f3670b724f02ef508abb33e63b9821220dcb10c21dd7bd2cfeeab",
+  "recorded_seconds": 14.016666666666667,
+  "retained_in_first_clip_after_release": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "sample_interval_seconds": 0.1,
+  "window_start_seconds": 13.5,
+  "final_tcp_m": [
+    -0.04858324772846115,
+    0.2594996511041575,
+    0.1300625
+  ],
+  "window": "After the open gripper lifted clear; diagnostic only, approximately half a second of observation"
+}

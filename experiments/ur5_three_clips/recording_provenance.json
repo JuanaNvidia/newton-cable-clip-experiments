@@ -1,0 +1,316 @@
+{
+  "motion_sha256": "80093fdb0f2766d3af6b894104c0411cc2a7d74770e8fb8bb75d9c05544fe476",
+  "recorded_frames": 9001,
+  "fps": 60,
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame_exclusive": 990,
+      "controller": "controller_initial_attempt.py",
+      "outcome": "Connector remained on socket rim",
+      "iterations": 80
+    },
+    {
+      "start_frame": 990,
+      "end_frame_exclusive": 1890,
+      "controller": "controller_pose_calibrated_attempt.py",
+      "outcome": "Connector remained unlatched",
+      "iterations": 80
+    },
+    {
+      "start_frame": 1890,
+      "end_frame_exclusive": 3601,
+      "controller": "controller_seating_path_attempt.py",
+      "outcome": "Both connectors seated; resumed last complete checkpoint before wrist winding limit",
+      "iterations": 80
+    },
+    {
+      "start_frame": 3601,
+      "end_frame_exclusive": 6301,
+      "controller": "controller_threeclip_attempt.py",
+      "outcome": "Wrist recovery and three clip insertion sequence",
+      "iterations": 80
+    },
+    {
+      "start_frame": 6301,
+      "end_frame_exclusive": 9001,
+      "controller": "controller_upstream_recovery.py",
+      "iterations": 40,
+      "outcome": "Targeted upstream strand recovery; same physical model, 40 VBD iterations per step"
+    }
+  ],
+  "restart_frames": [
+    990,
+    1890,
+    2790,
+    3601,
+    3781,
+    4621,
+    5461,
+    6301,
+    9001
+  ],
+  "restarts": [
+    {
+      "frame": 990,
+      "source": "assembly_boundary_990.npz",
+      "sha256": "dac5b8541c06a8015db7a1abdbcb68d3339506ae093017d287ec33a33e7238d0"
+    },
+    {
+      "frame": 1890,
+      "source": "assembly_retry_boundary_1890.npz",
+      "sha256": "ff9c15afa9b944d8d74b6dffae656e5a5cd1297a72462825ecd8ea9a7a66d789"
+    },
+    {
+      "frame": 2790,
+      "source": "assembly_corrected_boundary_2790.npz",
+      "sha256": "2d9f122cab3f7ec0ebd704bc6e5dbccdd6e1ede246d3926f8ab906f2efb51665"
+    },
+    {
+      "frame": 3601,
+      "source": "pre_wrist_recovery.npz",
+      "sha256": "c36d7eccbe898beafd7d93bcdd49fbfb524695a73aa5c965a7d03cb82f7d6223"
+    },
+    {
+      "frame": 3781,
+      "source": "assembly_final_boundary_3781.npz",
+      "sha256": "6bb21c9e5eb729a3581a1f37417c19adca5b47c1a456a7a6e6f5c0a4db9d4ad8"
+    },
+    {
+      "frame": 4621,
+      "source": "assembly_final_boundary_4621.npz",
+      "sha256": "81d74732fc1d1a10357111f88c362ec85a7a1d1bc0242505ef444e0f537b32fc"
+    },
+    {
+      "frame": 5461,
+      "source": "assembly_final_boundary_5461.npz",
+      "sha256": "e38a3e36c8d77f41642b3152194824b77117493bf42a666844e81c76aa8eb79d"
+    },
+    {
+      "frame": 6301,
+      "source": "assembly_final.npz",
+      "sha256": "6efc8e9727651be3dfa98dc721c92583e7a67cdd7a193949db3507c89bb34e99"
+    },
+    {
+      "frame": 9001,
+      "source": "assembly_recovery.npz",
+      "sha256": "80093fdb0f2766d3af6b894104c0411cc2a7d74770e8fb8bb75d9c05544fe476"
+    }
+  ],
+  "prefix_pose_arrays_verified_identical": true,
+  "events": [
+    {
+      "event": "in_hand_pose_calibration",
+      "time": 21.5,
+      "connector": 1,
+      "attempt": 2,
+      "plug_origin_in_tool_m": [
+        0.004877343146541829,
+        -9.085734077916589e-06,
+        0.0140587449821756
+      ],
+      "plug_rotation_in_tool_xyzw": [
+        -0.7072722024915489,
+        -0.7069387941798566,
+        -0.001454592814363331,
+        -0.0012070733318261726
+      ],
+      "recording_segment": "assembly_retry"
+    },
+    {
+      "event": "in_hand_pose_calibration",
+      "time": 23.5,
+      "connector": 1,
+      "attempt": 2,
+      "plug_origin_in_tool_m": [
+        0.004778417915693181,
+        -2.5962031097569953e-05,
+        0.014125853412611572
+      ],
+      "plug_rotation_in_tool_xyzw": [
+        -0.7075704559459183,
+        -0.7066278001677394,
+        -0.00359438155115821,
+        -0.002877902682764442
+      ],
+      "recording_segment": "assembly_retry"
+    },
+    {
+      "event": "in_hand_pose_calibration",
+      "time": 36.5,
+      "connector": 1,
+      "attempt": 3,
+      "plug_origin_in_tool_m": [
+        0.004999498993440288,
+        5.140621181559639e-05,
+        0.0140622149682023
+      ],
+      "plug_rotation_in_tool_xyzw": [
+        -0.7072130410077229,
+        -0.7069926034392944,
+        -0.0011986303063314385,
+        -0.0031203519235124726
+      ],
+      "recording_segment": "assembly_corrected"
+    },
+    {
+      "event": "in_hand_pose_calibration",
+      "time": 38.5,
+      "connector": 1,
+      "attempt": 3,
+      "plug_origin_in_tool_m": [
+        0.004945631484803959,
+        2.652095695445509e-05,
+        0.014121257606412252
+      ],
+      "plug_rotation_in_tool_xyzw": [
+        -0.7072883106563648,
+        -0.7069094752579048,
+        -0.0027649638342486516,
+        -0.0038202584277675753
+      ],
+      "recording_segment": "assembly_corrected"
+    },
+    {
+      "time": 41.916666666666664,
+      "event": "connector_latched",
+      "connector": 1,
+      "position_error_mm": 0.018951878501489508,
+      "angle_error_deg": 0.09989113844174766,
+      "recording_segment": "assembly_corrected"
+    },
+    {
+      "event": "in_hand_pose_calibration",
+      "time": 51.5,
+      "connector": 2,
+      "attempt": 1,
+      "plug_origin_in_tool_m": [
+        0.004830943212707765,
+        2.918902619757666e-07,
+        0.014234142856277741
+      ],
+      "plug_rotation_in_tool_xyzw": [
+        -0.7067567942571792,
+        -0.7074127211769898,
+        -0.005649163501961257,
+        -0.00549205244055813
+      ],
+      "recording_segment": "assembly_corrected"
+    },
+    {
+      "event": "in_hand_pose_calibration",
+      "time": 53.5,
+      "connector": 2,
+      "attempt": 1,
+      "plug_origin_in_tool_m": [
+        0.004706992705443633,
+        -1.3596232604165152e-05,
+        0.014306781819035812
+      ],
+      "plug_rotation_in_tool_xyzw": [
+        -0.7072845971811359,
+        -0.7068411648368575,
+        -0.008067268741905359,
+        -0.007680199049425518
+      ],
+      "recording_segment": "assembly_corrected"
+    },
+    {
+      "time": 56.916666666666664,
+      "event": "connector_latched",
+      "connector": 2,
+      "position_error_mm": 0.03309468708017198,
+      "angle_error_deg": 0.09068891469767149,
+      "recording_segment": "assembly_corrected"
+    },
+    {
+      "event": "upstream_recovery_selection",
+      "time": 105.01666666666667,
+      "clip": 1,
+      "cables": [
+        2
+      ],
+      "retained_before": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "recording_segment": "assembly_recovery"
+    },
+    {
+      "event": "upstream_recovery_selection",
+      "time": 119.01666666666667,
+      "clip": 2,
+      "cables": [
+        1,
+        2,
+        6
+      ],
+      "retained_before": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "recording_segment": "assembly_recovery"
+    },
+    {
+      "event": "upstream_recovery_selection",
+      "time": 133.01666666666668,
+      "clip": 3,
+      "cables": [
+        1
+      ],
+      "retained_before": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "recording_segment": "assembly_recovery"
+    }
+  ],
+  "unavailable_contact_count_samples": 6301,
+  "selection": {
+    "selected": "assembly_recovery",
+    "candidates": {
+      "assembly_recovery": {
+        "final_two_seconds_retained_counts": [
+          5,
+          6,
+          6
+        ],
+        "score": [
+          5,
+          17
+        ],
+        "frames": 9001
+      },
+      "assembly_angled": {
+        "final_two_seconds_retained_counts": [
+          3,
+          1,
+          1
+        ],
+        "score": [
+          1,
+          5
+        ],
+        "frames": 10021
+      }
+    },
+    "criterion": "Maximize the minimum retained count across clips, then total retained count, requiring retention at every recorded pose in the final two seconds. Keep the earlier branch on ties. This selection does not waive numerical or contact failures."
+  },
+  "excluded_failed_branches": [
+    "Low top-down recovery",
+    "Tilted whole-bundle recovery"
+  ],
+  "method": "Every body pose is a solved Newton state. At controller revisions, complete recorded prefixes and checkpoint positions/velocities were preserved; contact-history warm starts were reset. An unsaved tail after the final complete 60-second checkpoint of the aborted wrist-return attempt is excluded. No object poses were manually edited."
+}

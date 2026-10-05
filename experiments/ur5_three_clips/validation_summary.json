@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "exit_codes": {
+    "validate.py": 1,
+    "check_clip_contacts.py": 1,
+    "check_gripper_contacts.py": 1,
+    "check_connector_contacts.py": 1,
+    "check_robot_clearance.py": 0
+  }
+}
