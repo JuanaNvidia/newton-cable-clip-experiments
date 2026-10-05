@@ -1,0 +1,45 @@
+{
+  "strategy": "flat",
+  "grasp_gap_m": 0.047,
+  "grasp_height_m": 0.001,
+  "solver": "Newton SolverVBD",
+  "iterations": 40,
+  "substeps": 32,
+  "physics_hz": 1920,
+  "connector_mass_kg": 0.015,
+  "contact_only_grasp": true,
+  "latch_constraint": false,
+  "cables_included": false,
+  "handling_rib": false,
+  "existing_fingertip_support_lips": true,
+  "final_position_error_mm": 4.929173353662554,
+  "final_rotation_error_deg": 10.775204570242376,
+  "seated": false,
+  "max_joint_speed_rad_s": 0.3274322903518856,
+  "events": [
+    {
+      "event": "in_hand_calibration",
+      "time": 5.0,
+      "plug_position": [
+        0.13004912436008453,
+        0.1600881665945053,
+        0.08008567243814468
+      ],
+      "relative_position": [
+        8.84537766102377e-05,
+        4.9992538711464237e-05,
+        0.0008943116327925851
+      ]
+    },
+    {
+      "event": "press_alignment_check",
+      "time": 12.0,
+      "allowed": false,
+      "position": [
+        -0.021893369033932686,
+        0.16007578372955322,
+        0.03437935188412666
+      ]
+    }
+  ]
+}

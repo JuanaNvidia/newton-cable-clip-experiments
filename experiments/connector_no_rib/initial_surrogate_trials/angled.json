@@ -1,0 +1,33 @@
+{
+  "strategy": "angled",
+  "solver": "Newton SolverVBD",
+  "iterations": 40,
+  "substeps": 32,
+  "physics_hz": 1920,
+  "connector_mass_kg": 0.015,
+  "contact_only_grasp": true,
+  "latch_constraint": false,
+  "cables_included": false,
+  "handling_rib": false,
+  "existing_fingertip_support_lips": true,
+  "final_position_error_mm": 0.5015439363718016,
+  "final_rotation_error_deg": 0.4816934309736808,
+  "seated": true,
+  "max_joint_speed_rad_s": 0.45971457471171817,
+  "events": [
+    {
+      "event": "in_hand_calibration",
+      "time": 5.0,
+      "plug_position": [
+        0.12999901175498962,
+        0.15915879607200623,
+        0.08065031468868256
+      ],
+      "relative_position": [
+        -0.0008409172397953784,
+        -1.1103950427391246e-07,
+        -0.0036703306058747547
+      ]
+    }
+  ]
+}

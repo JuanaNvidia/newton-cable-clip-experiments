@@ -1,0 +1,23 @@
+{
+  "motion_sha256": "ee7eb0ef6633aa499a209a94f3fc7dc8204e4478387d1b25f2e50882ca1a0bbc",
+  "passed": true,
+  "checks": {
+    "finite": true,
+    "joint_bounds": true,
+    "joint_speed": true,
+    "robot_FK": true,
+    "seated_last_two_seconds": true,
+    "connector_contacts": true,
+    "robot_static_clearance": true
+  },
+  "final_position_error_mm": 0.02262349394337631,
+  "final_angle_error_deg": 0.002322164091806125,
+  "max_robot_fk_error_m": 1.1641532182693481e-10,
+  "max_joint_speed_rad_s": 0.46922864707426903,
+  "limitations": [
+    "Sampled geometry checks, not swept-volume proof",
+    "Kinematic UR5; no force or torque limits, no self-collision audit",
+    "No attached cables; no latch mechanism",
+    "Gripper lip configuration is recorded in the trial JSON"
+  ]
+}

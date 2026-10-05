@@ -1,0 +1,4 @@
+{
+  "selected": "pad_direct",
+  "reason": "Pad-only continuous angled insertion passes all recorded checks, with zero sampled robot/table/socket overlap and smaller final seat error than the 6 mm grasp-height trial."
+}

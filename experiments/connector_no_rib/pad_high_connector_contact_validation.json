@@ -1,0 +1,20 @@
+{
+  "motion_sha256": "1c9a1fcccd8117272c53c62341d4a6bbc4ae9e3550c6320ed8d5211f75544c6d",
+  "passed": true,
+  "max_sampled_connector_penetration_mm": {
+    "socket_boxes": 0.0027404083449886728,
+    "finger_pads": 0.13609345939139417,
+    "finger_lips": 0.0
+  },
+  "where": {
+    "finger_pads": {
+      "frame": 544,
+      "connector": 1
+    },
+    "socket_boxes": {
+      "frame": 632,
+      "connector": 1
+    }
+  },
+  "method": "Connector box surface grid at <=1 mm, sampled 15 Hz, against socket box and pad/lip signed distances; excludes decorative parts and cylindrical pedestal; not swept-volume proof"
+}

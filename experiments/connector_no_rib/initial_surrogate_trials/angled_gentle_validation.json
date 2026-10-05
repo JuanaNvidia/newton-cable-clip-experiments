@@ -1,0 +1,23 @@
+{
+  "motion_sha256": "38530d5e8bfabee827debca4fe43178441966f2caad3f7c7d378e5cdfa49c9df",
+  "passed": true,
+  "checks": {
+    "finite": true,
+    "joint_bounds": true,
+    "joint_speed": true,
+    "robot_FK": true,
+    "seated_last_two_seconds": true,
+    "connector_contacts": true,
+    "robot_static_clearance": true
+  },
+  "final_position_error_mm": 0.633124023403411,
+  "final_angle_error_deg": 2.6941965052834607,
+  "max_robot_fk_error_m": 1.1641532182693481e-10,
+  "max_joint_speed_rad_s": 0.46611519499178744,
+  "limitations": [
+    "Sampled geometry checks, not swept-volume proof",
+    "Kinematic UR5; no force or torque limits, no self-collision audit",
+    "No attached cables; no latch mechanism",
+    "Existing fingertip support lips retained"
+  ]
+}

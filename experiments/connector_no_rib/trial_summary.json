@@ -1,0 +1,607 @@
+[
+  {
+    "name": "initial_surrogate_trials/flat",
+    "controller": "initial_surrogate_trials/simulate.py",
+    "metadata": {
+      "strategy": "flat",
+      "solver": "Newton SolverVBD",
+      "iterations": 40,
+      "substeps": 32,
+      "physics_hz": 1920,
+      "connector_mass_kg": 0.015,
+      "contact_only_grasp": true,
+      "latch_constraint": false,
+      "cables_included": false,
+      "handling_rib": false,
+      "existing_fingertip_support_lips": true,
+      "final_position_error_mm": 0.6879841196277174,
+      "final_rotation_error_deg": 0.025128809211993786,
+      "seated": true,
+      "max_joint_speed_rad_s": 0.33825354828439735,
+      "events": [
+        {
+          "event": "in_hand_calibration",
+          "time": 5.0,
+          "plug_position": [
+            0.12999901175498962,
+            0.15915879607200623,
+            0.08065031468868256
+          ],
+          "relative_position": [
+            -0.0008409172397953784,
+            -1.1103950427391246e-07,
+            -0.0036703306058747547
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "motion_sha256": "80f1174558cdaa89b2ab7bb92976c486579f7e0f2b526c0435d8083ff0199bb2",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "joint_bounds": true,
+        "joint_speed": true,
+        "robot_FK": true,
+        "seated_last_two_seconds": true,
+        "connector_contacts": false,
+        "robot_static_clearance": true
+      },
+      "final_position_error_mm": 0.6879841196277174,
+      "final_angle_error_deg": 0.025128809211993786,
+      "max_robot_fk_error_m": 5.820766091346741e-11,
+      "max_joint_speed_rad_s": 0.33825354828439735,
+      "limitations": [
+        "Sampled geometry checks, not swept-volume proof",
+        "Kinematic UR5; no force or torque limits, no self-collision audit",
+        "No attached cables; no latch mechanism",
+        "Existing fingertip support lips retained"
+      ]
+    }
+  },
+  {
+    "name": "initial_surrogate_trials/angled",
+    "controller": "initial_surrogate_trials/simulate.py",
+    "metadata": {
+      "strategy": "angled",
+      "solver": "Newton SolverVBD",
+      "iterations": 40,
+      "substeps": 32,
+      "physics_hz": 1920,
+      "connector_mass_kg": 0.015,
+      "contact_only_grasp": true,
+      "latch_constraint": false,
+      "cables_included": false,
+      "handling_rib": false,
+      "existing_fingertip_support_lips": true,
+      "final_position_error_mm": 0.5015439363718016,
+      "final_rotation_error_deg": 0.4816934309736808,
+      "seated": true,
+      "max_joint_speed_rad_s": 0.45971457471171817,
+      "events": [
+        {
+          "event": "in_hand_calibration",
+          "time": 5.0,
+          "plug_position": [
+            0.12999901175498962,
+            0.15915879607200623,
+            0.08065031468868256
+          ],
+          "relative_position": [
+            -0.0008409172397953784,
+            -1.1103950427391246e-07,
+            -0.0036703306058747547
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "motion_sha256": "b5f7280175872e3d4bfb58684e9c5d25ccae4899b7ecd5c39e78a5e3da98a459",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "joint_bounds": true,
+        "joint_speed": true,
+        "robot_FK": true,
+        "seated_last_two_seconds": true,
+        "connector_contacts": false,
+        "robot_static_clearance": true
+      },
+      "final_position_error_mm": 0.5015439363718016,
+      "final_angle_error_deg": 0.4816934309736808,
+      "max_robot_fk_error_m": 5.820766091346741e-11,
+      "max_joint_speed_rad_s": 0.45971457471171817,
+      "limitations": [
+        "Sampled geometry checks, not swept-volume proof",
+        "Kinematic UR5; no force or torque limits, no self-collision audit",
+        "No attached cables; no latch mechanism",
+        "Existing fingertip support lips retained"
+      ]
+    }
+  },
+  {
+    "name": "initial_surrogate_trials/angled_gentle",
+    "controller": "initial_surrogate_trials/simulate.py",
+    "metadata": {
+      "strategy": "angled",
+      "grasp_gap_m": 0.0442,
+      "solver": "Newton SolverVBD",
+      "iterations": 40,
+      "substeps": 32,
+      "physics_hz": 1920,
+      "connector_mass_kg": 0.015,
+      "contact_only_grasp": true,
+      "latch_constraint": false,
+      "cables_included": false,
+      "handling_rib": false,
+      "existing_fingertip_support_lips": true,
+      "final_position_error_mm": 0.633124023403411,
+      "final_rotation_error_deg": 2.6941965052834607,
+      "seated": true,
+      "max_joint_speed_rad_s": 0.46611519499178744,
+      "events": [
+        {
+          "event": "in_hand_calibration",
+          "time": 5.0,
+          "plug_position": [
+            0.12996116280555725,
+            0.16254070401191711,
+            0.08055825531482697
+          ],
+          "relative_position": [
+            0.002540990333868047,
+            -3.799281186081403e-05,
+            -0.0035782712780408807
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "motion_sha256": "38530d5e8bfabee827debca4fe43178441966f2caad3f7c7d378e5cdfa49c9df",
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "joint_bounds": true,
+        "joint_speed": true,
+        "robot_FK": true,
+        "seated_last_two_seconds": true,
+        "connector_contacts": true,
+        "robot_static_clearance": true
+      },
+      "final_position_error_mm": 0.633124023403411,
+      "final_angle_error_deg": 2.6941965052834607,
+      "max_robot_fk_error_m": 1.1641532182693481e-10,
+      "max_joint_speed_rad_s": 0.46611519499178744,
+      "limitations": [
+        "Sampled geometry checks, not swept-volume proof",
+        "Kinematic UR5; no force or torque limits, no self-collision audit",
+        "No attached cables; no latch mechanism",
+        "Existing fingertip support lips retained"
+      ]
+    }
+  },
+  {
+    "name": "ear_grasp",
+    "controller": "controller_unguarded.py",
+    "metadata": {
+      "strategy": "angled",
+      "grasp_gap_m": 0.047,
+      "grasp_height_m": 0.001,
+      "solver": "Newton SolverVBD",
+      "iterations": 40,
+      "substeps": 32,
+      "physics_hz": 1920,
+      "connector_mass_kg": 0.015,
+      "contact_only_grasp": true,
+      "latch_constraint": false,
+      "cables_included": false,
+      "handling_rib": false,
+      "existing_fingertip_support_lips": true,
+      "final_position_error_mm": 200491.9839791708,
+      "final_rotation_error_deg": 179.87678491003933,
+      "seated": false,
+      "max_joint_speed_rad_s": 0.41797597511088913,
+      "events": [
+        {
+          "event": "in_hand_calibration",
+          "time": 5.0,
+          "plug_position": [
+            0.13004912436008453,
+            0.1600881665945053,
+            0.08008567243814468
+          ],
+          "relative_position": [
+            8.84537766102377e-05,
+            4.9992538711464237e-05,
+            0.0008943116327925851
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "motion_sha256": "aec133eb6e0681250f05060bad2b077a5f9c26485934a380093a6c6bf394bca5",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "joint_bounds": true,
+        "joint_speed": true,
+        "robot_FK": true,
+        "seated_last_two_seconds": false,
+        "connector_contacts": false,
+        "robot_static_clearance": true
+      },
+      "final_position_error_mm": 200491.9839791708,
+      "final_angle_error_deg": 179.87678491003933,
+      "max_robot_fk_error_m": 1.8189894035458565e-11,
+      "max_joint_speed_rad_s": 0.41797597511088913,
+      "limitations": [
+        "Sampled geometry checks, not swept-volume proof",
+        "Kinematic UR5; no force or torque limits, no self-collision audit",
+        "No attached cables; no latch mechanism",
+        "Existing fingertip support lips retained"
+      ]
+    }
+  },
+  {
+    "name": "tab_flat",
+    "controller": "controller_unguarded.py",
+    "metadata": {
+      "strategy": "flat",
+      "grasp_gap_m": 0.047,
+      "grasp_height_m": 0.001,
+      "solver": "Newton SolverVBD",
+      "iterations": 40,
+      "substeps": 32,
+      "physics_hz": 1920,
+      "connector_mass_kg": 0.015,
+      "contact_only_grasp": true,
+      "latch_constraint": false,
+      "cables_included": false,
+      "handling_rib": false,
+      "existing_fingertip_support_lips": true,
+      "final_position_error_mm": 1.3643221029856532,
+      "final_rotation_error_deg": 0.14306631284758095,
+      "seated": true,
+      "max_joint_speed_rad_s": 0.3274322903518856,
+      "events": [
+        {
+          "event": "in_hand_calibration",
+          "time": 5.0,
+          "plug_position": [
+            0.13004912436008453,
+            0.1600881665945053,
+            0.08008567243814468
+          ],
+          "relative_position": [
+            8.84537766102377e-05,
+            4.9992538711464237e-05,
+            0.0008943116327925851
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "motion_sha256": "da431a0edb00e689c49d5e1670352984da6548fcabdbc48a12236b7b67dab369",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "joint_bounds": true,
+        "joint_speed": true,
+        "robot_FK": true,
+        "seated_last_two_seconds": true,
+        "connector_contacts": false,
+        "robot_static_clearance": true
+      },
+      "final_position_error_mm": 1.3643221029856532,
+      "final_angle_error_deg": 0.14306631284758095,
+      "max_robot_fk_error_m": 5.820766091346741e-11,
+      "max_joint_speed_rad_s": 0.3274322903518856,
+      "limitations": [
+        "Sampled geometry checks, not swept-volume proof",
+        "Kinematic UR5; no force or torque limits, no self-collision audit",
+        "No attached cables; no latch mechanism",
+        "Existing fingertip support lips retained"
+      ]
+    }
+  },
+  {
+    "name": "tab_flat_guarded",
+    "controller": "controller_release.py",
+    "metadata": {
+      "strategy": "flat",
+      "grasp_gap_m": 0.047,
+      "grasp_height_m": 0.001,
+      "solver": "Newton SolverVBD",
+      "iterations": 40,
+      "substeps": 32,
+      "physics_hz": 1920,
+      "connector_mass_kg": 0.015,
+      "contact_only_grasp": true,
+      "latch_constraint": false,
+      "cables_included": false,
+      "handling_rib": false,
+      "existing_fingertip_support_lips": true,
+      "final_position_error_mm": 4.929173353662554,
+      "final_rotation_error_deg": 10.775204570242376,
+      "seated": false,
+      "max_joint_speed_rad_s": 0.3274322903518856,
+      "events": [
+        {
+          "event": "in_hand_calibration",
+          "time": 5.0,
+          "plug_position": [
+            0.13004912436008453,
+            0.1600881665945053,
+            0.08008567243814468
+          ],
+          "relative_position": [
+            8.84537766102377e-05,
+            4.9992538711464237e-05,
+            0.0008943116327925851
+          ]
+        },
+        {
+          "event": "press_alignment_check",
+          "time": 12.0,
+          "allowed": false,
+          "position": [
+            -0.021893369033932686,
+            0.16007578372955322,
+            0.03437935188412666
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "motion_sha256": "f3f242822e6b4f6d20baafdcea4bddbab3dbf596cc6e37570836c5c2ba8fbd29",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "joint_bounds": true,
+        "joint_speed": true,
+        "robot_FK": true,
+        "seated_last_two_seconds": false,
+        "connector_contacts": false,
+        "robot_static_clearance": true
+      },
+      "final_position_error_mm": 4.929173353662554,
+      "final_angle_error_deg": 10.775204570242375,
+      "max_robot_fk_error_m": 5.820766091346741e-11,
+      "max_joint_speed_rad_s": 0.3274322903518856,
+      "limitations": [
+        "Sampled geometry checks, not swept-volume proof",
+        "Kinematic UR5; no force or torque limits, no self-collision audit",
+        "No attached cables; no latch mechanism",
+        "Existing fingertip support lips retained"
+      ]
+    }
+  },
+  {
+    "name": "tab_direct",
+    "controller": "simulate.py",
+    "metadata": {
+      "strategy": "direct",
+      "grasp_gap_m": 0.0468,
+      "grasp_height_m": 0.005,
+      "solver": "Newton SolverVBD",
+      "iterations": 40,
+      "substeps": 32,
+      "physics_hz": 1920,
+      "connector_mass_kg": 0.015,
+      "contact_only_grasp": true,
+      "latch_constraint": false,
+      "cables_included": false,
+      "handling_rib": false,
+      "existing_fingertip_support_lips": true,
+      "final_position_error_mm": 0.10037171826000958,
+      "final_rotation_error_deg": 0.08619145036129865,
+      "seated": true,
+      "max_joint_speed_rad_s": 0.4679157694894087,
+      "events": [
+        {
+          "event": "in_hand_calibration",
+          "time": 5.0,
+          "plug_position": [
+            0.13000406324863434,
+            0.16009913384914398,
+            0.08093540370464325
+          ],
+          "relative_position": [
+            9.942058248474922e-05,
+            4.931331729261489e-06,
+            0.004044580365568115
+          ]
+        },
+        {
+          "event": "in_hand_calibration",
+          "time": 7.0,
+          "plug_position": [
+            -0.025006188079714775,
+            0.16035765409469604,
+            0.10097134113311768
+          ],
+          "relative_position": [
+            9.944376669582506e-05,
+            -3.322299919396625e-05,
+            0.003884456525914805
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "motion_sha256": "1e8f4af23659de3a2749e144eeeb870d96f7e9f9d8b1d35a1c87ca1edcf40f76",
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "joint_bounds": true,
+        "joint_speed": true,
+        "robot_FK": true,
+        "seated_last_two_seconds": true,
+        "connector_contacts": true,
+        "robot_static_clearance": false
+      },
+      "final_position_error_mm": 0.10037171826000958,
+      "final_angle_error_deg": 0.08619145036129865,
+      "max_robot_fk_error_m": 5.820766091346741e-11,
+      "max_joint_speed_rad_s": 0.4679157694894087,
+      "limitations": [
+        "Sampled geometry checks, not swept-volume proof",
+        "Kinematic UR5; no force or torque limits, no self-collision audit",
+        "No attached cables; no latch mechanism",
+        "Existing fingertip support lips retained"
+      ]
+    }
+  },
+  {
+    "name": "pad_direct",
+    "controller": "simulate.py",
+    "metadata": {
+      "strategy": "direct",
+      "grasp_gap_m": 0.0468,
+      "grasp_height_m": 0.005,
+      "solver": "Newton SolverVBD",
+      "iterations": 40,
+      "substeps": 32,
+      "physics_hz": 1920,
+      "connector_mass_kg": 0.015,
+      "contact_only_grasp": true,
+      "latch_constraint": false,
+      "cables_included": false,
+      "handling_rib": false,
+      "existing_fingertip_support_lips": false,
+      "final_position_error_mm": 0.02262349394337631,
+      "final_rotation_error_deg": 0.002322164091806125,
+      "seated": true,
+      "max_joint_speed_rad_s": 0.46922864707426903,
+      "events": [
+        {
+          "event": "in_hand_calibration",
+          "time": 5.0,
+          "plug_position": [
+            0.12999719381332397,
+            0.15999262034893036,
+            0.07995252311229706
+          ],
+          "relative_position": [
+            -7.092971158425344e-06,
+            -1.9370824697164627e-06,
+            0.005027460959260316
+          ]
+        },
+        {
+          "event": "in_hand_calibration",
+          "time": 7.0,
+          "plug_position": [
+            -0.024967746809124947,
+            0.16042855381965637,
+            0.10082022100687027
+          ],
+          "relative_position": [
+            -6.899295367697732e-06,
+            -1.79814720892435e-06,
+            0.005034103752882487
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "motion_sha256": "ee7eb0ef6633aa499a209a94f3fc7dc8204e4478387d1b25f2e50882ca1a0bbc",
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "joint_bounds": true,
+        "joint_speed": true,
+        "robot_FK": true,
+        "seated_last_two_seconds": true,
+        "connector_contacts": true,
+        "robot_static_clearance": true
+      },
+      "final_position_error_mm": 0.02262349394337631,
+      "final_angle_error_deg": 0.002322164091806125,
+      "max_robot_fk_error_m": 1.1641532182693481e-10,
+      "max_joint_speed_rad_s": 0.46922864707426903,
+      "limitations": [
+        "Sampled geometry checks, not swept-volume proof",
+        "Kinematic UR5; no force or torque limits, no self-collision audit",
+        "No attached cables; no latch mechanism",
+        "Gripper lip configuration is recorded in the trial JSON"
+      ]
+    }
+  },
+  {
+    "name": "pad_high",
+    "controller": "simulate.py",
+    "metadata": {
+      "strategy": "direct",
+      "grasp_gap_m": 0.0468,
+      "grasp_height_m": 0.006,
+      "solver": "Newton SolverVBD",
+      "iterations": 40,
+      "substeps": 32,
+      "physics_hz": 1920,
+      "connector_mass_kg": 0.015,
+      "contact_only_grasp": true,
+      "latch_constraint": false,
+      "cables_included": false,
+      "handling_rib": false,
+      "existing_fingertip_support_lips": false,
+      "final_position_error_mm": 0.04471536494511048,
+      "final_rotation_error_deg": 0.009685585155537815,
+      "seated": true,
+      "max_joint_speed_rad_s": 0.4687804501589943,
+      "events": [
+        {
+          "event": "in_hand_calibration",
+          "time": 5.0,
+          "plug_position": [
+            0.13003230094909668,
+            0.1600017100572586,
+            0.07995357364416122
+          ],
+          "relative_position": [
+            1.9970778734129404e-06,
+            3.3169965098318774e-05,
+            0.006026410427724269
+          ]
+        },
+        {
+          "event": "in_hand_calibration",
+          "time": 7.0,
+          "plug_position": [
+            -0.024968089535832405,
+            0.16042791306972504,
+            0.10082419961690903
+          ],
+          "relative_position": [
+            3.302108223994409e-06,
+            3.296144472044923e-05,
+            0.006029155279419158
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "motion_sha256": "1c9a1fcccd8117272c53c62341d4a6bbc4ae9e3550c6320ed8d5211f75544c6d",
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "joint_bounds": true,
+        "joint_speed": true,
+        "robot_FK": true,
+        "seated_last_two_seconds": true,
+        "connector_contacts": true,
+        "robot_static_clearance": true
+      },
+      "final_position_error_mm": 0.04471536494511048,
+      "final_angle_error_deg": 0.009685585155537815,
+      "max_robot_fk_error_m": 5.820766091346741e-11,
+      "max_joint_speed_rad_s": 0.4687804501589943,
+      "limitations": [
+        "Sampled geometry checks, not swept-volume proof",
+        "Kinematic UR5; no force or torque limits, no self-collision audit",
+        "No attached cables; no latch mechanism",
+        "Gripper lip configuration is recorded in the trial JSON"
+      ]
+    }
+  }
+]

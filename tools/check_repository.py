@@ -71,4 +71,16 @@ for diagnostic_name in ['lower_entry','angled_bundle']:
   expected=diag['arrays'][key];assert list(value.shape)==expected['shape'] and str(value.dtype)==expected['dtype'];assert hashlib.sha256(value.tobytes()).hexdigest()==expected['sha256'],key
  assert json.loads((three/f'diagnostics/{diagnostic_name}_validation.json').read_text())['motion_sha256']==diag['original_npz_sha256']
 
+no_rib=ROOT/'experiments/connector_no_rib'
+selection=json.loads((no_rib/'selection.json').read_text());name=selection['selected']
+r=json.loads((no_rib/(name+'_validation.json')).read_text());sha=hashlib.sha256((no_rib/(name+'.npz')).read_bytes()).hexdigest()
+assert r['motion_sha256']==sha and r['passed']==all(r['checks'].values()) and r['passed']
+for report in ['connector_contact_validation','robot_clearance_validation']:
+ assert json.loads((no_rib/(name+'_'+report+'.json')).read_text())['motion_sha256']==sha
+with np.load(no_rib/(name+'.npz')) as m:assert np.isfinite(m['poses']).all() and len(m['poses'])==1200
+parts=json.loads((no_rib/'assets/geometry.json').read_text())['plug']
+assert not any('handling_rib' in part['name'] for part in parts)
+assert all(part['collision'] for part in parts if part['name'].startswith(('grip_ear','top_ridge','rear_ridge','blue_wire_support')))
+assert not json.loads((no_rib/(name+'.json')).read_text())['existing_fingertip_support_lips']
+
 print(f'PASS: {len(files)} artifact hashes, finite reference motions, expected validation statuses, identical clip meshes, Python syntax.')

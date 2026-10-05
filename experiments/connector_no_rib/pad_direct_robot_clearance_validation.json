@@ -1,0 +1,15 @@
+{
+  "max_overlap_mm_by_phase": {
+    "approach": 0.0,
+    "body pinch and lift": 0.0,
+    "transport with side tabs": 0.0,
+    "lower at 25 degrees": 0.0,
+    "rotate down while holding side tabs": 0.0,
+    "release then withdraw; no latch": 0.0
+  },
+  "motion_sha256": "ee7eb0ef6633aa499a209a94f3fc7dc8204e4478387d1b25f2e50882ca1a0bbc",
+  "passed": true,
+  "max_sampled_static_penetration_mm": 0.0,
+  "where": null,
+  "method": "Mesh vertices at 10 Hz against table and socket boxes; not swept-volume proof"
+}

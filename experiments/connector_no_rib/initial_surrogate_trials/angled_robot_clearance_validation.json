@@ -1,0 +1,10 @@
+{
+  "motion_sha256": "b5f7280175872e3d4bfb58684e9c5d25ccae4899b7ecd5c39e78a5e3da98a459",
+  "passed": true,
+  "max_sampled_static_penetration_mm": 0.027016278745392586,
+  "where": {
+    "frame": 180,
+    "link": "right_pad"
+  },
+  "method": "Mesh vertices at 10 Hz against table and socket boxes; not swept-volume proof"
+}
