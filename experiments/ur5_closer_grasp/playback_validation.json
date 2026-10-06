@@ -1,0 +1,26 @@
+{
+  "kind": "Visual playback integrity, separate from physics validation",
+  "passed": true,
+  "motion_sha256": "daab9808e93bc6e2ec801374e87bb933bbbf1ad354136044272391991b345027",
+  "sampled_transform_max_error": 0.0,
+  "usd_time_codes_per_second": 60,
+  "usd_pose_samples_per_second": 10,
+  "usd_end_frame": 9329,
+  "no_active_physics_schemas": true,
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 960,
+        "r_frame_rate": "15/1"
+      }
+    ],
+    "format": {
+      "duration": "159.066667",
+      "size": "31859873"
+    }
+  }
+}

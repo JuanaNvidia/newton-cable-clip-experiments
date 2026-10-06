@@ -14,6 +14,7 @@ Click a preview to open its video. The recordings and numerical results are incl
 
 | Experiment | Preview and video | Recorded outcome |
 |---|---|---|
+| UR5 cable grasps closer to each clip | [![Closer grasps](experiments/ur5_closer_grasp/assembly_after.png)](experiments/ur5_closer_grasp/ur5_cable_clip.mp4) | 30 mm bulk grasps; opposite-side recovery at 29–36 mm. Final counts 6/6, 6/6, 5/6. [Results and audit limits](experiments/ur5_closer_grasp/README.md). |
 | UR5 connector insertion and cable routing through three clips | [![Merged harness](experiments/ur5_merged_harness/assembly_after.png)](experiments/ur5_merged_harness/ur5_cable_clip.mp4) | Existing connector side tabs; opposite-side individual-wire pulls. Final channel counts 6/6, 5/6, 5/6; see lid and physics limitations. [Recorded outcome and limits](experiments/ur5_merged_harness/README.md). |
 | UR5 connector insertion without the top rib | [![Side-tab grasp](experiments/connector_no_rib/pad_direct_1198.png)](experiments/connector_no_rib/pad_direct.mp4) | Existing side tabs, angled insertion and release; no cables or latch constraint. [Results and limits](experiments/connector_no_rib/README.md). |
 | UR5, 30-inch harness, two sockets and three clips | [![Three-clip assembly](experiments/ur5_three_clips/assembly_after.png)](experiments/ur5_three_clips/ur5_cable_clip.mp4) | Both connectors installed; final retention 5/6, 6/6, 6/6. Scripted contact grasps and recovery attempts. Strict checks did not pass. |

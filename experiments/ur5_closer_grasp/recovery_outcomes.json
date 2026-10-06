@@ -1,0 +1,405 @@
+{
+  "attempts": [
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 45.5,
+      "clip": 1,
+      "cable": 5,
+      "segment": 31,
+      "side": -1,
+      "separation_mm": 3.951231765418179,
+      "longitudinal_offset_mm": -31.165575678734168,
+      "retained_before": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "retained_after": [
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "selected_wire_retained_after": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 71.5,
+      "clip": 2,
+      "cable": 5,
+      "segment": 67,
+      "side": -1,
+      "separation_mm": 2.3405191609174874,
+      "longitudinal_offset_mm": -35.056898593902595,
+      "retained_before": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "retained_after": [
+        [
+          true,
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          false,
+          false,
+          true
+        ]
+      ],
+      "selected_wire_retained_after": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 83.5,
+      "clip": 3,
+      "cable": 5,
+      "segment": 107,
+      "side": -1,
+      "separation_mm": 2.117548528186197,
+      "longitudinal_offset_mm": -32.39052508504941,
+      "retained_before": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "retained_after": [
+        [
+          true,
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ]
+      ],
+      "selected_wire_retained_after": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 95.5,
+      "clip": 3,
+      "cable": 4,
+      "segment": 107,
+      "side": -1,
+      "separation_mm": 19.17831337361505,
+      "longitudinal_offset_mm": -32.879118136690664,
+      "retained_before": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "retained_after": [
+        [
+          true,
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ]
+      ],
+      "selected_wire_retained_after": false
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 107.5,
+      "clip": 3,
+      "cable": 4,
+      "segment": 121,
+      "side": 1,
+      "separation_mm": 19.093599722018833,
+      "longitudinal_offset_mm": 35.73240387301254,
+      "retained_before": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "retained_after": [
+        [
+          true,
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          false,
+          false,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ]
+      ],
+      "selected_wire_retained_after": false
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 119.5,
+      "clip": 1,
+      "cable": 5,
+      "segment": 43,
+      "side": 1,
+      "separation_mm": 3.1580957022210088,
+      "longitudinal_offset_mm": 33.06304342982112,
+      "retained_before": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        true
+      ],
+      "retained_after": [
+        [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      ],
+      "selected_wire_retained_after": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 131.5,
+      "clip": 1,
+      "cable": 4,
+      "segment": 30,
+      "side": -1,
+      "separation_mm": 20.15025201331632,
+      "longitudinal_offset_mm": -32.91784737606052,
+      "retained_before": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "retained_after": [
+        [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ]
+      ],
+      "selected_wire_retained_after": false
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 143.5,
+      "clip": 2,
+      "cable": 4,
+      "segment": 71,
+      "side": -1,
+      "separation_mm": 34.57500103090208,
+      "longitudinal_offset_mm": -29.78248357772828,
+      "retained_before": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "retained_after": [
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ]
+      ],
+      "selected_wire_retained_after": true
+    }
+  ],
+  "limits": [
+    {
+      "event": "recovery_limit_reached",
+      "time": 119.5,
+      "clip": 3,
+      "retained": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "event": "recovery_limit_reached",
+      "time": 119.5,
+      "clip": 3,
+      "retained": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "event": "recovery_limit_reached",
+      "time": 143.5,
+      "clip": 1,
+      "retained": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ]
+    }
+  ]
+}

@@ -111,4 +111,18 @@ assert json.loads((merged/'checkpoint_validation.json').read_text())['passed']
 assert json.loads((merged/'release_comparison.json').read_text())['shared_prefix_bitwise_equal']
 assert all(p.stat().st_size<100_000_000 for p in merged.rglob('*') if p.is_file())
 
+closer=ROOT/'experiments/ur5_closer_grasp'
+spec=importlib.util.spec_from_file_location('closer_motion_io',closer/'motion_io.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+d=module.load_motion(closer/'motion.npz');sha=module.motion_sha256(closer/'motion.npz');prefix=np.load(closer/'two_connectors.npz')
+for key in ['poses','joint_positions','jaw_width','tcp_targets','tool_rotations','phases','phase_elapsed','attempt_history','latch_history','contact_counts']:assert np.array_equal(d[key][:1890],prefix[key]),key
+assert np.isfinite(d['poses']).all() and d['latch_history'][-1].all()
+r=json.loads((closer/'validation.json').read_text());assert r['motion_sha256']==sha and r['passed']==all(r['checks'].values())
+for name in ['contact_validation','gripper_contact_validation','connector_contact_validation','robot_clearance_validation','recovery_validation','playback_validation']:
+ assert json.loads((closer/(name+'.json')).read_text())['motion_sha256']==sha,name
+assert json.loads((closer/'recovery_validation.json').read_text())['passed']
+assert json.loads((closer/'playback_validation.json').read_text())['passed']
+prov=json.loads((closer/'recording_provenance.json').read_text());assert prov['motion_sha256']==sha and prov['connector_prefix_exact'] and prov['bulk_grasp_offset_mm']==30
+for name in ['clipTop.stl','clipBottom.stl','actual_clip_scene.usda']:assert (closer/name).read_bytes()==(merged/name).read_bytes()
+assert all(p.stat().st_size<100_000_000 for p in closer.rglob('*') if p.is_file())
+
 print(f'PASS: {len(files)} artifact hashes, finite reference motions, expected validation statuses, identical clip meshes, Python syntax.')

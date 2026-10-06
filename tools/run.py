@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse,shutil,subprocess,sys
 ROOT=Path(__file__).resolve().parents[1]
 CASES={
+ 'ur5-closer-grasp':('ur5_closer_grasp',{'simulate':[['reproduce_recording.py']],'validate':[['validate_all.py']],'render':[['render.py','--stride','4'],['finalize_stills.py']],'usd':[['export_playback.py']]}),
  'ur5-merged-harness':('ur5_merged_harness',{'simulate':[['reproduce_recording.py']],'validate':[['validate_all.py']],'render':[['render.py','--stride','4'],['finalize_stills.py']],'usd':[['export_playback.py']]}),
  'connector-no-rib':('connector_no_rib',{'simulate':[['simulate.py','--strategy','direct','--grasp-gap','.0468','--grasp-z','0.005','--no-lips','--output','pad_direct']],'validate':[['validate.py','--motion','pad_direct']],'render':[['render.py','--strategy','pad_direct']]}),
  'ur5-three-clips':('ur5_three_clips',{'simulate':[['simulate.py']],'validate':[['validate_all.py']],'render':[['render.py']],'usd':[['export_playback.py']]}),

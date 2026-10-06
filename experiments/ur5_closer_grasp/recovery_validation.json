@@ -1,0 +1,145 @@
+{
+  "motion_sha256": "daab9808e93bc6e2ec801374e87bb933bbbf1ad354136044272391991b345027",
+  "passed": true,
+  "checks_count": 31,
+  "recovery_attempts": [
+    {
+      "time": 45.5,
+      "clip": 1,
+      "cable": 5,
+      "selected_missing": true,
+      "opposite_side": true,
+      "side_matches_position": true,
+      "selected_wire_near_each_pad": [
+        true,
+        true
+      ]
+    },
+    {
+      "time": 71.5,
+      "clip": 2,
+      "cable": 5,
+      "selected_missing": true,
+      "opposite_side": true,
+      "side_matches_position": true,
+      "selected_wire_near_each_pad": [
+        true,
+        true
+      ]
+    },
+    {
+      "time": 83.5,
+      "clip": 3,
+      "cable": 5,
+      "selected_missing": true,
+      "opposite_side": true,
+      "side_matches_position": true,
+      "selected_wire_near_each_pad": [
+        true,
+        true
+      ]
+    },
+    {
+      "time": 95.5,
+      "clip": 3,
+      "cable": 4,
+      "selected_missing": true,
+      "opposite_side": true,
+      "side_matches_position": true,
+      "selected_wire_near_each_pad": [
+        true,
+        true
+      ]
+    },
+    {
+      "time": 107.5,
+      "clip": 3,
+      "cable": 4,
+      "selected_missing": true,
+      "opposite_side": true,
+      "side_matches_position": true,
+      "selected_wire_near_each_pad": [
+        true,
+        true
+      ]
+    },
+    {
+      "time": 119.5,
+      "clip": 1,
+      "cable": 5,
+      "selected_missing": true,
+      "opposite_side": true,
+      "side_matches_position": true,
+      "selected_wire_near_each_pad": [
+        true,
+        true
+      ]
+    },
+    {
+      "time": 131.5,
+      "clip": 1,
+      "cable": 4,
+      "selected_missing": true,
+      "opposite_side": true,
+      "side_matches_position": true,
+      "selected_wire_near_each_pad": [
+        true,
+        true
+      ]
+    },
+    {
+      "time": 143.5,
+      "clip": 2,
+      "cable": 4,
+      "selected_missing": true,
+      "opposite_side": true,
+      "side_matches_position": true,
+      "selected_wire_near_each_pad": [
+        true,
+        true
+      ]
+    }
+  ],
+  "limits": [
+    {
+      "event": "recovery_limit_reached",
+      "time": 119.5,
+      "clip": 3,
+      "retained": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "event": "recovery_limit_reached",
+      "time": 119.5,
+      "clip": 3,
+      "retained": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "event": "recovery_limit_reached",
+      "time": 143.5,
+      "clip": 1,
+      "retained": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        true
+      ]
+    }
+  ],
+  "note": "Pad proximity is a diagnostic, not force sensing or proof of grasp security. Final channel occupancy is checked separately and does not require the lid to close."
+}
