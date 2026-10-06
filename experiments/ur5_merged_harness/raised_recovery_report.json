@@ -1,0 +1,263 @@
+{
+  "solver_runs": [
+    {
+      "start_frame": 0,
+      "iterations": 60,
+      "substeps": 32,
+      "bundle_gap_m": 0.0018
+    },
+    {
+      "start_frame": 2730,
+      "iterations": 80,
+      "substeps": 32,
+      "bundle_gap_m": 0.0018
+    }
+  ],
+  "bundle_gap_m": 0.0018,
+  "cable_count": 6,
+  "length_mm": 762.0,
+  "diameter_mm": 2.0,
+  "segments": 152,
+  "solver": "Newton SolverVBD compliant ALM",
+  "iterations": 80,
+  "physics_hz": 1920,
+  "EI_Nm2": 0.0011459155902616466,
+  "grasp": "Contact-only pads; no support lips or attachments",
+  "connector_modification": "Handling rib removed; original side tabs and ridges collide",
+  "latches": "Idealized socket locks activate only within 1.5 mm and 6 degrees; used to retain connectors against cable loads",
+  "events": [
+    {
+      "event": "in_hand_calibration",
+      "time": 6.5,
+      "connector": 1,
+      "relative_position": [
+        8.120014116561725e-06,
+        2.1863678550821087e-06,
+        0.0050040312297142085
+      ]
+    },
+    {
+      "event": "in_hand_calibration",
+      "time": 8.5,
+      "connector": 1,
+      "relative_position": [
+        1.6565466364426276e-05,
+        3.7939572916553886e-06,
+        0.005010461500747151
+      ]
+    },
+    {
+      "event": "connector_latched",
+      "time": 11.9,
+      "connector": 1,
+      "position_error_mm": 0.008752468935610323,
+      "angle_error_deg": 0.09524220639589684
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 16.5,
+      "source": "motion_boundary.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "in_hand_calibration",
+      "time": 21.5,
+      "connector": 2,
+      "relative_position": [
+        -2.090482853598284e-05,
+        -9.426057489438498e-07,
+        0.005001639554317877
+      ]
+    },
+    {
+      "event": "in_hand_calibration",
+      "time": 23.5,
+      "connector": 2,
+      "relative_position": [
+        -0.00017134803805249408,
+        -1.748226886471444e-06,
+        0.005071490227694483
+      ]
+    },
+    {
+      "event": "connector_latched",
+      "time": 26.9,
+      "connector": 2,
+      "position_error_mm": 0.02892424928283669,
+      "angle_error_deg": 0.07662308205745406
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 31.5,
+      "source": "two_connectors.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 45.5,
+      "clip": 1,
+      "phase": "clip",
+      "retained": [
+        [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 45.5,
+      "source": "motion_boundary.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 45.5,
+      "clip": 1,
+      "cable": 3,
+      "segment": 27,
+      "side": -1,
+      "separation_mm": 14.057472047009144,
+      "retained_before": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 57.5,
+      "clip": 1,
+      "phase": "repair",
+      "retained": [
+        [
+          true,
+          false,
+          false,
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 57.5,
+      "source": "motion_boundary.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 57.5,
+      "clip": 1,
+      "cable": 3,
+      "segment": 47,
+      "side": 1,
+      "separation_mm": 20.224580197733683,
+      "retained_before": [
+        true,
+        false,
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "event": "opposite_side_wire_seated_during_pull",
+      "time": 64.4,
+      "clip": 1,
+      "cable": 3,
+      "side": 1
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 69.5,
+      "clip": 1,
+      "phase": "repair",
+      "retained": [
+        [
+          true,
+          false,
+          false,
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ]
+    }
+  ],
+  "final_latched": [
+    true,
+    true
+  ],
+  "final_retained": [
+    4,
+    1,
+    0
+  ],
+  "seconds": 69.5,
+  "runtime_seconds": 361.27819538116455,
+  "complete": false,
+  "repairs": [
+    2,
+    0,
+    0
+  ],
+  "pose_servo": false
+}

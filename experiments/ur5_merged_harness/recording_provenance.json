@@ -1,0 +1,73 @@
+{
+  "motion_sha256": "033b0786cebb8a029f3861e82f71db09a6581a143b4a9bdd5322e1c83ee98380",
+  "recorded_frames": 9450,
+  "prefix_pose_arrays_verified_identical": true,
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame_exclusive": 990,
+      "controller": "simulate.py",
+      "controller_sha256": "9663561123845a5b04b78d6789b3bb1234a28d170c1b7efc1ea0fff721ae4711",
+      "iterations": 60,
+      "substeps_per_frame": 32
+    },
+    {
+      "start_frame": 990,
+      "end_frame_exclusive": 1890,
+      "controller": "simulate.py",
+      "controller_sha256": "9663561123845a5b04b78d6789b3bb1234a28d170c1b7efc1ea0fff721ae4711",
+      "iterations": 60,
+      "substeps_per_frame": 32
+    },
+    {
+      "start_frame": 1890,
+      "end_frame_exclusive": 2730,
+      "controller": "simulate.py",
+      "controller_sha256": "9663561123845a5b04b78d6789b3bb1234a28d170c1b7efc1ea0fff721ae4711",
+      "iterations": 60,
+      "substeps_per_frame": 32
+    },
+    {
+      "start_frame": 2730,
+      "end_frame_exclusive": 3450,
+      "controller": "controller_low_recovery.py",
+      "controller_sha256": "8f235bbd1e5f5469851093a230f1d45b0b7a55b2918e3997b9c1536d221525e7",
+      "iterations": 80,
+      "substeps_per_frame": 32
+    },
+    {
+      "start_frame": 3450,
+      "end_frame_exclusive": 4170,
+      "controller": "controller_raised_recovery.py",
+      "controller_sha256": "08837dc8ff120a2c5a26147eb85ada351b9e582c5c95730518f66af0d6331cd9",
+      "iterations": 80,
+      "substeps_per_frame": 32
+    },
+    {
+      "start_frame": 4170,
+      "end_frame_exclusive": 5730,
+      "controller": "controller_raised_recovery.py",
+      "controller_sha256": "08837dc8ff120a2c5a26147eb85ada351b9e582c5c95730518f66af0d6331cd9",
+      "iterations": 80,
+      "substeps_per_frame": 32
+    },
+    {
+      "start_frame": 5730,
+      "end_frame_exclusive": 8610,
+      "controller": "controller_adaptive_recovery.py",
+      "controller_sha256": "e94cdc1482c613aa5d57e656f324f78118d4322b4f6592895be0dc1f6db62bdd",
+      "iterations": 80,
+      "substeps_per_frame": 32
+    },
+    {
+      "start_frame": 8610,
+      "end_frame_exclusive": 9450,
+      "controller": "simulate.py",
+      "controller_sha256": "9663561123845a5b04b78d6789b3bb1234a28d170c1b7efc1ea0fff721ae4711",
+      "iterations": 80,
+      "substeps_per_frame": 32
+    }
+  ],
+  "restart_note": "Actual Newton body poses and velocities restored at completed phase boundaries. Collision warm-start state resets. No pose edits. The final narrow-release attempt is a separate branch from the preserved wide-release failure.",
+  "diagnostic_branches": "Loose and tighter bulk-grasp failures and pickup probe branch from the same first 1890 frames. Selected motion keeps the narrow-grasp branch. Earlier recovery failures remain in the selected motion. The final wide-opening release branches at frame 8610 and is preserved separately; selected motion uses a narrow opening before withdrawal."
+}

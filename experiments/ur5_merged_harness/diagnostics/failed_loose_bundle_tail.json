@@ -1,0 +1,303 @@
+{
+  "prefix_frames": 1890,
+  "frame_arrays": [
+    "poses",
+    "joint_positions",
+    "jaw_width",
+    "tcp_targets",
+    "tool_rotations",
+    "phases",
+    "phase_elapsed",
+    "attempt_history",
+    "latch_history",
+    "contact_counts"
+  ],
+  "original_npz_sha256": "a8314299c9201f8f23c8b63431f1168876c038d05eb47941bc7bc1ad30032172",
+  "prefix_array_sha256": {
+    "poses": "d86f385334b95c71a5897221f553fd0b5d9c41e29568a30f6462f9b44a158941",
+    "joint_positions": "8aeac9d00323edd7a5eb4c5daa4a940cd8ecfc213acba22d196f8fbee0dd6116",
+    "jaw_width": "51e405d811b64e306b832b799e6992a03a1d44a8b4f82a4a66604b8995e24581",
+    "tcp_targets": "70a73211e618126ff890ef16d1ff36209eeb17ae89426742266bce497db09eee",
+    "tool_rotations": "39ab10f2fe1514bda629a42c085228966c633128de8ca2ed300a779c147c160e",
+    "phases": "f15c46a8cf09b94a810b64012b69fad10f13cf5e4d33bae1fce56e36362f8b90",
+    "phase_elapsed": "157277ea20703ac523ef71d40daeae8d264fb70c10a04f4fd9eb35b4507cd60b",
+    "attempt_history": "364803a06e82440f3d5c5ac93bde221796a44b25b1f4ac79de4dff822d3b3086",
+    "latch_history": "a1a579a4b2477fd427701c01112851fc5478d3cdb54a5420cd159c34983e1191",
+    "contact_counts": "25ea9a0c59e437517e3b37a9ce677864db49fed363e14496f3588f338ffcb390"
+  },
+  "arrays": {
+    "poses": {
+      "shape": [
+        2730,
+        938,
+        7
+      ],
+      "dtype": "float32",
+      "sha256": "3566ce60353def4c7da272c1bc9010d887e3402e36ae14a978bfa447360b9596"
+    },
+    "joint_positions": {
+      "shape": [
+        2730,
+        6
+      ],
+      "dtype": "float64",
+      "sha256": "e32f63c80106b6039935bc6892548e256531061499ef270ec5b3140c76ffad87"
+    },
+    "jaw_width": {
+      "shape": [
+        2730
+      ],
+      "dtype": "float64",
+      "sha256": "532be271c05bbe971fa3aa5fb9dc39c56ff4964eb6939db4382c8a9793b105da"
+    },
+    "tcp_targets": {
+      "shape": [
+        2730,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "e3d023db56e73b67ebc04639ca34206edb13a80474cb2791780fe5091b6cbfb0"
+    },
+    "tool_rotations": {
+      "shape": [
+        2730,
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "93af495edb2014e9a9fabbda07a20057cc6d93c23bcf4517a9a097385640993e"
+    },
+    "phases": {
+      "shape": [
+        2730
+      ],
+      "dtype": "<U11",
+      "sha256": "8248eb3a0cb0e8ebdc7c092ce7bb7fd4bb78cce4118c2e41e132205d6f09471e"
+    },
+    "phase_elapsed": {
+      "shape": [
+        2730
+      ],
+      "dtype": "float64",
+      "sha256": "b190b306f9379e018998ed6e09e473de4c213aad435a37ade2b5b02bbe10f724"
+    },
+    "attempt_history": {
+      "shape": [
+        2730
+      ],
+      "dtype": "int64",
+      "sha256": "466612aac6175d51a7500f593ea432b038e8a147662f34f888446bc2970e6bc5"
+    },
+    "latch_history": {
+      "shape": [
+        2730,
+        2
+      ],
+      "dtype": "bool",
+      "sha256": "c6b2df823ac86ec9518fd2548c4d6fce83d8322719fe425cc45f9becc92f37d0"
+    },
+    "contact_counts": {
+      "shape": [
+        2730
+      ],
+      "dtype": "int64",
+      "sha256": "1cb950d07a1c2c2f24405296a211969fa1ab039856582da93050c989f7a25ed9"
+    },
+    "state_velocity": {
+      "shape": [
+        938,
+        6
+      ],
+      "dtype": "float32",
+      "sha256": "d6d920c9283a4efcc48e59659437ab5db82dca31447002670781e3f9198c1f3d"
+    },
+    "fps": {
+      "shape": [],
+      "dtype": "int64",
+      "sha256": "3fe8adee83a670dd3131f667e963775b2256f3f59d5a996984eb47f8375efd7c"
+    },
+    "segments": {
+      "shape": [],
+      "dtype": "int64",
+      "sha256": "3f767b01e4e58fae238695575a828fdf5cd094d8111a92de89c372451eb3eb74"
+    },
+    "segment_length": {
+      "shape": [],
+      "dtype": "float64",
+      "sha256": "a7f45247cb1d4c3aa904930c72a098fec78f78aef89771963c6ee68b63ea853f"
+    },
+    "clip_top_bodies": {
+      "shape": [
+        3
+      ],
+      "dtype": "int64",
+      "sha256": "cbcae63ebaff347cdb47a11c2050268d4f9495e1c8740b77f5fabceb0eebb108"
+    },
+    "robot_start": {
+      "shape": [],
+      "dtype": "int64",
+      "sha256": "cf9bbfdcee3e1320cb2c261b345d4d68d8af72a6dbec791bb5fc7cabf9ae0061"
+    },
+    "robot_names": {
+      "shape": [
+        21
+      ],
+      "dtype": "<U18",
+      "sha256": "bfcbda14493f764599af848a3ea44fcb3f65a3c7362af53afb1f7ae51ce719d7"
+    },
+    "plug_bodies": {
+      "shape": [
+        2
+      ],
+      "dtype": "int64",
+      "sha256": "9d34149fbd1fe777eb238799054c8cbfbce372255f219f8740838def9bfd02db"
+    },
+    "plug_anchors": {
+      "shape": [
+        12,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "0b0473133d6643c4b2ca2db36f87509993083c15479aad2b4e9240e55e535c0d"
+    },
+    "anchor_q": {
+      "shape": [
+        12,
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "e255681fec0d62f4279d59cde9890f76803b33f313550065731cc8c179d5c3af"
+    },
+    "rod_ids": {
+      "shape": [
+        912
+      ],
+      "dtype": "int64",
+      "sha256": "9d3b49af7c2542b4b3aad27900ea09be662a6a56c1e071827e93e3a779230d78"
+    }
+  },
+  "run_metadata": {
+    "cable_count": 6,
+    "length_mm": 762.0,
+    "diameter_mm": 2.0,
+    "segments": 152,
+    "solver": "Newton SolverVBD compliant ALM",
+    "iterations": 60,
+    "physics_hz": 1920,
+    "EI_Nm2": 0.0011459155902616466,
+    "grasp": "Contact-only pads; no support lips or attachments",
+    "connector_modification": "Handling rib removed; original side tabs and ridges collide",
+    "latches": "Idealized socket locks activate only within 1.5 mm and 6 degrees; used to retain connectors against cable loads",
+    "events": [
+      {
+        "event": "in_hand_calibration",
+        "time": 6.5,
+        "connector": 1,
+        "relative_position": [
+          8.120014116561725e-06,
+          2.1863678550821087e-06,
+          0.0050040312297142085
+        ]
+      },
+      {
+        "event": "in_hand_calibration",
+        "time": 8.5,
+        "connector": 1,
+        "relative_position": [
+          1.6565466364426276e-05,
+          3.7939572916553886e-06,
+          0.005010461500747151
+        ]
+      },
+      {
+        "event": "connector_latched",
+        "time": 11.9,
+        "connector": 1,
+        "position_error_mm": 0.008752468935610323,
+        "angle_error_deg": 0.09524220639589684
+      },
+      {
+        "event": "resume_at_phase_boundary",
+        "time": 16.5,
+        "source": "motion_boundary.npz",
+        "preserved_positions_and_velocities": true
+      },
+      {
+        "event": "in_hand_calibration",
+        "time": 21.5,
+        "connector": 2,
+        "relative_position": [
+          -2.090482853598284e-05,
+          -9.426057489438498e-07,
+          0.005001639554317877
+        ]
+      },
+      {
+        "event": "in_hand_calibration",
+        "time": 23.5,
+        "connector": 2,
+        "relative_position": [
+          -0.00017134803805249408,
+          -1.748226886471444e-06,
+          0.005071490227694483
+        ]
+      },
+      {
+        "event": "connector_latched",
+        "time": 26.9,
+        "connector": 2,
+        "position_error_mm": 0.02892424928283669,
+        "angle_error_deg": 0.07662308205745406
+      },
+      {
+        "event": "post_insertion_retention_check",
+        "time": 45.5,
+        "clip": 1,
+        "phase": "clip",
+        "retained": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ]
+      }
+    ],
+    "final_latched": [
+      true,
+      true
+    ],
+    "final_retained": [
+      0,
+      0,
+      0
+    ],
+    "seconds": 45.5,
+    "runtime_seconds": 604.2057068347931,
+    "complete": false,
+    "repairs": [
+      0,
+      0,
+      0
+    ],
+    "pose_servo": false
+  }
+}

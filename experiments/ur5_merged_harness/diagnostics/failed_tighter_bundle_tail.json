@@ -1,0 +1,309 @@
+{
+  "prefix_frames": 1890,
+  "frame_arrays": [
+    "poses",
+    "joint_positions",
+    "jaw_width",
+    "tcp_targets",
+    "tool_rotations",
+    "phases",
+    "phase_elapsed",
+    "attempt_history",
+    "latch_history",
+    "contact_counts"
+  ],
+  "original_npz_sha256": "ab4d6a8b55d63601c8f433e1a7538ba35b77130e65108053c0f3ffb1ba813153",
+  "prefix_array_sha256": {
+    "poses": "d86f385334b95c71a5897221f553fd0b5d9c41e29568a30f6462f9b44a158941",
+    "joint_positions": "8aeac9d00323edd7a5eb4c5daa4a940cd8ecfc213acba22d196f8fbee0dd6116",
+    "jaw_width": "51e405d811b64e306b832b799e6992a03a1d44a8b4f82a4a66604b8995e24581",
+    "tcp_targets": "70a73211e618126ff890ef16d1ff36209eeb17ae89426742266bce497db09eee",
+    "tool_rotations": "39ab10f2fe1514bda629a42c085228966c633128de8ca2ed300a779c147c160e",
+    "phases": "f15c46a8cf09b94a810b64012b69fad10f13cf5e4d33bae1fce56e36362f8b90",
+    "phase_elapsed": "157277ea20703ac523ef71d40daeae8d264fb70c10a04f4fd9eb35b4507cd60b",
+    "attempt_history": "364803a06e82440f3d5c5ac93bde221796a44b25b1f4ac79de4dff822d3b3086",
+    "latch_history": "a1a579a4b2477fd427701c01112851fc5478d3cdb54a5420cd159c34983e1191",
+    "contact_counts": "25ea9a0c59e437517e3b37a9ce677864db49fed363e14496f3588f338ffcb390"
+  },
+  "arrays": {
+    "poses": {
+      "shape": [
+        2730,
+        938,
+        7
+      ],
+      "dtype": "float32",
+      "sha256": "2de758272e72a8e64c45c336e2742943611fb5da152a4a36ea3e849d84cb0a8a"
+    },
+    "joint_positions": {
+      "shape": [
+        2730,
+        6
+      ],
+      "dtype": "float64",
+      "sha256": "097f0ac03bae1944f33bce3c5ea209945bb1febb3a8b99cb7d2dd87c76747c15"
+    },
+    "jaw_width": {
+      "shape": [
+        2730
+      ],
+      "dtype": "float64",
+      "sha256": "1d526a0df88932cdeadd48ca24f41273b46d6d70582f0265f51ccbd9839ca7bc"
+    },
+    "tcp_targets": {
+      "shape": [
+        2730,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "da760c922630bd68ac6f2798c4b42eee7361b15dd0844d7271bea101c6dc2719"
+    },
+    "tool_rotations": {
+      "shape": [
+        2730,
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "e93b08aa02e55ce7ed25409d2bad8a7895078b344df677b3dd054058e5633e2f"
+    },
+    "phases": {
+      "shape": [
+        2730
+      ],
+      "dtype": "<U11",
+      "sha256": "8248eb3a0cb0e8ebdc7c092ce7bb7fd4bb78cce4118c2e41e132205d6f09471e"
+    },
+    "phase_elapsed": {
+      "shape": [
+        2730
+      ],
+      "dtype": "float64",
+      "sha256": "b190b306f9379e018998ed6e09e473de4c213aad435a37ade2b5b02bbe10f724"
+    },
+    "attempt_history": {
+      "shape": [
+        2730
+      ],
+      "dtype": "int64",
+      "sha256": "466612aac6175d51a7500f593ea432b038e8a147662f34f888446bc2970e6bc5"
+    },
+    "latch_history": {
+      "shape": [
+        2730,
+        2
+      ],
+      "dtype": "bool",
+      "sha256": "c6b2df823ac86ec9518fd2548c4d6fce83d8322719fe425cc45f9becc92f37d0"
+    },
+    "contact_counts": {
+      "shape": [
+        2730
+      ],
+      "dtype": "int64",
+      "sha256": "4097b850fcdd7f5a6d63c011de9e4f85168fcd9a40f54475a44afb9697cf1ef1"
+    },
+    "state_velocity": {
+      "shape": [
+        938,
+        6
+      ],
+      "dtype": "float32",
+      "sha256": "c91d7286f23c0fb2a8461a51af6385891b9b5c3ae916a998cd70705763ecb7ac"
+    },
+    "fps": {
+      "shape": [],
+      "dtype": "int64",
+      "sha256": "3fe8adee83a670dd3131f667e963775b2256f3f59d5a996984eb47f8375efd7c"
+    },
+    "segments": {
+      "shape": [],
+      "dtype": "int64",
+      "sha256": "3f767b01e4e58fae238695575a828fdf5cd094d8111a92de89c372451eb3eb74"
+    },
+    "segment_length": {
+      "shape": [],
+      "dtype": "float64",
+      "sha256": "a7f45247cb1d4c3aa904930c72a098fec78f78aef89771963c6ee68b63ea853f"
+    },
+    "clip_top_bodies": {
+      "shape": [
+        3
+      ],
+      "dtype": "int64",
+      "sha256": "cbcae63ebaff347cdb47a11c2050268d4f9495e1c8740b77f5fabceb0eebb108"
+    },
+    "robot_start": {
+      "shape": [],
+      "dtype": "int64",
+      "sha256": "cf9bbfdcee3e1320cb2c261b345d4d68d8af72a6dbec791bb5fc7cabf9ae0061"
+    },
+    "robot_names": {
+      "shape": [
+        21
+      ],
+      "dtype": "<U18",
+      "sha256": "bfcbda14493f764599af848a3ea44fcb3f65a3c7362af53afb1f7ae51ce719d7"
+    },
+    "plug_bodies": {
+      "shape": [
+        2
+      ],
+      "dtype": "int64",
+      "sha256": "9d34149fbd1fe777eb238799054c8cbfbce372255f219f8740838def9bfd02db"
+    },
+    "plug_anchors": {
+      "shape": [
+        12,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "0b0473133d6643c4b2ca2db36f87509993083c15479aad2b4e9240e55e535c0d"
+    },
+    "anchor_q": {
+      "shape": [
+        12,
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "e255681fec0d62f4279d59cde9890f76803b33f313550065731cc8c179d5c3af"
+    },
+    "rod_ids": {
+      "shape": [
+        912
+      ],
+      "dtype": "int64",
+      "sha256": "9d3b49af7c2542b4b3aad27900ea09be662a6a56c1e071827e93e3a779230d78"
+    }
+  },
+  "run_metadata": {
+    "cable_count": 6,
+    "length_mm": 762.0,
+    "diameter_mm": 2.0,
+    "segments": 152,
+    "solver": "Newton SolverVBD compliant ALM",
+    "iterations": 60,
+    "physics_hz": 1920,
+    "EI_Nm2": 0.0011459155902616466,
+    "grasp": "Contact-only pads; no support lips or attachments",
+    "connector_modification": "Handling rib removed; original side tabs and ridges collide",
+    "latches": "Idealized socket locks activate only within 1.5 mm and 6 degrees; used to retain connectors against cable loads",
+    "events": [
+      {
+        "event": "in_hand_calibration",
+        "time": 6.5,
+        "connector": 1,
+        "relative_position": [
+          8.120014116561725e-06,
+          2.1863678550821087e-06,
+          0.0050040312297142085
+        ]
+      },
+      {
+        "event": "in_hand_calibration",
+        "time": 8.5,
+        "connector": 1,
+        "relative_position": [
+          1.6565466364426276e-05,
+          3.7939572916553886e-06,
+          0.005010461500747151
+        ]
+      },
+      {
+        "event": "connector_latched",
+        "time": 11.9,
+        "connector": 1,
+        "position_error_mm": 0.008752468935610323,
+        "angle_error_deg": 0.09524220639589684
+      },
+      {
+        "event": "resume_at_phase_boundary",
+        "time": 16.5,
+        "source": "motion_boundary.npz",
+        "preserved_positions_and_velocities": true
+      },
+      {
+        "event": "in_hand_calibration",
+        "time": 21.5,
+        "connector": 2,
+        "relative_position": [
+          -2.090482853598284e-05,
+          -9.426057489438498e-07,
+          0.005001639554317877
+        ]
+      },
+      {
+        "event": "in_hand_calibration",
+        "time": 23.5,
+        "connector": 2,
+        "relative_position": [
+          -0.00017134803805249408,
+          -1.748226886471444e-06,
+          0.005071490227694483
+        ]
+      },
+      {
+        "event": "connector_latched",
+        "time": 26.9,
+        "connector": 2,
+        "position_error_mm": 0.02892424928283669,
+        "angle_error_deg": 0.07662308205745406
+      },
+      {
+        "event": "resume_at_phase_boundary",
+        "time": 31.5,
+        "source": "two_connectors.npz",
+        "preserved_positions_and_velocities": true
+      },
+      {
+        "event": "post_insertion_retention_check",
+        "time": 45.5,
+        "clip": 1,
+        "phase": "clip",
+        "retained": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ]
+      }
+    ],
+    "final_latched": [
+      true,
+      true
+    ],
+    "final_retained": [
+      0,
+      0,
+      0
+    ],
+    "seconds": 45.5,
+    "runtime_seconds": 298.04792046546936,
+    "complete": false,
+    "repairs": [
+      0,
+      0,
+      0
+    ],
+    "pose_servo": false
+  }
+}

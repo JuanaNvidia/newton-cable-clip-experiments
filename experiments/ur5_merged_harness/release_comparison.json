@@ -1,0 +1,24 @@
+{
+  "selected_sha256": "033b0786cebb8a029f3861e82f71db09a6581a143b4a9bdd5322e1c83ee98380",
+  "diagnostic_sha256": "f17a89df115c681adcc6d6b5c19854ba99f376ec0f3166a20de253fbb855309f",
+  "branch_frame": 8610,
+  "release_start_frame": 9138,
+  "release_start_seconds": 152.3,
+  "shared_prefix_bitwise_equal": true,
+  "pre_release_max_pose_component_difference": 0.5071397423744202,
+  "pre_release_max_body_position_difference_mm": 5.534931182861328,
+  "first_difference_above_1e_7_frame": 8610,
+  "selected_jaw_release_gap_m": 0.0028,
+  "diagnostic_jaw_release_gap_m": 0.06,
+  "selected_counts_at_diagnostic_end": [
+    6,
+    5,
+    5
+  ],
+  "diagnostic_counts_at_end": [
+    6,
+    5,
+    1
+  ],
+  "note": "Same phase-boundary poses and velocities. Changed only the release and initial withdrawal jaw gap in the controller. The reruns diverged numerically before release, so this comparison does not isolate the release width as the sole cause of the different result. No simulated pose edits."
+}

@@ -1,0 +1,118 @@
+{
+  "motion_sha256": "f17a89df115c681adcc6d6b5c19854ba99f376ec0f3166a20de253fbb855309f",
+  "passed": false,
+  "checks": {
+    "recorded_contact_counts_below_capacity": true,
+    "robot_joint_limits": true,
+    "robot_joint_velocity_limits": true,
+    "finite": true,
+    "length_762_mm": true,
+    "both_connectors_started_unlatched": true,
+    "both_connectors_seated": true,
+    "sequential_connector_latches": true,
+    "all_cables_in_all_three_clips": false,
+    "cable_joints_within_point2_mm": false,
+    "end_attachments_within_point2_mm": true,
+    "hinges_within_point05_mm": false,
+    "robot_matches_fk": true,
+    "cable_table_overlap_below_point2_mm": false
+  },
+  "measurements": {
+    "closed_lid_envelope_counts": [
+      4,
+      5,
+      1
+    ],
+    "max_recorded_contact_count": 2719,
+    "contact_count_recording_coverage": 1.0,
+    "max_joint_velocity_rad_s": [
+      1.0955161213804132,
+      0.9096564920331485,
+      0.7025587925014065,
+      0.6352084929091406,
+      0.2706160786766709,
+      2.5685663296778305
+    ],
+    "joint_velocity_limits_rad_s": [
+      3.141592653589793,
+      3.141592653589793,
+      3.141592653589793,
+      3.141592653589793,
+      3.141592653589793,
+      3.141592653589793
+    ],
+    "final_lid_angles_deg": [
+      -71.1723772453666,
+      0.003119775638681598,
+      -4.403827198884854
+    ],
+    "final_retained_per_clip": [
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ]
+    ],
+    "final_retained_counts": [
+      6,
+      5,
+      1
+    ],
+    "latch_events": [
+      {
+        "connector": 1,
+        "time": 11.9,
+        "position_error_mm": 0.0019386787965453177,
+        "angle_error_degrees": 0.0031912725663039714
+      },
+      {
+        "connector": 2,
+        "time": 26.9,
+        "position_error_mm": 0.013265537469178865,
+        "angle_error_degrees": 0.0021749543804354815
+      }
+    ],
+    "final_connector_position_errors_mm": [
+      0.00028899251483706167,
+      0.017040125698202787
+    ],
+    "max_cable_joint_gap_mm": 3.1912553599262545,
+    "max_cable_joint_gap_frame": 9054,
+    "max_cable_joint_gap_by_phase_mm": {
+      "settle_0": 0.000743730038619848,
+      "connector_1": 0.0035055209908600627,
+      "connector_2": 0.005331311228811466,
+      "clip_1": 0.30462573337279875,
+      "repair_1": 1.8058670697759525,
+      "clip_2": 1.7956289079851826,
+      "repair_2": 1.7934817738658095,
+      "repair_3": 3.1912553599262545
+    },
+    "max_cable_joint_gap_by_recording_segment_mm": {},
+    "final_two_seconds_max_cable_joint_gap_mm": 1.8919787639997594,
+    "max_connector_attachment_gap_mm": 0.07090890688786307,
+    "max_hinge_anchor_error_mm": 0.28871436762555014,
+    "max_robot_fk_error_mm": 1.1641532182693481e-07,
+    "max_capsule_table_overlap_mm": 1.0799047774829844
+  },
+  "limitations": "Geometric and sampled checks; strict clip, finger and robot-clearance reports are separate; not a continuous collision or force validation."
+}

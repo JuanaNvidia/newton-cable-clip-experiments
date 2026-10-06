@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "all_arrays_identical": true,
+  "controller_state_identical": true,
+  "frames": 8610,
+  "source_sha256": "d861e98336d53c07d524f719e9bcf3ec112b48980bf7c907ac3ddbd42722c05b",
+  "restored_sha256": "d861e98336d53c07d524f719e9bcf3ec112b48980bf7c907ac3ddbd42722c05b"
+}

@@ -1,0 +1,362 @@
+{
+  "prefix_frames": 1890,
+  "frame_arrays": [
+    "poses",
+    "joint_positions",
+    "jaw_width",
+    "tcp_targets",
+    "tool_rotations",
+    "phases",
+    "phase_elapsed",
+    "attempt_history",
+    "latch_history",
+    "contact_counts"
+  ],
+  "original_npz_sha256": "4dc98b07faceb43cdcd824593e6d1fb7f7dda8d7a0cf2d20c930df881144301b",
+  "prefix_array_sha256": {
+    "poses": "d86f385334b95c71a5897221f553fd0b5d9c41e29568a30f6462f9b44a158941",
+    "joint_positions": "8aeac9d00323edd7a5eb4c5daa4a940cd8ecfc213acba22d196f8fbee0dd6116",
+    "jaw_width": "51e405d811b64e306b832b799e6992a03a1d44a8b4f82a4a66604b8995e24581",
+    "tcp_targets": "70a73211e618126ff890ef16d1ff36209eeb17ae89426742266bce497db09eee",
+    "tool_rotations": "39ab10f2fe1514bda629a42c085228966c633128de8ca2ed300a779c147c160e",
+    "phases": "f15c46a8cf09b94a810b64012b69fad10f13cf5e4d33bae1fce56e36362f8b90",
+    "phase_elapsed": "157277ea20703ac523ef71d40daeae8d264fb70c10a04f4fd9eb35b4507cd60b",
+    "attempt_history": "364803a06e82440f3d5c5ac93bde221796a44b25b1f4ac79de4dff822d3b3086",
+    "latch_history": "a1a579a4b2477fd427701c01112851fc5478d3cdb54a5420cd159c34983e1191",
+    "contact_counts": "25ea9a0c59e437517e3b37a9ce677864db49fed363e14496f3588f338ffcb390"
+  },
+  "arrays": {
+    "poses": {
+      "shape": [
+        2167,
+        938,
+        7
+      ],
+      "dtype": "float32",
+      "sha256": "70fe0e6d28671c7b218bcc90caeb8fa71a01dbc54a8f68d3a52eb0e4ab6ca1b8"
+    },
+    "joint_positions": {
+      "shape": [
+        2167,
+        6
+      ],
+      "dtype": "float64",
+      "sha256": "3f64fd2ab6f4eaf262a30fb0b89272e9ce7f95952646d85505333a39ccae7d8c"
+    },
+    "jaw_width": {
+      "shape": [
+        2167
+      ],
+      "dtype": "float64",
+      "sha256": "eab55f36409a514537c2505a81dcfd82ea26873fac488937c8e1fb935e7f96ba"
+    },
+    "tcp_targets": {
+      "shape": [
+        2167,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "1eafc91090c7ded1fab6fba717069453bd2e716d93f8a72aed5964c26c3f509f"
+    },
+    "tool_rotations": {
+      "shape": [
+        2167,
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "3f6eef53531c9fa489c844c8ac525155d3e449985254fb18301cc37395df174b"
+    },
+    "phases": {
+      "shape": [
+        2167
+      ],
+      "dtype": "<U11",
+      "sha256": "d7bb98cae8e6856cc949877761661d359406b18323f1f55b2db5a07d355586c9"
+    },
+    "phase_elapsed": {
+      "shape": [
+        2167
+      ],
+      "dtype": "float64",
+      "sha256": "d8979c08cef38ba63e50e986d1fcbad3863e0ab168a4ed0a0acf1317e2b72f08"
+    },
+    "attempt_history": {
+      "shape": [
+        2167
+      ],
+      "dtype": "int64",
+      "sha256": "cd4f88abd00344a58791d600ae9fb8765e700ede618b4a578cc44fe2c29181ae"
+    },
+    "latch_history": {
+      "shape": [
+        2167,
+        2
+      ],
+      "dtype": "bool",
+      "sha256": "b526e78e950fad883bb8e9e4945eff1d6c57482c48361acba2fc273ec6802fab"
+    },
+    "contact_counts": {
+      "shape": [
+        2167
+      ],
+      "dtype": "int64",
+      "sha256": "9608b6ab834ebf5c176291511318038862767799c66f6ae2c66b0b950836bc66"
+    },
+    "state_velocity": {
+      "shape": [
+        938,
+        6
+      ],
+      "dtype": "float32",
+      "sha256": "cd23478e56e5fc4f3439ad23b813473e9e2c662df78bb4c029accd80361f279c"
+    },
+    "fps": {
+      "shape": [],
+      "dtype": "int64",
+      "sha256": "3fe8adee83a670dd3131f667e963775b2256f3f59d5a996984eb47f8375efd7c"
+    },
+    "segments": {
+      "shape": [],
+      "dtype": "int64",
+      "sha256": "3f767b01e4e58fae238695575a828fdf5cd094d8111a92de89c372451eb3eb74"
+    },
+    "segment_length": {
+      "shape": [],
+      "dtype": "float64",
+      "sha256": "a7f45247cb1d4c3aa904930c72a098fec78f78aef89771963c6ee68b63ea853f"
+    },
+    "clip_top_bodies": {
+      "shape": [
+        3
+      ],
+      "dtype": "int64",
+      "sha256": "cbcae63ebaff347cdb47a11c2050268d4f9495e1c8740b77f5fabceb0eebb108"
+    },
+    "robot_start": {
+      "shape": [],
+      "dtype": "int64",
+      "sha256": "cf9bbfdcee3e1320cb2c261b345d4d68d8af72a6dbec791bb5fc7cabf9ae0061"
+    },
+    "robot_names": {
+      "shape": [
+        21
+      ],
+      "dtype": "<U18",
+      "sha256": "bfcbda14493f764599af848a3ea44fcb3f65a3c7362af53afb1f7ae51ce719d7"
+    },
+    "plug_bodies": {
+      "shape": [
+        2
+      ],
+      "dtype": "int64",
+      "sha256": "9d34149fbd1fe777eb238799054c8cbfbce372255f219f8740838def9bfd02db"
+    },
+    "plug_anchors": {
+      "shape": [
+        12,
+        3
+      ],
+      "dtype": "float64",
+      "sha256": "0b0473133d6643c4b2ca2db36f87509993083c15479aad2b4e9240e55e535c0d"
+    },
+    "anchor_q": {
+      "shape": [
+        12,
+        4
+      ],
+      "dtype": "float64",
+      "sha256": "e255681fec0d62f4279d59cde9890f76803b33f313550065731cc8c179d5c3af"
+    },
+    "rod_ids": {
+      "shape": [
+        912
+      ],
+      "dtype": "int64",
+      "sha256": "9d3b49af7c2542b4b3aad27900ea09be662a6a56c1e071827e93e3a779230d78"
+    }
+  },
+  "run_metadata": {
+    "time": 36.11666666666667,
+    "bundle_gap": 0.0018,
+    "tcp": [
+      0.004210496375377182,
+      0.25250039442473654,
+      0.026300082114338874
+    ],
+    "wire_points": [
+      [
+        0.0046133664436638355,
+        0.2501204013824463,
+        0.0260957982391119
+      ],
+      [
+        0.004719453398138285,
+        0.24949124455451965,
+        0.03441418334841728
+      ],
+      [
+        0.004026426468044519,
+        0.25358277559280396,
+        0.03707144036889076
+      ],
+      [
+        0.0039536431431770325,
+        0.2540036141872406,
+        0.030483102425932884
+      ],
+      [
+        0.004122942686080933,
+        0.2530231475830078,
+        0.032516349107027054
+      ],
+      [
+        0.004153851885348558,
+        0.25283706188201904,
+        0.028376473113894463
+      ]
+    ],
+    "minimum_wire_height_mm": 26.09579849243164
+  },
+  "controller_state": {
+    "phase_count": 3,
+    "queue": [
+      [
+        "clip",
+        1,
+        14.0
+      ],
+      [
+        "clip",
+        2,
+        14.0
+      ]
+    ],
+    "events": [
+      {
+        "event": "in_hand_calibration",
+        "time": 6.5,
+        "connector": 1,
+        "relative_position": [
+          8.120014116561725e-06,
+          2.1863678550821087e-06,
+          0.0050040312297142085
+        ]
+      },
+      {
+        "event": "in_hand_calibration",
+        "time": 8.5,
+        "connector": 1,
+        "relative_position": [
+          1.6565466364426276e-05,
+          3.7939572916553886e-06,
+          0.005010461500747151
+        ]
+      },
+      {
+        "event": "connector_latched",
+        "time": 11.9,
+        "connector": 1,
+        "position_error_mm": 0.008752468935610323,
+        "angle_error_deg": 0.09524220639589684
+      },
+      {
+        "event": "resume_at_phase_boundary",
+        "time": 16.5,
+        "source": "motion_boundary.npz",
+        "preserved_positions_and_velocities": true
+      },
+      {
+        "event": "in_hand_calibration",
+        "time": 21.5,
+        "connector": 2,
+        "relative_position": [
+          -2.090482853598284e-05,
+          -9.426057489438498e-07,
+          0.005001639554317877
+        ]
+      },
+      {
+        "event": "in_hand_calibration",
+        "time": 23.5,
+        "connector": 2,
+        "relative_position": [
+          -0.00017134803805249408,
+          -1.748226886471444e-06,
+          0.005071490227694483
+        ]
+      },
+      {
+        "event": "connector_latched",
+        "time": 26.9,
+        "connector": 2,
+        "position_error_mm": 0.02892424928283669,
+        "angle_error_deg": 0.07662308205745406
+      },
+      {
+        "event": "resume_at_phase_boundary",
+        "time": 31.5,
+        "source": "two_connectors.npz",
+        "preserved_positions_and_velocities": true
+      }
+    ],
+    "repairs": [
+      0,
+      0,
+      0
+    ],
+    "wire_attempts": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "last_sides": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "final_sweep": false,
+    "phase_boundary": false
+  }
+}

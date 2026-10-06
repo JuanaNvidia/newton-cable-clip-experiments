@@ -1,0 +1,21 @@
+{
+  "motion_sha256": "033b0786cebb8a029f3861e82f71db09a6581a143b4a9bdd5322e1c83ee98380",
+  "passed": false,
+  "max_sampled_capsule_clip_penetration_mm": {
+    "clip1_top": 0.2904410550524421,
+    "clip1_bottom": 3.109439315859159,
+    "clip2_top": 0.6431638748082265,
+    "clip2_bottom": 0.5326097891030979,
+    "clip3_top": 3.5017704295203247,
+    "clip3_bottom": 0.23810000135603746
+  },
+  "frames": {
+    "clip2_bottom": 7000,
+    "clip3_bottom": 6984,
+    "clip1_bottom": 4020,
+    "clip1_top": 3880,
+    "clip2_top": 5084,
+    "clip3_top": 9188
+  },
+  "method": "Original STL signed distances with per-mesh local bounds including the rotated lid, 15 Hz and 17 samples per capsule; not continuous collision proof"
+}

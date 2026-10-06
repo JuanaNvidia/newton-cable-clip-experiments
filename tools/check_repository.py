@@ -83,4 +83,32 @@ assert not any('handling_rib' in part['name'] for part in parts)
 assert all(part['collision'] for part in parts if part['name'].startswith(('grip_ear','top_ridge','rear_ridge','blue_wire_support')))
 assert not json.loads((no_rib/(name+'.json')).read_text())['existing_fingertip_support_lips']
 
+merged=ROOT/'experiments/ur5_merged_harness'
+spec=importlib.util.spec_from_file_location('merged_motion_io',merged/'motion_io.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+d=module.load_motion(merged/'motion.npz');sha=module.motion_sha256(merged/'motion.npz')
+assert np.isfinite(d['poses']).all() and int(d['fps'])==60
+assert len(d['clip_top_bodies'])==3 and len(d['plug_bodies'])==2
+assert not d['latch_history'][0].any() and d['latch_history'][-1].all()
+r=json.loads((merged/'validation.json').read_text());assert r['motion_sha256']==sha and r['passed']==all(r['checks'].values())
+assert r['checks']['finite'] and r['checks']['both_connectors_seated']
+for name in ['contact_validation','gripper_contact_validation','connector_contact_validation','robot_clearance_validation','recovery_validation','playback_validation']:
+ assert json.loads((merged/(name+'.json')).read_text())['motion_sha256']==sha,name
+assert json.loads((merged/'recovery_validation.json').read_text())['passed']
+assert json.loads((merged/'playback_validation.json').read_text())['passed']
+parts=json.loads((merged/'assets/geometry.json').read_text())['plug'];assert not any('handling_rib' in part['name'] for part in parts)
+for name in ['clipTop.stl','clipBottom.stl']:assert (merged/name).read_bytes()==(three/name).read_bytes()
+for name in ['failed_loose_bundle','failed_tighter_bundle','narrow_probe','failed_wide_release']:
+ meta=json.loads((merged/f'diagnostics/{name}_tail.json').read_text());tail=np.load(merged/f'diagnostics/{name}_tail.npz');n=meta['prefix_frames']
+ for key in tail.files:
+  if key in meta['frame_arrays']:
+   prefix=d[key][:n];assert hashlib.sha256(prefix.tobytes()).hexdigest()==meta['prefix_array_sha256'][key];value=np.concatenate([prefix,tail[key]])
+  else:value=tail[key]
+  expected=meta['arrays'][key];assert list(value.shape)==expected['shape'] and str(value.dtype)==expected['dtype'] and hashlib.sha256(value.tobytes()).hexdigest()==expected['sha256']
+checkpoint=json.loads((merged/'restart_143_5.json').read_text())
+assert hashlib.sha256((merged/'restart_143_5_state.npz').read_bytes()).hexdigest()==checkpoint['state_sha256']
+for key in checkpoint['frame_arrays']:assert hashlib.sha256(d[key][:checkpoint['prefix_frames']].tobytes()).hexdigest()==checkpoint['prefix_array_sha256'][key]
+assert json.loads((merged/'checkpoint_validation.json').read_text())['passed']
+assert json.loads((merged/'release_comparison.json').read_text())['shared_prefix_bitwise_equal']
+assert all(p.stat().st_size<100_000_000 for p in merged.rglob('*') if p.is_file())
+
 print(f'PASS: {len(files)} artifact hashes, finite reference motions, expected validation statuses, identical clip meshes, Python syntax.')

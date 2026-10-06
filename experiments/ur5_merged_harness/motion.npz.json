@@ -1,0 +1,745 @@
+{
+  "solver_runs": [
+    {
+      "start_frame": 0,
+      "iterations": 60,
+      "substeps": 32,
+      "bundle_gap_m": 0.0018
+    },
+    {
+      "start_frame": 2730,
+      "iterations": 80,
+      "substeps": 32,
+      "bundle_gap_m": 0.0018
+    }
+  ],
+  "phase_count": 14,
+  "queue": [],
+  "events": [
+    {
+      "event": "in_hand_calibration",
+      "time": 6.5,
+      "connector": 1,
+      "relative_position": [
+        8.120014116561725e-06,
+        2.1863678550821087e-06,
+        0.0050040312297142085
+      ]
+    },
+    {
+      "event": "in_hand_calibration",
+      "time": 8.5,
+      "connector": 1,
+      "relative_position": [
+        1.6565466364426276e-05,
+        3.7939572916553886e-06,
+        0.005010461500747151
+      ]
+    },
+    {
+      "event": "connector_latched",
+      "time": 11.9,
+      "connector": 1,
+      "position_error_mm": 0.008752468935610323,
+      "angle_error_deg": 0.09524220639589684
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 16.5,
+      "source": "motion_boundary.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "in_hand_calibration",
+      "time": 21.5,
+      "connector": 2,
+      "relative_position": [
+        -2.090482853598284e-05,
+        -9.426057489438498e-07,
+        0.005001639554317877
+      ]
+    },
+    {
+      "event": "in_hand_calibration",
+      "time": 23.5,
+      "connector": 2,
+      "relative_position": [
+        -0.00017134803805249408,
+        -1.748226886471444e-06,
+        0.005071490227694483
+      ]
+    },
+    {
+      "event": "connector_latched",
+      "time": 26.9,
+      "connector": 2,
+      "position_error_mm": 0.02892424928283669,
+      "angle_error_deg": 0.07662308205745406
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 31.5,
+      "source": "two_connectors.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 45.5,
+      "clip": 1,
+      "phase": "clip",
+      "retained": [
+        [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 45.5,
+      "source": "motion_boundary.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 45.5,
+      "clip": 1,
+      "cable": 3,
+      "segment": 27,
+      "side": -1,
+      "separation_mm": 14.057472047009144,
+      "retained_before": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 57.5,
+      "clip": 1,
+      "phase": "repair",
+      "retained": [
+        [
+          true,
+          false,
+          false,
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 57.5,
+      "source": "motion_boundary.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 57.5,
+      "clip": 1,
+      "cable": 3,
+      "segment": 47,
+      "side": 1,
+      "separation_mm": 20.224580197733683,
+      "retained_before": [
+        true,
+        false,
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "event": "opposite_side_wire_seated_during_pull",
+      "time": 64.4,
+      "clip": 1,
+      "cable": 3,
+      "side": 1
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 69.5,
+      "clip": 1,
+      "phase": "repair",
+      "retained": [
+        [
+          true,
+          false,
+          false,
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 69.5,
+      "source": "motion_boundary.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 69.5,
+      "clip": 1,
+      "cable": 2,
+      "segment": 31,
+      "side": -1,
+      "separation_mm": 31.489336416876476,
+      "retained_before": [
+        true,
+        false,
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "event": "opposite_side_wire_seated_during_pull",
+      "time": 76.15,
+      "clip": 1,
+      "cable": 2,
+      "side": -1
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 81.5,
+      "clip": 1,
+      "phase": "repair",
+      "retained": [
+        [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "recovery_limit_reached",
+      "time": 81.5,
+      "clip": 1,
+      "retained": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 95.5,
+      "clip": 2,
+      "phase": "clip",
+      "retained": [
+        [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 95.5,
+      "source": "motion_boundary.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 95.5,
+      "clip": 2,
+      "cable": 6,
+      "segment": 72,
+      "side": -1,
+      "separation_mm": 20.65242370861524,
+      "retained_before": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "event": "opposite_side_wire_seated_during_pull",
+      "time": 104.58333333333333,
+      "clip": 2,
+      "cable": 6,
+      "side": -1
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 107.5,
+      "clip": 2,
+      "phase": "repair",
+      "retained": [
+        [
+          true,
+          true,
+          false,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 107.5,
+      "clip": 2,
+      "cable": 3,
+      "segment": 61,
+      "side": -1,
+      "separation_mm": 29.717407605196684,
+      "retained_before": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "event": "opposite_side_wire_seated_during_pull",
+      "time": 114.76666666666667,
+      "clip": 2,
+      "cable": 3,
+      "side": -1
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 119.5,
+      "clip": 2,
+      "phase": "repair",
+      "retained": [
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 119.5,
+      "clip": 2,
+      "cable": 6,
+      "segment": 90,
+      "side": 1,
+      "separation_mm": 32.07140604640674,
+      "retained_before": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 131.5,
+      "clip": 2,
+      "phase": "repair",
+      "retained": [
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "recovery_limit_reached",
+      "time": 131.5,
+      "clip": 2,
+      "retained": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "event": "existing_bundle_check",
+      "time": 131.5,
+      "clip": 3,
+      "retained": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "single_wire_recovery"
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 131.5,
+      "clip": 3,
+      "cable": 6,
+      "segment": 108,
+      "side": -1,
+      "separation_mm": 33.78596753616075,
+      "retained_before": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "event": "opposite_side_wire_seated_during_pull",
+      "time": 139.03333333333333,
+      "clip": 3,
+      "cable": 6,
+      "side": -1
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 143.5,
+      "clip": 3,
+      "phase": "repair",
+      "retained": [
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "resume_at_phase_boundary",
+      "time": 143.5,
+      "source": "before_lower_recovery.npz",
+      "preserved_positions_and_velocities": true
+    },
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 143.5,
+      "clip": 3,
+      "cable": 6,
+      "segment": 125,
+      "side": 1,
+      "separation_mm": 36.7043682955179,
+      "retained_before": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "event": "post_insertion_retention_check",
+      "time": 155.5,
+      "clip": 3,
+      "phase": "repair",
+      "retained": [
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ]
+      ]
+    },
+    {
+      "event": "recovery_limit_reached",
+      "time": 155.5,
+      "clip": 3,
+      "retained": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "event": "recovery_limit_reached",
+      "time": 155.5,
+      "clip": 3,
+      "retained": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "event": "recovery_limit_reached",
+      "time": 155.5,
+      "clip": 2,
+      "retained": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    }
+  ],
+  "repairs": [
+    3,
+    3,
+    2
+  ],
+  "wire_attempts": [
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ]
+  ],
+  "last_sides": [
+    [
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "final_sweep": true,
+  "phase_boundary": true
+}

@@ -1,0 +1,37 @@
+{
+  "original_npz_sha256": "033b0786cebb8a029f3861e82f71db09a6581a143b4a9bdd5322e1c83ee98380",
+  "frames": 9450,
+  "chunks": [
+    "motion_part_00.npz",
+    "motion_part_01.npz",
+    "motion_part_02.npz",
+    "motion_part_03.npz",
+    "motion_part_04.npz",
+    "motion_part_05.npz",
+    "motion_part_06.npz",
+    "motion_part_07.npz"
+  ],
+  "sha256": {
+    "motion_part_00.npz": "3be48f4907082d89c91df1a46a60371e100e9295a105d62ff57f0bded206ffd5",
+    "motion_part_01.npz": "49f57879a8b23aef5b10db9cf10e86ef7f44a8e64bc0763e5cd9089fd4d0beb7",
+    "motion_part_02.npz": "36d7b7126525a26ef35c1170d7e345b69c65eca88413c141fc1442e59716a9dd",
+    "motion_part_03.npz": "315f81ba47561672276a88a85db5fa99b2286b463bd45129d5e01e248cda2247",
+    "motion_part_04.npz": "4a9bedd3b2a4798df070e63e3c4fb21e40418dce58ebc5220fa53458879b286e",
+    "motion_part_05.npz": "da002097a3af993f1a9134b1c711a398c9a2ce53e3fdcbe5791d7d6eb93796d1",
+    "motion_part_06.npz": "55a0284f4822e1b9a359f8f395b339ce379b60f303b056f07e70bc65031c02eb",
+    "motion_part_07.npz": "1301e393a9f86eeb3053acca273a22005edecfce21581b12a025c70815e12210"
+  },
+  "frame_arrays": [
+    "poses",
+    "joint_positions",
+    "jaw_width",
+    "tcp_targets",
+    "tool_rotations",
+    "phases",
+    "phase_elapsed",
+    "attempt_history",
+    "latch_history",
+    "contact_counts"
+  ],
+  "description": "Lossless 60 Hz frame partitions; no pose edits or downsampling."
+}

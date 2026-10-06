@@ -1,0 +1,35 @@
+[
+  {
+    "angle_deg": 65,
+    "ik_failure": null,
+    "table_overlap_mm": 9.999113137777519,
+    "where": {
+      "time": 5.65,
+      "link": "wrist_1_link"
+    },
+    "max_joint_speed_rad_s": 2.1233817374544373,
+    "geometry_only": true
+  },
+  {
+    "angle_deg": 75,
+    "ik_failure": null,
+    "table_overlap_mm": 9.99974539544999,
+    "where": {
+      "time": 2.5500000000000003,
+      "link": "right_coupler"
+    },
+    "max_joint_speed_rad_s": 2.4982595491920545,
+    "geometry_only": true
+  },
+  {
+    "angle_deg": 80,
+    "ik_failure": null,
+    "table_overlap_mm": 9.999978494136457,
+    "where": {
+      "time": 3.5500000000000003,
+      "link": "forearm_link"
+    },
+    "max_joint_speed_rad_s": 2.6958347672109895,
+    "geometry_only": true
+  }
+]

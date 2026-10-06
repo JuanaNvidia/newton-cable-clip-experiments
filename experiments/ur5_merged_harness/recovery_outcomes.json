@@ -1,0 +1,98 @@
+[
+  {
+    "time": 45.5,
+    "clip": 1,
+    "wire": 3,
+    "side": -1,
+    "selected_wire_inside_after_release": false,
+    "all_counts_after_release": [
+      4,
+      0,
+      0
+    ]
+  },
+  {
+    "time": 57.5,
+    "clip": 1,
+    "wire": 3,
+    "side": 1,
+    "selected_wire_inside_after_release": false,
+    "all_counts_after_release": [
+      4,
+      1,
+      0
+    ]
+  },
+  {
+    "time": 69.5,
+    "clip": 1,
+    "wire": 2,
+    "side": -1,
+    "selected_wire_inside_after_release": true,
+    "all_counts_after_release": [
+      5,
+      1,
+      0
+    ]
+  },
+  {
+    "time": 95.5,
+    "clip": 2,
+    "wire": 6,
+    "side": -1,
+    "selected_wire_inside_after_release": false,
+    "all_counts_after_release": [
+      5,
+      4,
+      5
+    ]
+  },
+  {
+    "time": 107.5,
+    "clip": 2,
+    "wire": 3,
+    "side": -1,
+    "selected_wire_inside_after_release": true,
+    "all_counts_after_release": [
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "time": 119.5,
+    "clip": 2,
+    "wire": 6,
+    "side": 1,
+    "selected_wire_inside_after_release": false,
+    "all_counts_after_release": [
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "time": 131.5,
+    "clip": 3,
+    "wire": 6,
+    "side": -1,
+    "selected_wire_inside_after_release": false,
+    "all_counts_after_release": [
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "time": 143.5,
+    "clip": 3,
+    "wire": 6,
+    "side": 1,
+    "selected_wire_inside_after_release": false,
+    "all_counts_after_release": [
+      6,
+      5,
+      5
+    ]
+  }
+]
