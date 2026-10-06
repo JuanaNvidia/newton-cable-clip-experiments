@@ -125,4 +125,21 @@ prov=json.loads((closer/'recording_provenance.json').read_text());assert prov['m
 for name in ['clipTop.stl','clipBottom.stl','actual_clip_scene.usda']:assert (closer/name).read_bytes()==(merged/name).read_bytes()
 assert all(p.stat().st_size<100_000_000 for p in closer.rglob('*') if p.is_file())
 
+low=ROOT/'experiments/ur5_low_friction'
+spec=importlib.util.spec_from_file_location('low_motion_io',low/'motion_io.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+d=module.load_motion(low/'motion.npz');sha=module.motion_sha256(low/'motion.npz');prefix=np.load(low/'two_connectors.npz')
+for key in ['poses','joint_positions','jaw_width','tcp_targets','tool_rotations','phases','phase_elapsed','attempt_history','latch_history','contact_counts']:assert np.array_equal(d[key][:1890],prefix[key]),key
+assert np.isfinite(d['poses']).all() and d['latch_history'][-1].all()
+r=json.loads((low/'validation.json').read_text());assert r['motion_sha256']==sha and r['passed']==all(r['checks'].values())
+for name in ['contact_validation','gripper_contact_validation','connector_contact_validation','robot_clearance_validation','recovery_validation','playback_validation']:
+ assert json.loads((low/(name+'.json')).read_text())['motion_sha256']==sha,name
+assert json.loads((low/'recovery_validation.json').read_text())['passed']
+assert json.loads((low/'playback_validation.json').read_text())['passed']
+mat=json.loads((low/'clip_materials.json').read_text());assert mat['clip_friction']==.1 and len(mat['clip_shape_ids'])==210 and np.allclose(mat['clip_shape_friction'],.1)
+assert np.isclose(mat['effective_cable_clip_friction'],np.sqrt(.05))
+comparison=json.loads((low/'comparison.json').read_text());assert comparison['baseline']['final_counts']==json.loads((closer/'validation.json').read_text())['measurements']['final_retained_counts']
+assert comparison['lower_friction']['final_counts']==r['measurements']['final_retained_counts']
+for name in ['clipTop.stl','clipBottom.stl','actual_clip_scene.usda']:assert (low/name).read_bytes()==(closer/name).read_bytes()
+assert all(p.stat().st_size<100_000_000 for p in low.rglob('*') if p.is_file())
+
 print(f'PASS: {len(files)} artifact hashes, finite reference motions, expected validation statuses, identical clip meshes, Python syntax.')

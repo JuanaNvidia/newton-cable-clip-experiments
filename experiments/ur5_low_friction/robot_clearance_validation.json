@@ -1,0 +1,12 @@
+{
+  "motion_sha256": "7454af69302296bbf862fc838d464d67e55db4e44adf25d90dc05a6fad3c129a",
+  "passed": true,
+  "max_sampled_static_penetration_mm": 0.0,
+  "max_overlap_mm_by_obstacle": {
+    "table": 0.0,
+    "sockets": 0.0,
+    "clips": 0.0
+  },
+  "where": null,
+  "method": "Mesh vertices at 10 Hz against table/socket boxes and original clip meshes; not swept-volume proof"
+}

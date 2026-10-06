@@ -1,0 +1,29 @@
+{
+  "original_npz_sha256": "7454af69302296bbf862fc838d464d67e55db4e44adf25d90dc05a6fad3c129a",
+  "frames": 4410,
+  "chunks": [
+    "motion_part_00.npz",
+    "motion_part_01.npz",
+    "motion_part_02.npz",
+    "motion_part_03.npz"
+  ],
+  "sha256": {
+    "motion_part_00.npz": "0515ac07d3ee6c4eaaedbee93297ad1c76af81c5fd365d86e2dac189e1b33d06",
+    "motion_part_01.npz": "8ade8bd87c0242ede4ef277ba33d06aa6c2841157ba4bae59ffa4ab5ba767e7b",
+    "motion_part_02.npz": "c8868350b474fdd1f20e7a5e05c756611d1dbf77bf31c4791ab88071a0df1363",
+    "motion_part_03.npz": "7c4bf99ea5af4ebda93599f64b70ce423587c90d1699d77298f08bf41afee7c9"
+  },
+  "frame_arrays": [
+    "poses",
+    "joint_positions",
+    "jaw_width",
+    "tcp_targets",
+    "tool_rotations",
+    "phases",
+    "phase_elapsed",
+    "attempt_history",
+    "latch_history",
+    "contact_counts"
+  ],
+  "description": "Lossless 60 Hz frame partitions; no pose edits or downsampling."
+}

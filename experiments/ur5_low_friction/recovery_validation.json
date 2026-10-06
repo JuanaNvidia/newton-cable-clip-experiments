@@ -1,0 +1,21 @@
+{
+  "motion_sha256": "7454af69302296bbf862fc838d464d67e55db4e44adf25d90dc05a6fad3c129a",
+  "passed": true,
+  "checks_count": 3,
+  "recovery_attempts": [
+    {
+      "time": 59.5,
+      "clip": 3,
+      "cable": 6,
+      "selected_missing": true,
+      "opposite_side": true,
+      "side_matches_position": true,
+      "selected_wire_near_each_pad": [
+        true,
+        true
+      ]
+    }
+  ],
+  "limits": [],
+  "note": "Pad proximity is a diagnostic, not force sensing or proof of grasp security. Final channel occupancy is checked separately and does not require the lid to close."
+}

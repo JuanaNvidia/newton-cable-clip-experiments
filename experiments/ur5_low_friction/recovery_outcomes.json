@@ -1,0 +1,50 @@
+{
+  "attempts": [
+    {
+      "event": "opposite_side_wire_selection",
+      "time": 59.5,
+      "clip": 3,
+      "cable": 6,
+      "segment": 107,
+      "side": -1,
+      "separation_mm": 2.850163746092383,
+      "longitudinal_offset_mm": -31.742416028297104,
+      "retained_before": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "retained_after": [
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      ],
+      "selected_wire_retained_after": true
+    }
+  ],
+  "limits": []
+}

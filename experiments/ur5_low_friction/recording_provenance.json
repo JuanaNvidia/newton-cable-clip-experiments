@@ -1,0 +1,39 @@
+{
+  "motion_sha256": "7454af69302296bbf862fc838d464d67e55db4e44adf25d90dc05a6fad3c129a",
+  "connector_prefix_frames": 1890,
+  "connector_prefix_exact": true,
+  "connector_checkpoint_sha256": "fee27773d1214d7d4c7ae98bdd673c2f3e12c7dd4186fd0e2ea35fbbc515d24d",
+  "clip_geometry_modified": false,
+  "clip_friction": 0.1,
+  "baseline_clip_friction": 0.5,
+  "effective_cable_clip_friction": 0.22360679774997896,
+  "bulk_grasp_offset_mm": 30,
+  "recovery_grasp_band_mm": [
+    29,
+    36
+  ],
+  "restart_seconds": [
+    31.5,
+    45.5
+  ],
+  "segments": [
+    {
+      "start_frame": 0,
+      "end_frame_exclusive": 1890,
+      "controller": "unchanged connector prefix",
+      "iterations": "see two_connectors.json"
+    },
+    {
+      "start_frame": 1890,
+      "end_frame_exclusive": 2730,
+      "controller": "simulate.py: closer grasp, clip friction 0.1",
+      "iterations": 80
+    },
+    {
+      "start_frame": 2730,
+      "end_frame_exclusive": 4410,
+      "controller": "simulate.py: closer grasp, clip friction 0.1 (resumed)",
+      "iterations": 80
+    }
+  ]
+}

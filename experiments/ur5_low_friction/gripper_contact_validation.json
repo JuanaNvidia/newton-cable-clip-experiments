@@ -1,0 +1,16 @@
+{
+  "motion_sha256": "7454af69302296bbf862fc838d464d67e55db4e44adf25d90dc05a6fad3c129a",
+  "passed": false,
+  "max_sampled_cable_gripper_penetration_mm": {
+    "pads": 0.9489989402368603,
+    "support_lips": 0.0
+  },
+  "where": {
+    "pads": {
+      "frame": 2480,
+      "side": "right"
+    },
+    "support_lips": null
+  },
+  "method": "Pad box signed distances; support lips absent, 15 Hz, 17 axis points per capsule; not continuous collision proof"
+}
